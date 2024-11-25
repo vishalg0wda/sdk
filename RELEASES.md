@@ -50,7 +50,7 @@ Based on:
 ### Releases
 - [NPM v14.0.0-canary.6] https://www.npmjs.com/package/@vercel/sdk/v/14.0.0-canary.6 - packages/sdk
 
-## 2024-11-25 16:32:25
+## 2024-11-25 16:32:27
 ### Changes
 Based on:
 - OpenAPI Doc  
