@@ -16,8 +16,8 @@ let value: UpdateFirewallConfigRequestBody2 = {
       {
         conditions: [
           {
-            type: "header",
-            op: "gt",
+            type: "path",
+            op: "suf",
           },
         ],
       },

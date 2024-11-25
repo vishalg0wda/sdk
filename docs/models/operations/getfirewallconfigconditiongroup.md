@@ -8,8 +8,8 @@ import { GetFirewallConfigConditionGroup } from "@vercel/sdk/models/operations/g
 let value: GetFirewallConfigConditionGroup = {
   conditions: [
     {
-      type: "scheme",
-      op: "inc",
+      type: "geo_country_region",
+      op: "gte",
     },
   ],
 };

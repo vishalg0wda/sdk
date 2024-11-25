@@ -9,10 +9,10 @@ import { Membership } from "@vercel/sdk/models/components/teamlimited.js";
 
 let value: Membership = {
   confirmed: false,
-  confirmedAt: 2975.85,
-  role: "OWNER",
-  createdAt: 9016.11,
-  created: 9869.92,
+  confirmedAt: 6090.79,
+  role: "MEMBER",
+  createdAt: 7567.66,
+  created: 789.96,
 };
 ```
 

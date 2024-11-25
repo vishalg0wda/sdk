@@ -8,12 +8,12 @@ import { UpdateCheckResponseBody } from "@vercel/sdk/models/operations/updateche
 let value: UpdateCheckResponseBody = {
   id: "<id>",
   name: "<value>",
-  status: "completed",
+  status: "running",
   blocking: false,
   integrationId: "<id>",
   deploymentId: "<id>",
-  createdAt: 6994.79,
-  updatedAt: 2974.37,
+  createdAt: 8817.35,
+  updatedAt: 6925.32,
 };
 ```
 

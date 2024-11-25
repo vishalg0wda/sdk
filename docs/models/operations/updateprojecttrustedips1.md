@@ -6,13 +6,13 @@
 import { UpdateProjectTrustedIps1 } from "@vercel/sdk/models/operations/updateproject.js";
 
 let value: UpdateProjectTrustedIps1 = {
-  deploymentType: "production",
+  deploymentType: "prod_deployment_urls_and_all_previews",
   addresses: [
     {
       value: "<value>",
     },
   ],
-  protectionMode: "exclusive",
+  protectionMode: "additional",
 };
 ```
 

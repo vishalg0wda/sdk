@@ -5,7 +5,7 @@
 ```typescript
 import { ResponseBodyProvider } from "@vercel/sdk/models/operations/searchrepo.js";
 
-let value: ResponseBodyProvider = "bitbucket";
+let value: ResponseBodyProvider = "github";
 ```
 
 ## Values

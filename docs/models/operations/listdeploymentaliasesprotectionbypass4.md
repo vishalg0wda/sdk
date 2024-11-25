@@ -8,8 +8,8 @@ The protection bypass for the alias
 import { ListDeploymentAliasesProtectionBypass4 } from "@vercel/sdk/models/operations/listdeploymentaliases.js";
 
 let value: ListDeploymentAliasesProtectionBypass4 = {
-  createdAt: 4343.45,
-  lastUpdatedAt: 9268.02,
+  createdAt: 8264.30,
+  lastUpdatedAt: 9539.20,
   lastUpdatedBy: "<value>",
   scope: "email_invite",
 };

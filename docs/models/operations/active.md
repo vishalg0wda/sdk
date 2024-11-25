@@ -9,7 +9,7 @@ let value: Active = {
   ownerId: "<id>",
   projectKey: "<value>",
   id: "<id>",
-  version: 9082.73,
+  version: 8429.35,
   updatedAt: "<value>",
   firewallEnabled: false,
   crs: {
@@ -35,11 +35,11 @@ let value: Active = {
     },
     php: {
       active: false,
-      action: "deny",
+      action: "log",
     },
     gen: {
       active: false,
-      action: "log",
+      action: "deny",
     },
     xss: {
       active: false,
@@ -47,15 +47,15 @@ let value: Active = {
     },
     sqli: {
       active: false,
-      action: "log",
+      action: "deny",
     },
     sf: {
       active: false,
-      action: "deny",
+      action: "log",
     },
     java: {
       active: false,
-      action: "deny",
+      action: "log",
     },
   },
   rules: [
@@ -67,8 +67,8 @@ let value: Active = {
         {
           conditions: [
             {
-              type: "geo_country_region",
-              op: "ex",
+              type: "target_path",
+              op: "neq",
             },
           ],
         },
@@ -79,8 +79,8 @@ let value: Active = {
   ips: [
     {
       id: "<id>",
-      hostname: "deficient-fat.net",
-      ip: "1afb:c4cc:ff9d:00c6:567a:cbcc:99ee:1b7f",
+      hostname: "tired-tomatillo.com",
+      ip: "6cdb:2bdf:cffe:bad0:22a7:ed8b:eecd:1ebb",
       action: "deny",
     },
   ],

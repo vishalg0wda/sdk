@@ -8,9 +8,9 @@
 ```typescript
 const value: operations.GitRepo1 = {
   namespace: "<value>",
-  projectId: 2713.06,
+  projectId: 5775.90,
   type: "gitlab",
-  url: "https://mundane-pressure.org/",
+  url: "https://boiling-galoshes.net/",
   path: "/usr/X11R6",
   defaultBranch: "<value>",
   name: "<value>",
@@ -25,10 +25,10 @@ const value: operations.GitRepo1 = {
 const value: operations.GitRepo2 = {
   org: "<value>",
   repo: "<value>",
-  repoId: 1689.26,
+  repoId: 7672.10,
   type: "github",
-  repoOwnerId: 3740.63,
-  path: "/opt/lib",
+  repoOwnerId: 2871.53,
+  path: "/root",
   defaultBranch: "<value>",
   name: "<value>",
   private: false,
@@ -45,11 +45,11 @@ const value: operations.GitRepo3 = {
   slug: "<value>",
   type: "bitbucket",
   workspaceUuid: "<id>",
-  path: "/media",
+  path: "/usr/lib",
   defaultBranch: "<value>",
   name: "<value>",
   private: false,
-  ownerType: "team",
+  ownerType: "user",
 };
 ```
 

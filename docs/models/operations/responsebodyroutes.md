@@ -15,7 +15,7 @@ const value: operations.GetDeploymentRoutes1 = {
 
 ```typescript
 const value: operations.GetDeploymentRoutes2 = {
-  handle: "hit",
+  handle: "filesystem",
 };
 ```
 
@@ -25,7 +25,7 @@ const value: operations.GetDeploymentRoutes2 = {
 const value: operations.GetDeploymentRoutes3 = {
   src: "<value>",
   continue: false,
-  middleware: 7068.72,
+  middleware: 194.62,
 };
 ```
 

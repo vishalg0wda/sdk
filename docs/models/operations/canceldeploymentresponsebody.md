@@ -16,32 +16,32 @@ let value: CancelDeploymentResponseBody = {
   env: [
     "<value>",
   ],
-  inspectorUrl: "https://lost-swine.org",
+  inspectorUrl: "https://remarkable-fat.biz",
   isInConcurrentBuildsQueue: false,
   isInSystemBuildsQueue: false,
   projectSettings: {},
   aliasAssigned: false,
-  bootedAt: 2715.51,
-  buildingAt: 6075.45,
+  bootedAt: 6715.28,
+  buildingAt: 8429.73,
   buildSkipped: false,
   creator: {
     uid: "<id>",
   },
   public: false,
-  status: "QUEUED",
+  status: "BUILDING",
   id: "<id>",
-  createdAt: 5379.46,
+  createdAt: 6428.03,
   name: "<value>",
   meta: {
     "key": "<value>",
   },
-  readyState: "CANCELED",
+  readyState: "INITIALIZING",
   regions: [
     "<value>",
   ],
   type: "LAMBDAS",
-  url: "https://worthless-tentacle.info/",
-  version: 8174.53,
+  url: "https://gloomy-intent.name",
+  version: 1404.40,
   createdIn: "<value>",
   ownerId: "<id>",
   plan: "hobby",
@@ -50,7 +50,7 @@ let value: CancelDeploymentResponseBody = {
     {
       src: "<value>",
       continue: false,
-      middleware: 3198.34,
+      middleware: 579.09,
     },
   ],
 };
@@ -135,3 +135,4 @@ let value: CancelDeploymentResponseBody = {
 | `routes`                                                                                                                                                                                                                    | *operations.CancelDeploymentRoutes*[]                                                                                                                                                                                       | :heavy_check_mark:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
 | `gitRepo`                                                                                                                                                                                                                   | *operations.CancelDeploymentGitRepo*                                                                                                                                                                                        | :heavy_minus_sign:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
 | `flags`                                                                                                                                                                                                                     | *operations.CancelDeploymentFlags*                                                                                                                                                                                          | :heavy_minus_sign:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
+| `microfrontends`                                                                                                                                                                                                            | *operations.CancelDeploymentMicrofrontends*                                                                                                                                                                                 | :heavy_minus_sign:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |

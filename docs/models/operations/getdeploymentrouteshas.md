@@ -16,7 +16,7 @@ const value: operations.GetDeploymentHas1 = {
 
 ```typescript
 const value: operations.GetDeploymentHas2 = {
-  type: "query",
+  type: "cookie",
   key: "<key>",
 };
 ```

@@ -10,13 +10,13 @@ let value: PutFirewallConfigResponseBody = {
     ownerId: "<id>",
     projectKey: "<value>",
     id: "<id>",
-    version: 6121.81,
+    version: 4209.10,
     updatedAt: "<value>",
     firewallEnabled: false,
     crs: {
       sd: {
         active: false,
-        action: "log",
+        action: "deny",
       },
       ma: {
         active: false,
@@ -32,7 +32,7 @@ let value: PutFirewallConfigResponseBody = {
       },
       rce: {
         active: false,
-        action: "log",
+        action: "deny",
       },
       php: {
         active: false,
@@ -44,15 +44,15 @@ let value: PutFirewallConfigResponseBody = {
       },
       xss: {
         active: false,
-        action: "deny",
+        action: "log",
       },
       sqli: {
         active: false,
-        action: "log",
+        action: "deny",
       },
       sf: {
         active: false,
-        action: "log",
+        action: "deny",
       },
       java: {
         active: false,
@@ -68,8 +68,8 @@ let value: PutFirewallConfigResponseBody = {
           {
             conditions: [
               {
-                type: "method",
-                op: "gt",
+                type: "ja3_digest",
+                op: "ninc",
               },
             ],
           },
@@ -80,9 +80,9 @@ let value: PutFirewallConfigResponseBody = {
     ips: [
       {
         id: "<id>",
-        hostname: "prestigious-valuable.name",
-        ip: "feba:d022:a7ed:8bee:cd1e:bb19:55bd:90ff",
-        action: "deny",
+        hostname: "outlandish-event.biz",
+        ip: "a256:2aee:1067:bf8f:fad1:7e4c:f8bb:fb2b",
+        action: "log",
       },
     ],
     changes: [

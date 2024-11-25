@@ -6,7 +6,7 @@
 ### `operations.Roles1`
 
 ```typescript
-const value: operations.Roles1 = "MEMBER";
+const value: operations.Roles1 = "VIEWER";
 ```
 
 ### `operations.Roles2`

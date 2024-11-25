@@ -201,6 +201,10 @@ run();
 * [listAccessGroups](docs/sdks/accessgroups/README.md#listaccessgroups) - List access groups for a team, project or member
 * [createAccessGroup](docs/sdks/accessgroups/README.md#createaccessgroup) - Creates an access group
 * [listAccessGroupProjects](docs/sdks/accessgroups/README.md#listaccessgroupprojects) - List projects of an access group
+* [createAccessGroupProject](docs/sdks/accessgroups/README.md#createaccessgroupproject) - Create an access group project
+* [readAccessGroupProject](docs/sdks/accessgroups/README.md#readaccessgroupproject) - Reads an access group project
+* [updateAccessGroupProject](docs/sdks/accessgroups/README.md#updateaccessgroupproject) - Update an access group project
+* [deleteAccessGroupProject](docs/sdks/accessgroups/README.md#deleteaccessgroupproject) - Delete an access group project
 
 ### [aliases](docs/sdks/aliases/README.md)
 
@@ -336,8 +340,6 @@ run();
 * [updateProjectProtectionBypass](docs/sdks/projects/README.md#updateprojectprotectionbypass) - Update Protection Bypass for Automation
 * [requestPromote](docs/sdks/projects/README.md#requestpromote) - Points all production domains for a project to the given deploy
 * [listPromoteAliases](docs/sdks/projects/README.md#listpromotealiases) - Gets a list of aliases with status for the current promote
-* [pauseProject](docs/sdks/projects/README.md#pauseproject) - Pause a project
-* [unpauseProject](docs/sdks/projects/README.md#unpauseproject) - Unpause a project
 
 ### [security](docs/sdks/security/README.md)
 
@@ -395,12 +397,16 @@ To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
 <summary>Available standalone functions</summary>
 
 - [`accessGroupsCreateAccessGroup`](docs/sdks/accessgroups/README.md#createaccessgroup) - Creates an access group
+- [`accessGroupsCreateAccessGroupProject`](docs/sdks/accessgroups/README.md#createaccessgroupproject) - Create an access group project
 - [`accessGroupsDeleteAccessGroup`](docs/sdks/accessgroups/README.md#deleteaccessgroup) - Deletes an access group
+- [`accessGroupsDeleteAccessGroupProject`](docs/sdks/accessgroups/README.md#deleteaccessgroupproject) - Delete an access group project
 - [`accessGroupsListAccessGroupMembers`](docs/sdks/accessgroups/README.md#listaccessgroupmembers) - List members of an access group
 - [`accessGroupsListAccessGroupProjects`](docs/sdks/accessgroups/README.md#listaccessgroupprojects) - List projects of an access group
 - [`accessGroupsListAccessGroups`](docs/sdks/accessgroups/README.md#listaccessgroups) - List access groups for a team, project or member
 - [`accessGroupsReadAccessGroup`](docs/sdks/accessgroups/README.md#readaccessgroup) - Reads an access group
+- [`accessGroupsReadAccessGroupProject`](docs/sdks/accessgroups/README.md#readaccessgroupproject) - Reads an access group project
 - [`accessGroupsUpdateAccessGroup`](docs/sdks/accessgroups/README.md#updateaccessgroup) - Update an access group
+- [`accessGroupsUpdateAccessGroupProject`](docs/sdks/accessgroups/README.md#updateaccessgroupproject) - Update an access group project
 - [`aliasesAssignAlias`](docs/sdks/aliases/README.md#assignalias) - Assign an Alias
 - [`aliasesDeleteAlias`](docs/sdks/aliases/README.md#deletealias) - Delete an Alias
 - [`aliasesGetAlias`](docs/sdks/aliases/README.md#getalias) - Get an Alias
@@ -489,11 +495,9 @@ To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
 - [`projectsGetProjectEnv`](docs/sdks/projects/README.md#getprojectenv) - Retrieve the decrypted value of an environment variable of a project by id
 - [`projectsGetProjects`](docs/sdks/projects/README.md#getprojects) - Retrieve a list of projects
 - [`projectsListPromoteAliases`](docs/sdks/projects/README.md#listpromotealiases) - Gets a list of aliases with status for the current promote
-- [`projectsPauseProject`](docs/sdks/projects/README.md#pauseproject) - Pause a project
 - [`projectsRemoveProjectDomain`](docs/sdks/projects/README.md#removeprojectdomain) - Remove a domain from a project
 - [`projectsRemoveProjectEnv`](docs/sdks/projects/README.md#removeprojectenv) - Remove an environment variable
 - [`projectsRequestPromote`](docs/sdks/projects/README.md#requestpromote) - Points all production domains for a project to the given deploy
-- [`projectsUnpauseProject`](docs/sdks/projects/README.md#unpauseproject) - Unpause a project
 - [`projectsUpdateProject`](docs/sdks/projects/README.md#updateproject) - Update an existing project
 - [`projectsUpdateProjectDataCache`](docs/sdks/projects/README.md#updateprojectdatacache) - Update the data cache feature
 - [`projectsUpdateProjectDomain`](docs/sdks/projects/README.md#updateprojectdomain) - Update a project domain

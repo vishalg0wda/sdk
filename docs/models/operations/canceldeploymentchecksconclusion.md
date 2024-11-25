@@ -5,7 +5,7 @@
 ```typescript
 import { CancelDeploymentChecksConclusion } from "@vercel/sdk/models/operations/canceldeployment.js";
 
-let value: CancelDeploymentChecksConclusion = "skipped";
+let value: CancelDeploymentChecksConclusion = "failed";
 ```
 
 ## Values

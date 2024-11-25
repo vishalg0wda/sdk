@@ -13,7 +13,7 @@ let value: GetFirewallConfigRules = {
     {
       conditions: [
         {
-          type: "ja3_digest",
+          type: "geo_country",
           op: "inc",
         },
       ],

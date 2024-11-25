@@ -5,11 +5,11 @@
 ```typescript
 import { CreateProjectEnvCreatedType } from "@vercel/sdk/models/operations/createprojectenv.js";
 
-let value: CreateProjectEnvCreatedType = "plain";
+let value: CreateProjectEnvCreatedType = "secret";
 ```
 
 ## Values
 
 ```typescript
-"system" | "secret" | "encrypted" | "plain" | "sensitive"
+"system" | "encrypted" | "plain" | "sensitive" | "secret"
 ```

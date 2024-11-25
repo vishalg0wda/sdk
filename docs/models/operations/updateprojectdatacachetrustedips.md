@@ -7,7 +7,7 @@
 
 ```typescript
 const value: operations.TrustedIps1 = {
-  deploymentType: "production",
+  deploymentType: "all",
   addresses: [
     {
       value: "<value>",
@@ -21,7 +21,7 @@ const value: operations.TrustedIps1 = {
 
 ```typescript
 const value: operations.TrustedIps2 = {
-  deploymentType: "prod_deployment_urls_and_all_previews",
+  deploymentType: "preview",
 };
 ```
 

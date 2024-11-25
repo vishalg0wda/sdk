@@ -14,6 +14,6 @@ const value: operations.CreateProjectEnvTargetProjects1[] = [
 ### `operations.CreateProjectEnvTargetProjectsResponse2`
 
 ```typescript
-const value: operations.CreateProjectEnvTargetProjectsResponse2 = "production";
+const value: operations.CreateProjectEnvTargetProjectsResponse2 = "preview";
 ```
 

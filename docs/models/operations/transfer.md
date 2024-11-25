@@ -9,8 +9,8 @@ import { Transfer } from "@vercel/sdk/models/operations/getedgeconfigs.js";
 
 let value: Transfer = {
   fromAccountId: "<id>",
-  startedAt: 2578.22,
-  doneAt: 7402.45,
+  startedAt: 7403.47,
+  doneAt: 8210.15,
 };
 ```
 

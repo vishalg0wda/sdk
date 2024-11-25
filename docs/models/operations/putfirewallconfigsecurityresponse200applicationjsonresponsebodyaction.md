@@ -6,7 +6,8 @@
 import { PutFirewallConfigSecurityResponse200ApplicationJSONResponseBodyAction } from "@vercel/sdk/models/operations/putfirewallconfig.js";
 
 let value:
-  PutFirewallConfigSecurityResponse200ApplicationJSONResponseBodyAction = "log";
+  PutFirewallConfigSecurityResponse200ApplicationJSONResponseBodyAction =
+    "deny";
 ```
 
 ## Values

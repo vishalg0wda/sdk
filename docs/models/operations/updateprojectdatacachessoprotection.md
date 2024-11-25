@@ -6,7 +6,7 @@
 import { UpdateProjectDataCacheSsoProtection } from "@vercel/sdk/models/operations/updateprojectdatacache.js";
 
 let value: UpdateProjectDataCacheSsoProtection = {
-  deploymentType: "all",
+  deploymentType: "preview",
 };
 ```
 

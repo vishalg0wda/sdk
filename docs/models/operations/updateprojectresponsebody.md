@@ -10,9 +10,9 @@ import { UpdateProjectResponseBody } from "@vercel/sdk/models/operations/updatep
 let value: UpdateProjectResponseBody = {
   accountId: "<id>",
   crons: {
-    enabledAt: 2201.04,
-    disabledAt: 6228.94,
-    updatedAt: 1114.96,
+    enabledAt: 8791.73,
+    disabledAt: 7348.14,
+    updatedAt: 1764.99,
     deploymentId: "<id>",
     definitions: [
       {
@@ -27,12 +27,35 @@ let value: UpdateProjectResponseBody = {
   latestDeployments: [
     {
       id: "<id>",
-      createdAt: 4589.70,
+      createdAt: 9391.61,
       createdIn: "<value>",
       creator: {
-        email: "Emil87@gmail.com",
+        email: "Zula.Leuschke@yahoo.com",
         uid: "<id>",
-        username: "Charles_Lakin",
+        username: "Theo_Reilly",
+      },
+      deploymentHostname: "<value>",
+      name: "<value>",
+      plan: "hobby",
+      previewCommentsEnabled: false,
+      private: false,
+      readyState: "CANCELED",
+      type: "LAMBDAS",
+      url: "https://some-adrenalin.biz/",
+      userId: "<id>",
+    },
+  ],
+  name: "<value>",
+  nodeVersion: "20.x",
+  targets: {
+    "key": {
+      id: "<id>",
+      createdAt: 5068.63,
+      createdIn: "<value>",
+      creator: {
+        email: "Axel.Wehner@hotmail.com",
+        uid: "<id>",
+        username: "Adeline.Quitzon",
       },
       deploymentHostname: "<value>",
       name: "<value>",
@@ -41,30 +64,7 @@ let value: UpdateProjectResponseBody = {
       private: false,
       readyState: "ERROR",
       type: "LAMBDAS",
-      url: "https://utilized-shark.net",
-      userId: "<id>",
-    },
-  ],
-  name: "<value>",
-  nodeVersion: "14.x",
-  targets: {
-    "key": {
-      id: "<id>",
-      createdAt: 9222.99,
-      createdIn: "<value>",
-      creator: {
-        email: "Scot_Emard1@yahoo.com",
-        uid: "<id>",
-        username: "Daphnee51",
-      },
-      deploymentHostname: "<value>",
-      name: "<value>",
-      plan: "pro",
-      previewCommentsEnabled: false,
-      private: false,
-      readyState: "READY",
-      type: "LAMBDAS",
-      url: "https://adolescent-interchange.net",
+      url: "https://our-bungalow.biz",
       userId: "<id>",
     },
   },

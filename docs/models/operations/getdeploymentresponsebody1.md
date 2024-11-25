@@ -16,39 +16,39 @@ let value: GetDeploymentResponseBody1 = {
   env: [
     "<value>",
   ],
-  inspectorUrl: "https://sore-merit.org/",
+  inspectorUrl: "https://caring-caption.info/",
   isInConcurrentBuildsQueue: false,
   isInSystemBuildsQueue: false,
   projectSettings: {},
   aliasAssigned: false,
-  bootedAt: 9822.48,
-  buildingAt: 9926.67,
+  bootedAt: 46.55,
+  buildingAt: 4248.54,
   buildSkipped: false,
   creator: {
     uid: "<id>",
   },
   public: false,
-  status: "QUEUED",
+  status: "INITIALIZING",
   id: "<id>",
   type: "LAMBDAS",
-  createdAt: 9382.56,
+  createdAt: 4016.88,
   name: "<value>",
-  readyState: "BUILDING",
+  readyState: "QUEUED",
   meta: {
     "key": "<value>",
   },
   regions: [
     "<value>",
   ],
-  url: "https://small-creator.name/",
-  version: 1858.17,
+  url: "https://flickering-comestible.org/",
+  version: 1512.30,
   projectId: "<id>",
-  plan: "pro",
+  plan: "hobby",
   createdIn: "<value>",
   ownerId: "<id>",
   routes: [
     {
-      src: "<value>",
+      handle: "miss",
     },
   ],
 };
@@ -133,3 +133,4 @@ let value: GetDeploymentResponseBody1 = {
 | `routes`                                                                                                                                                                                                                    | *operations.ResponseBodyRoutes*[]                                                                                                                                                                                           | :heavy_check_mark:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
 | `gitRepo`                                                                                                                                                                                                                   | *operations.ResponseBodyGitRepo*                                                                                                                                                                                            | :heavy_minus_sign:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
 | `flags`                                                                                                                                                                                                                     | *operations.ResponseBodyFlags*                                                                                                                                                                                              | :heavy_minus_sign:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
+| `microfrontends`                                                                                                                                                                                                            | *operations.ResponseBodyMicrofrontends*                                                                                                                                                                                     | :heavy_minus_sign:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |

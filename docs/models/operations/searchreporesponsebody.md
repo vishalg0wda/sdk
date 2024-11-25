@@ -14,25 +14,25 @@ const value: operations.SearchRepoResponseBody1 = {};
 ```typescript
 const value: operations.SearchRepoResponseBody2 = {
   gitAccount: {
-    provider: "github",
-    namespaceId: 9444.04,
+    provider: "gitlab",
+    namespaceId: "<id>",
   },
   repos: [
     {
-      id: "<id>",
-      provider: "gitlab",
-      url: "https://dependent-account.com",
+      id: 7319.30,
+      provider: "github-custom-host",
+      url: "https://hateful-obligation.org/",
       name: "<value>",
       slug: "<value>",
       namespace: "<value>",
       owner: {
-        id: 9427.79,
+        id: "<id>",
         name: "<value>",
       },
       ownerType: "team",
       private: false,
       defaultBranch: "<value>",
-      updatedAt: 7143.00,
+      updatedAt: 276.53,
     },
   ],
 };
