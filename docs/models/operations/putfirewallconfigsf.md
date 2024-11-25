@@ -7,7 +7,7 @@ import { PutFirewallConfigSf } from "@vercel/sdk/models/operations/putfirewallco
 
 let value: PutFirewallConfigSf = {
   active: false,
-  action: "log",
+  action: "deny",
 };
 ```
 

@@ -9,17 +9,17 @@ let value: GetFirewallConfigResponseBody = {
   ownerId: "<id>",
   projectKey: "<value>",
   id: "<id>",
-  version: 896.42,
+  version: 9830.67,
   updatedAt: "<value>",
   firewallEnabled: false,
   crs: {
     sd: {
       active: false,
-      action: "deny",
+      action: "log",
     },
     ma: {
       active: false,
-      action: "deny",
+      action: "log",
     },
     lfi: {
       active: false,
@@ -27,7 +27,7 @@ let value: GetFirewallConfigResponseBody = {
     },
     rfi: {
       active: false,
-      action: "deny",
+      action: "log",
     },
     rce: {
       active: false,
@@ -43,11 +43,11 @@ let value: GetFirewallConfigResponseBody = {
     },
     xss: {
       active: false,
-      action: "log",
+      action: "deny",
     },
     sqli: {
       active: false,
-      action: "deny",
+      action: "log",
     },
     sf: {
       active: false,
@@ -67,8 +67,8 @@ let value: GetFirewallConfigResponseBody = {
         {
           conditions: [
             {
-              type: "ip_address",
-              op: "lte",
+              type: "target_path",
+              op: "gt",
             },
           ],
         },
@@ -79,8 +79,8 @@ let value: GetFirewallConfigResponseBody = {
   ips: [
     {
       id: "<id>",
-      hostname: "insistent-shipper.net",
-      ip: "bb77:892b:2d19:63bf:3dbb:2ffc:bafb:c7ca",
+      hostname: "bleak-bonnet.info",
+      ip: "103.116.249.241",
       action: "deny",
     },
   ],

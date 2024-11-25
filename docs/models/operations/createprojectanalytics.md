@@ -7,8 +7,8 @@ import { CreateProjectAnalytics } from "@vercel/sdk/models/operations/createproj
 
 let value: CreateProjectAnalytics = {
   id: "<id>",
-  disabledAt: 764.87,
-  enabledAt: 6964.63,
+  disabledAt: 6725.82,
+  enabledAt: 5289.40,
 };
 ```
 

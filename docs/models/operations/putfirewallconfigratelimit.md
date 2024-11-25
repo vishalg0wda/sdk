@@ -6,9 +6,9 @@
 import { PutFirewallConfigRateLimit } from "@vercel/sdk/models/operations/putfirewallconfig.js";
 
 let value: PutFirewallConfigRateLimit = {
-  algo: "fixed_window",
-  window: 3553.80,
-  limit: 438.62,
+  algo: "token_bucket",
+  window: 7132.46,
+  limit: 9818.64,
   keys: [
     "<value>",
   ],

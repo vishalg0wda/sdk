@@ -6,8 +6,8 @@
 import { Integrations } from "@vercel/sdk/models/operations/createdeployment.js";
 
 let value: Integrations = {
-  status: "timeout",
-  startedAt: 5488.46,
+  status: "error",
+  startedAt: 8310.31,
 };
 ```
 

@@ -7,7 +7,7 @@ import { UpdateFirewallConfigRequestBodyConditions } from "@vercel/sdk/models/op
 
 let value: UpdateFirewallConfigRequestBodyConditions = {
   type: "ip_address",
-  op: "inc",
+  op: "eq",
 };
 ```
 

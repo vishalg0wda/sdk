@@ -18,41 +18,39 @@ const value: operations.GetDeploymentResponseBody1 = {
   env: [
     "<value>",
   ],
-  inspectorUrl: "https://accomplished-hippodrome.name/",
+  inspectorUrl: "https://winding-freezing.net",
   isInConcurrentBuildsQueue: false,
   isInSystemBuildsQueue: false,
   projectSettings: {},
   aliasAssigned: false,
-  bootedAt: 4016.88,
-  buildingAt: 857.95,
+  bootedAt: 5552.94,
+  buildingAt: 3956.34,
   buildSkipped: false,
   creator: {
     uid: "<id>",
   },
   public: false,
-  status: "QUEUED",
+  status: "CANCELED",
   id: "<id>",
   type: "LAMBDAS",
-  createdAt: 2781.17,
+  createdAt: 5983.16,
   name: "<value>",
-  readyState: "BUILDING",
+  readyState: "QUEUED",
   meta: {
     "key": "<value>",
   },
   regions: [
     "<value>",
   ],
-  url: "https://critical-shark.name",
-  version: 5692.87,
+  url: "https://specific-popularity.org/",
+  version: 2593.77,
   projectId: "<id>",
-  plan: "enterprise",
+  plan: "hobby",
   createdIn: "<value>",
   ownerId: "<id>",
   routes: [
     {
-      src: "<value>",
-      continue: false,
-      middleware: 3638.45,
+      handle: "miss",
     },
   ],
 };
@@ -63,27 +61,27 @@ const value: operations.GetDeploymentResponseBody1 = {
 ```typescript
 const value: operations.GetDeploymentResponseBody2 = {
   aliasAssigned: false,
-  bootedAt: 7879.16,
-  buildingAt: 5552.94,
+  bootedAt: 9550.47,
+  buildingAt: 9792.86,
   buildSkipped: false,
   creator: {
     uid: "<id>",
   },
   public: false,
-  status: "ERROR",
+  status: "CANCELED",
   id: "<id>",
   type: "LAMBDAS",
-  createdAt: 9554.66,
+  createdAt: 3590.97,
   name: "<value>",
-  readyState: "INITIALIZING",
+  readyState: "CANCELED",
   meta: {
     "key": "<value>",
   },
   regions: [
     "<value>",
   ],
-  url: "https://inferior-scale.net/",
-  version: 9163.40,
+  url: "https://internal-amnesty.net",
+  version: 5021.06,
 };
 ```
 

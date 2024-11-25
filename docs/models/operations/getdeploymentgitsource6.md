@@ -1,5 +1,7 @@
 # GetDeploymentGitSource6
 
+Allows custom git sources (local folder mounted to the container) in test mode
+
 ## Example Usage
 
 ```typescript
@@ -9,7 +11,7 @@ let value: GetDeploymentGitSource6 = {
   type: "custom",
   ref: "<value>",
   sha: "<value>",
-  gitUrl: "https://jittery-cow.info/",
+  gitUrl: "https://untimely-skean.name/",
 };
 ```
 

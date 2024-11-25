@@ -11,7 +11,7 @@ let value: GetProjectsLink1 = {
       id: "<id>",
       name: "<value>",
       ref: "<value>",
-      url: "https://which-fork.info/",
+      url: "https://vengeful-bran.org/",
     },
   ],
 };

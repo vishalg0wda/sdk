@@ -6,9 +6,9 @@
 import { UpdateFirewallConfigRequestBodySecurityRequest9Value } from "@vercel/sdk/models/operations/updatefirewallconfig.js";
 
 let value: UpdateFirewallConfigRequestBodySecurityRequest9Value = {
-  hostname: "muffled-utilization.org",
-  ip: "67da:2562:aee1:067b:f8ff:ad17:e4cf:8bbf",
-  action: "log",
+  hostname: "focused-dividend.info",
+  ip: "d36c:99ce:afbb:6ecd:1eb0:7faf:97cc:fbe9",
+  action: "deny",
 };
 ```
 

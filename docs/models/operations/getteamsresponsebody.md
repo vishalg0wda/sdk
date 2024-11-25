@@ -33,10 +33,10 @@ let value: GetTeamsResponseBody = {
       avatar: "6eb07268bcfadd309905ffb1579354084c24655c",
       membership: {
         confirmed: false,
-        confirmedAt: 2205.06,
+        confirmedAt: 5587.31,
         role: "MEMBER",
-        createdAt: 2084.14,
-        created: 9281.02,
+        createdAt: 8452.38,
+        created: 4554.36,
       },
       created: "<value>",
       createdAt: 1630748523395,

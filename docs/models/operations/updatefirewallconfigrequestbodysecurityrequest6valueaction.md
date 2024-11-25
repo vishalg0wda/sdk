@@ -5,7 +5,7 @@
 ```typescript
 import { UpdateFirewallConfigRequestBodySecurityRequest6ValueAction } from "@vercel/sdk/models/operations/updatefirewallconfig.js";
 
-let value: UpdateFirewallConfigRequestBodySecurityRequest6ValueAction = "log";
+let value: UpdateFirewallConfigRequestBodySecurityRequest6ValueAction = "deny";
 ```
 
 ## Values

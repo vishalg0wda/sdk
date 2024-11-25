@@ -9,7 +9,7 @@ import { RequestDeleteResponseBody } from "@vercel/sdk/models/operations/request
 
 let value: RequestDeleteResponseBody = {
   id: "<id>",
-  email: "Jeremy60@gmail.com",
+  email: "Hattie_Hackett@yahoo.com",
   message: "Verification email sent",
 };
 ```

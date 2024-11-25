@@ -1,5 +1,7 @@
 # GitSource6
 
+Allows custom git sources (local folder mounted to the container) in test mode
+
 ## Example Usage
 
 ```typescript
@@ -9,7 +11,7 @@ let value: GitSource6 = {
   type: "custom",
   ref: "<value>",
   sha: "<value>",
-  gitUrl: "https://naughty-parsnip.info",
+  gitUrl: "https://genuine-fuel.biz",
 };
 ```
 

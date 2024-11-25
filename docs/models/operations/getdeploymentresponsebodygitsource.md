@@ -8,7 +8,7 @@
 ```typescript
 const value: operations.GetDeploymentGitSourceDeployments1 = {
   type: "github",
-  repoId: "<id>",
+  repoId: 9838.54,
 };
 ```
 
@@ -27,7 +27,7 @@ const value: operations.GetDeploymentGitSourceDeployments2 = {
 ```typescript
 const value: operations.GetDeploymentGitSourceDeployments3 = {
   type: "gitlab",
-  projectId: 1035.78,
+  projectId: 3895.49,
 };
 ```
 
@@ -57,7 +57,7 @@ const value: operations.GetDeploymentGitSourceDeployments6 = {
   type: "custom",
   ref: "<value>",
   sha: "<value>",
-  gitUrl: "https://overdue-hubris.net/",
+  gitUrl: "https://wealthy-chairperson.net/",
 };
 ```
 
@@ -68,7 +68,7 @@ const value: operations.GetDeploymentGitSourceDeployments7 = {
   type: "github",
   ref: "<value>",
   sha: "<value>",
-  repoId: 9234.56,
+  repoId: 9253.95,
 };
 ```
 
@@ -79,7 +79,7 @@ const value: operations.GetDeploymentGitSourceDeployments8 = {
   type: "gitlab",
   ref: "<value>",
   sha: "<value>",
-  projectId: 2991.54,
+  projectId: 6646.66,
 };
 ```
 

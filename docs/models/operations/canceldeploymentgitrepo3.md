@@ -11,7 +11,7 @@ let value: CancelDeploymentGitRepo3 = {
   slug: "<value>",
   type: "bitbucket",
   workspaceUuid: "<id>",
-  path: "/etc/defaults",
+  path: "/Users",
   defaultBranch: "<value>",
   name: "<value>",
   private: false,

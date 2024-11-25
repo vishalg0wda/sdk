@@ -5,7 +5,7 @@
 ```typescript
 import { GetProjectsType } from "@vercel/sdk/models/operations/getprojects.js";
 
-let value: GetProjectsType = "system";
+let value: GetProjectsType = "encrypted";
 ```
 
 ## Values

@@ -38,10 +38,10 @@ const value: components.TeamLimited = {
   avatar: "6eb07268bcfadd309905ffb1579354084c24655c",
   membership: {
     confirmed: false,
-    confirmedAt: 9640.20,
+    confirmedAt: 8621.66,
     role: "BILLING",
-    createdAt: 687.78,
-    created: 107.78,
+    createdAt: 4610.94,
+    created: 9651.16,
   },
   created: "<value>",
   createdAt: 1630748523395,

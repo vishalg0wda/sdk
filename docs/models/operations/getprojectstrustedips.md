@@ -13,7 +13,7 @@ const value: operations.GetProjectsTrustedIps1 = {
       value: "<value>",
     },
   ],
-  protectionMode: "additional",
+  protectionMode: "exclusive",
 };
 ```
 
@@ -21,7 +21,7 @@ const value: operations.GetProjectsTrustedIps1 = {
 
 ```typescript
 const value: operations.GetProjectsTrustedIps2 = {
-  deploymentType: "all",
+  deploymentType: "prod_deployment_urls_and_all_previews",
 };
 ```
 

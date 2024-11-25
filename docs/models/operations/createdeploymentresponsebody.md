@@ -16,13 +16,13 @@ let value: CreateDeploymentResponseBody = {
   env: [
     "<value>",
   ],
-  inspectorUrl: "https://blue-bidet.info",
+  inspectorUrl: "https://ornery-sand.org",
   isInConcurrentBuildsQueue: false,
   isInSystemBuildsQueue: false,
   projectSettings: {},
   aliasAssigned: false,
-  bootedAt: 7665.91,
-  buildingAt: 6886.83,
+  bootedAt: 366.91,
+  buildingAt: 1474.00,
   buildSkipped: false,
   creator: {
     uid: "<id>",
@@ -30,25 +30,23 @@ let value: CreateDeploymentResponseBody = {
   public: false,
   status: "INITIALIZING",
   type: "LAMBDAS",
-  createdAt: 7672.10,
+  createdAt: 837.91,
   name: "<value>",
   id: "<id>",
-  version: 2871.53,
+  version: 5161.24,
   meta: {
     "key": "<value>",
   },
-  readyState: "BUILDING",
+  readyState: "ERROR",
   regions: [
     "<value>",
   ],
-  url: "https://showy-vanadyl.biz",
+  url: "https://rusty-alliance.org/",
   projectId: "<id>",
   ownerId: "<id>",
   routes: [
     {
-      src: "<value>",
-      continue: false,
-      middleware: 6599.71,
+      handle: "miss",
     },
   ],
   plan: "enterprise",
@@ -124,6 +122,7 @@ let value: CreateDeploymentResponseBody = {
 | `oidcTokenClaims`                                                                                                                                                                                                           | [operations.OidcTokenClaims](../../models/operations/oidctokenclaims.md)                                                                                                                                                    | :heavy_minus_sign:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
 | `projectId`                                                                                                                                                                                                                 | *string*                                                                                                                                                                                                                    | :heavy_check_mark:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
 | `ownerId`                                                                                                                                                                                                                   | *string*                                                                                                                                                                                                                    | :heavy_check_mark:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
+| `microfrontends`                                                                                                                                                                                                            | *operations.CreateDeploymentMicrofrontends*                                                                                                                                                                                 | :heavy_minus_sign:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
 | `monorepoManager`                                                                                                                                                                                                           | *string*                                                                                                                                                                                                                    | :heavy_minus_sign:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
 | `functions`                                                                                                                                                                                                                 | Record<string, [operations.Functions](../../models/operations/functions.md)>                                                                                                                                                | :heavy_minus_sign:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |
 | `routes`                                                                                                                                                                                                                    | *operations.Routes*[]                                                                                                                                                                                                       | :heavy_check_mark:                                                                                                                                                                                                          | N/A                                                                                                                                                                                                                         |

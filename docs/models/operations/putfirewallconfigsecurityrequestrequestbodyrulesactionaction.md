@@ -6,7 +6,7 @@
 import { PutFirewallConfigSecurityRequestRequestBodyRulesActionAction } from "@vercel/sdk/models/operations/putfirewallconfig.js";
 
 let value: PutFirewallConfigSecurityRequestRequestBodyRulesActionAction =
-  "deny";
+  "bypass";
 ```
 
 ## Values

@@ -12,8 +12,8 @@ let value: RequestBodyValue = {
     {
       conditions: [
         {
-          type: "ip_address",
-          op: "lt",
+          type: "environment",
+          op: "neq",
         },
       ],
     },

@@ -6,7 +6,7 @@
 ### `operations.UpdateFirewallConfigActionSecurity1`
 
 ```typescript
-const value: operations.UpdateFirewallConfigActionSecurity1 = "rate_limit";
+const value: operations.UpdateFirewallConfigActionSecurity1 = "deny";
 ```
 
 ### `any`

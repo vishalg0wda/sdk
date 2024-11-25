@@ -6,20 +6,20 @@
 import { Repos } from "@vercel/sdk/models/operations/searchrepo.js";
 
 let value: Repos = {
-  id: 6836.02,
-  provider: "github-custom-host",
-  url: "https://baggy-minister.biz/",
+  id: "<id>",
+  provider: "github",
+  url: "https://whopping-scaffold.com/",
   name: "<value>",
   slug: "<value>",
   namespace: "<value>",
   owner: {
-    id: "<id>",
+    id: 4137.68,
     name: "<value>",
   },
-  ownerType: "team",
+  ownerType: "user",
   private: false,
   defaultBranch: "<value>",
-  updatedAt: 5371.40,
+  updatedAt: 1620.73,
 };
 ```
 

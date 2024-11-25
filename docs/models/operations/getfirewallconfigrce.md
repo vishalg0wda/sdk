@@ -7,7 +7,7 @@ import { GetFirewallConfigRce } from "@vercel/sdk/models/operations/getfirewallc
 
 let value: GetFirewallConfigRce = {
   active: false,
-  action: "deny",
+  action: "log",
 };
 ```
 

@@ -24,8 +24,8 @@ const value: operations.UpdateFirewallConfigRequestBody2 = {
       {
         conditions: [
           {
-            type: "path",
-            op: "ninc",
+            type: "geo_city",
+            op: "gt",
           },
         ],
       },
@@ -49,7 +49,7 @@ const value: operations.UpdateFirewallConfigRequestBody3 = {
         conditions: [
           {
             type: "host",
-            op: "gte",
+            op: "inc",
           },
         ],
       },
@@ -74,7 +74,7 @@ const value: operations.UpdateFirewallConfigRequestBody4 = {
 const value: operations.UpdateFirewallConfigRequestBody5 = {
   action: "rules.priority",
   id: "<id>",
-  value: 9504.86,
+  value: 445.10,
 };
 ```
 
@@ -83,10 +83,10 @@ const value: operations.UpdateFirewallConfigRequestBody5 = {
 ```typescript
 const value: operations.RequestBody6 = {
   action: "crs.update",
-  id: "sd",
+  id: "lfi",
   value: {
     active: false,
-    action: "log",
+    action: "deny",
   },
 };
 ```
@@ -105,9 +105,9 @@ const value: operations.RequestBody7 = {
 const value: operations.RequestBody8 = {
   action: "ip.insert",
   value: {
-    hostname: "sore-formula.org",
-    ip: "104.24.168.7",
-    action: "challenge",
+    hostname: "ecstatic-flat.biz",
+    ip: "7d3a:1a0b:e0eb:7d69:2e0a:fc3a:fcc2:d8d6",
+    action: "log",
   },
 };
 ```
@@ -119,9 +119,9 @@ const value: operations.RequestBody9 = {
   action: "ip.update",
   id: "<id>",
   value: {
-    hostname: "rich-slime.com",
-    ip: "fcc2:d8d6:c9d5:1a9c:0edd:08fe:3afb:0d52",
-    action: "challenge",
+    hostname: "intelligent-sustenance.biz",
+    ip: "191.105.150.6",
+    action: "bypass",
   },
 };
 ```

@@ -5,8 +5,7 @@
 ```typescript
 import { GetConfigurationsResponseBodyDisabledReason } from "@vercel/sdk/models/operations/getconfigurations.js";
 
-let value: GetConfigurationsResponseBodyDisabledReason =
-  "original-owner-left-the-team";
+let value: GetConfigurationsResponseBodyDisabledReason = "disabled-by-owner";
 ```
 
 ## Values

@@ -7,10 +7,10 @@ import { UpdateRecordResponseBody } from "@vercel/sdk/models/operations/updatere
 
 let value: UpdateRecordResponseBody = {
   creator: "<value>",
-  domain: "sentimental-farm.biz",
+  domain: "outrageous-mortise.com",
   id: "<id>",
   name: "<value>",
-  recordType: "A",
+  recordType: "NS",
   type: "record",
   value: "<value>",
 };

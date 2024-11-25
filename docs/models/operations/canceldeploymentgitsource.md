@@ -8,7 +8,7 @@
 ```typescript
 const value: operations.CancelDeploymentGitSource1 = {
   type: "github",
-  repoId: 9657.34,
+  repoId: 5371.70,
 };
 ```
 
@@ -27,7 +27,7 @@ const value: operations.CancelDeploymentGitSource2 = {
 ```typescript
 const value: operations.CancelDeploymentGitSource3 = {
   type: "gitlab",
-  projectId: 6174.97,
+  projectId: "<id>",
 };
 ```
 
@@ -57,7 +57,7 @@ const value: operations.GitSource6 = {
   type: "custom",
   ref: "<value>",
   sha: "<value>",
-  gitUrl: "https://unhappy-roundabout.biz",
+  gitUrl: "https://prudent-cash.biz",
 };
 ```
 
@@ -68,7 +68,7 @@ const value: operations.GitSource7 = {
   type: "github",
   ref: "<value>",
   sha: "<value>",
-  repoId: 3655.39,
+  repoId: 600.78,
 };
 ```
 
@@ -79,7 +79,7 @@ const value: operations.GitSource8 = {
   type: "gitlab",
   ref: "<value>",
   sha: "<value>",
-  projectId: 2012.67,
+  projectId: 2098.60,
 };
 ```
 

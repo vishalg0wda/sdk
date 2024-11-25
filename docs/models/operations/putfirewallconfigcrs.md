@@ -8,11 +8,11 @@ import { PutFirewallConfigCrs } from "@vercel/sdk/models/operations/putfirewallc
 let value: PutFirewallConfigCrs = {
   sd: {
     active: false,
-    action: "deny",
+    action: "log",
   },
   ma: {
     active: false,
-    action: "log",
+    action: "deny",
   },
   lfi: {
     active: false,
@@ -20,19 +20,19 @@ let value: PutFirewallConfigCrs = {
   },
   rfi: {
     active: false,
-    action: "deny",
+    action: "log",
   },
   rce: {
     active: false,
-    action: "deny",
+    action: "log",
   },
   php: {
     active: false,
-    action: "deny",
+    action: "log",
   },
   gen: {
     active: false,
-    action: "log",
+    action: "deny",
   },
   xss: {
     active: false,
@@ -40,11 +40,11 @@ let value: PutFirewallConfigCrs = {
   },
   sqli: {
     active: false,
-    action: "deny",
+    action: "log",
   },
   sf: {
     active: false,
-    action: "log",
+    action: "deny",
   },
   java: {
     active: false,

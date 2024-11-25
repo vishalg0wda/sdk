@@ -6,7 +6,7 @@
 import { UpdateCheckCLS } from "@vercel/sdk/models/operations/updatecheck.js";
 
 let value: UpdateCheckCLS = {
-  value: 2487.53,
+  value: 4471.25,
   source: "web-vitals",
 };
 ```

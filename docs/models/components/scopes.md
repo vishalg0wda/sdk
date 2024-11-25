@@ -8,8 +8,8 @@
 ```typescript
 const value: components.Scopes1 = {
   type: "user",
-  origin: "manual",
-  createdAt: 7932.59,
+  origin: "github",
+  createdAt: 1609.10,
 };
 ```
 
@@ -19,8 +19,8 @@ const value: components.Scopes1 = {
 const value: components.Scopes2 = {
   type: "team",
   teamId: "<id>",
-  origin: "gitlab",
-  createdAt: 7014.76,
+  origin: "sms",
+  createdAt: 2870.20,
 };
 ```
 

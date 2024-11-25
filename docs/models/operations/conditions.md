@@ -6,8 +6,8 @@
 import { Conditions } from "@vercel/sdk/models/operations/putfirewallconfig.js";
 
 let value: Conditions = {
-  type: "rate_limit_api_id",
-  op: "inc",
+  type: "geo_as_number",
+  op: "ninc",
 };
 ```
 

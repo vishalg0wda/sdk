@@ -9,8 +9,8 @@ import { GetDeploymentResponseBody2 } from "@vercel/sdk/models/operations/getdep
 
 let value: GetDeploymentResponseBody2 = {
   aliasAssigned: false,
-  bootedAt: 5831.93,
-  buildingAt: 20.65,
+  bootedAt: 1081.66,
+  buildingAt: 3923.19,
   buildSkipped: false,
   creator: {
     uid: "<id>",
@@ -19,17 +19,17 @@ let value: GetDeploymentResponseBody2 = {
   status: "BUILDING",
   id: "<id>",
   type: "LAMBDAS",
-  createdAt: 9561.23,
+  createdAt: 6837.26,
   name: "<value>",
-  readyState: "BUILDING",
+  readyState: "QUEUED",
   meta: {
     "key": "<value>",
   },
   regions: [
     "<value>",
   ],
-  url: "https://flowery-understanding.net",
-  version: 3296.51,
+  url: "https://flawed-lace.info/",
+  version: 7064.11,
 };
 ```
 

@@ -12,7 +12,7 @@ const value: operations.Link1 = {
       id: "<id>",
       name: "<value>",
       ref: "<value>",
-      url: "https://descriptive-unblinking.net/",
+      url: "https://baggy-hovercraft.biz/",
     },
   ],
 };
@@ -27,7 +27,7 @@ const value: operations.Link2 = {
       id: "<id>",
       name: "<value>",
       ref: "<value>",
-      url: "https://enchanted-disclosure.com/",
+      url: "https://humble-confusion.com",
     },
   ],
 };
@@ -42,7 +42,7 @@ const value: operations.Link3 = {
       id: "<id>",
       name: "<value>",
       ref: "<value>",
-      url: "https://general-possession.info/",
+      url: "https://repentant-ignorance.name/",
     },
   ],
 };

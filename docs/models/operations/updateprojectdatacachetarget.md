@@ -7,13 +7,13 @@
 
 ```typescript
 const value: operations.UpdateProjectDataCacheTarget1[] = [
-  "preview",
+  "production",
 ];
 ```
 
 ### `operations.UpdateProjectDataCacheTarget2`
 
 ```typescript
-const value: operations.UpdateProjectDataCacheTarget2 = "development";
+const value: operations.UpdateProjectDataCacheTarget2 = "preview";
 ```
 
