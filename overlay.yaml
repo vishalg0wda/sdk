@@ -1373,6 +1373,108 @@ actions:
   - target: $.paths['/v7/certs'].put.requestBody
     update:
       required: true
+  # Add appropriate examples for properties
+  - target: $.paths['/v1/deployments/{deploymentId}/checks'].post.responses.200.content["application/json"].schema.properties.id
+    update:
+      example: "chk_1a2b3c4d5e6f7g8h9i0j"     
+  - target: $.paths['/v1/deployments/{deploymentId}/checks'].post.responses.200.content["application/json"].schema.properties.name
+    update:
+      example: "Performance Check"     
+  - target: $.paths['/v1/deployments/{deploymentId}/checks'].post.responses.200.content["application/json"].schema.properties.path
+    update:
+      example: "/api/users"       
+  - target: $.paths['/v1/deployments/{deploymentId}/checks'].post.responses.200.content["application/json"].schema.properties.status
+    update:
+      example: "completed"   
+  - target: $.paths['/v1/deployments/{deploymentId}/checks'].post.responses.200.content["application/json"].schema.properties.conclusion
+    update:
+      example: "succeeded"    
+  - target: $.paths['/v1/access-groups/{idOrName}'].get.parameters[?(@.name=='idOrName')]
+    update:
+      examples:
+        id:
+          summary: Access group ID
+          value: "ag_1a2b3c4d5e6f7g8h9i0j"
+        name:
+          summary: Access group name
+          value: "My Access Group"       
+  - target: $["paths"][*][*]["parameters"][?(@.name=='teamId')].schema
+    update:
+      example: "team_1a2b3c4d5e6f7g8h9i0j1k2l"                   
+  - target: $["paths"][*][*]["parameters"][?(@.name=='slug')].schema
+    update:
+      example: "my-team-url-slug"       
+  - target: $.paths['/v1/access-groups/{idOrName}'].post.requestBody.content["application/json"].schema.properties.membersToAdd
+    update:
+      example:
+        - "usr_1a2b3c4d5e6f7g8h9i0j"
+        - "usr_2b3c4d5e6f7g8h9i0j1k"  
+  - target: $.paths['/v1/access-groups/{idOrName}'].post.requestBody.content["application/json"].schema.properties.membersToRemove
+    update:
+      example:
+        - "usr_1a2b3c4d5e6f7g8h9i0j"
+        - "usr_2b3c4d5e6f7g8h9i0j1k"  
+  - target: $.paths['/v1/access-groups'].post.requestBody.content["application/json"].schema.properties.membersToAdd      
+    update:
+      example:
+        - "usr_1a2b3c4d5e6f7g8h9i0j"
+        - "usr_2b3c4d5e6f7g8h9i0j1k"                  
+  - target: $.paths['/v1/access-groups/{accessGroupIdOrName}/projects/{projectId}'][*]["parameters"][?(@.name=='accessGroupIdOrName')]  
+    update:
+      examples:
+        id:
+          summary: Access group ID
+          value: "ag_1a2b3c4d5e6f7g8h9i0j"
+        name:
+          summary: Access group name
+          value: "My Access Group" 
+  - target: $.paths['/v1/access-groups/{accessGroupIdOrName}/projects/{projectId}'][*]["parameters"][?(@.name=='projectId')]  
+    update:
+      example: "prj_ndlgr43fadlPyCtREAqxxdyFK" 
+  - target: $.paths['/v8/artifacts'].post.requestBody.content["application/json"].schema.properties.hashes      
+    update:
+      example:
+        - "12HKQaOmR5t5Uy6vdcQsNIiZgHGB"
+        - "34HKQaOmR5t5Uy6vasdasdasdasd"  
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.deploymentId      
+    update:
+      example: "dpl_2qn7PZrx89yxY34vEZPD31Y9XVj6"    
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.gitSource.anyOf..ref   
+    update:
+      example: "main"  
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.gitSource.anyOf..repoId     
+    update:
+      example: 123456789     
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.gitSource.anyOf..sha      
+    update:
+      example: "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0"  
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.gitSource.anyOf..org    
+    update:
+      example: "vercel"   
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.gitSource.anyOf..repo    
+    update:
+      example: "next.js"  
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.gitSource.anyOf..projectId      
+    update:
+      example: 987654321  
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.gitSource.anyOf..repoUuid      
+    update:
+      example: "123e4567-e89b-12d3-a456-426614174000"    
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.gitSource.anyOf..workspaceUuid     
+    update:
+      example: "987e6543-e21b-12d3-a456-426614174000"       
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.gitSource.anyOf..owner     
+    update:
+      example: "bitbucket_user"    
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.gitSource.anyOf..slug     
+    update:
+      example: "my-awesome-project"        
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.projectSettings.properties.buildCommand      
+    update:
+      example: "next build"      
+  - target: $.paths['/v13/deployments'].post.requestBody.content["application/json"].schema.properties.projectSettings.properties.installCommand      
+    update:
+      example: "pnpm install"                                                  
   # Update response schemas for various HTTP status codes across all paths and operations
   - target: $["paths"][*][*]["responses"]["400"]
     update:
