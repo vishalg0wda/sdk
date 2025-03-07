@@ -6,3 +6,4 @@ rulesets:
       - speakeasy-generation
     rules:
       path-params: { severity: warn }
+      validate-composite-schemas: { severity: warn }
