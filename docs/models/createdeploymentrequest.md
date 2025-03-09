@@ -26,11 +26,11 @@ let value: CreateDeploymentRequest = {
       dirty: true,
     },
     gitSource: {
-      owner: "bitbucket_user",
       ref: "main",
+      repoUuid: "123e4567-e89b-12d3-a456-426614174000",
       sha: "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0",
-      slug: "my-awesome-project",
       type: "bitbucket",
+      workspaceUuid: "987e6543-e21b-12d3-a456-426614174000",
     },
     meta: {
       "foo": "bar",
@@ -41,6 +41,7 @@ let value: CreateDeploymentRequest = {
       buildCommand: "next build",
       installCommand: "pnpm install",
     },
+    target: "production",
   },
 };
 ```

@@ -1,21 +1,19 @@
 # CreateProjectTarget
 
-Deployment Target or Targets in which the ENV variable will be used
-
 
 ## Supported Types
 
-### `models.Target1`
+### `models.CreateProjectTarget1[]`
 
 ```typescript
-const value: models.Target1 = "development";
-```
-
-### `models.Target2[]`
-
-```typescript
-const value: models.Target2[] = [
+const value: models.CreateProjectTarget1[] = [
   "preview",
 ];
+```
+
+### `models.CreateProjectTarget2`
+
+```typescript
+const value: models.CreateProjectTarget2 = "development";
 ```
 

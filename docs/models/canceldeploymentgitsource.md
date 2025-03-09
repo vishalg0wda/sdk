@@ -8,7 +8,7 @@
 ```typescript
 const value: models.CancelDeploymentGitSource1 = {
   type: "github",
-  repoId: 3966.1,
+  repoId: 3214.73,
 };
 ```
 
@@ -57,7 +57,7 @@ const value: models.GitSource6 = {
   type: "custom",
   ref: "<value>",
   sha: "<value>",
-  gitUrl: "https://frequent-kettledrum.name/",
+  gitUrl: "https://cooperative-promise.net",
 };
 ```
 
@@ -68,7 +68,7 @@ const value: models.GitSource7 = {
   type: "github",
   ref: "<value>",
   sha: "<value>",
-  repoId: 4610.5,
+  repoId: 579.09,
 };
 ```
 
@@ -79,7 +79,7 @@ const value: models.GitSource8 = {
   type: "gitlab",
   ref: "<value>",
   sha: "<value>",
-  projectId: 9351.61,
+  projectId: 2913.89,
 };
 ```
 

@@ -6,9 +6,9 @@
 import { Repos } from "@vercel/sdk/models/searchrepoop.js";
 
 let value: Repos = {
-  id: 5749.9,
-  provider: "gitlab",
-  url: "https://wiggly-encouragement.net",
+  id: 342.67,
+  provider: "bitbucket",
+  url: "https://shrill-slime.info/",
   name: "<value>",
   slug: "<value>",
   namespace: "<value>",
@@ -19,7 +19,7 @@ let value: Repos = {
   ownerType: "user",
   private: false,
   defaultBranch: "<value>",
-  updatedAt: 2305.94,
+  updatedAt: 7486.06,
 };
 ```
 

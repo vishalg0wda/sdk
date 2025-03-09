@@ -1,7 +1,5 @@
 # CreateConfigurableLogDrainDeliveryFormat
 
-The delivery log format
-
 ## Example Usage
 
 ```typescript
@@ -13,5 +11,5 @@ let value: CreateConfigurableLogDrainDeliveryFormat = "json";
 ## Values
 
 ```typescript
-"json" | "ndjson"
+"json" | "ndjson" | "syslog"
 ```

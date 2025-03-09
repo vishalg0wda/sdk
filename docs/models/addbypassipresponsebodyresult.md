@@ -8,7 +8,7 @@ import { AddBypassIpResponseBodyResult } from "@vercel/sdk/models/addbypassipop.
 let value: AddBypassIpResponseBodyResult = {
   ownerId: "<id>",
   id: "<id>",
-  domain: "dark-importance.org",
+  domain: "grimy-object.org",
   projectId: "<id>",
   isProjectRule: false,
 };

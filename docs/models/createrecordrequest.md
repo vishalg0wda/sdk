@@ -11,9 +11,9 @@ let value: CreateRecordRequest = {
   slug: "my-team-url-slug",
   requestBody: {
     name: "subdomain",
-    type: "A",
+    type: "HTTPS",
     ttl: 60,
-    value: "2001:DB8::42",
+    value: "0 issue \\"letsencrypt.org\\"",
     comment: "used to verify ownership of domain",
   },
 };

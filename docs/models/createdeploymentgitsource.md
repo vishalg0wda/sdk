@@ -8,7 +8,7 @@
 ```typescript
 const value: models.CreateDeploymentGitSource1 = {
   type: "github",
-  repoId: "<id>",
+  repoId: 5433.53,
 };
 ```
 
@@ -27,7 +27,7 @@ const value: models.CreateDeploymentGitSource2 = {
 ```typescript
 const value: models.GitSource3 = {
   type: "gitlab",
-  projectId: "<id>",
+  projectId: 9568.71,
 };
 ```
 
@@ -57,7 +57,7 @@ const value: models.CreateDeploymentGitSource6 = {
   type: "custom",
   ref: "<value>",
   sha: "<value>",
-  gitUrl: "https://fruitful-masterpiece.org",
+  gitUrl: "https://staid-permafrost.name/",
 };
 ```
 
@@ -68,7 +68,7 @@ const value: models.CreateDeploymentGitSource7 = {
   type: "github",
   ref: "<value>",
   sha: "<value>",
-  repoId: 4004.48,
+  repoId: 7748.8,
 };
 ```
 
@@ -79,7 +79,7 @@ const value: models.CreateDeploymentGitSource8 = {
   type: "gitlab",
   ref: "<value>",
   sha: "<value>",
-  projectId: 6658.72,
+  projectId: 9440.33,
 };
 ```
 

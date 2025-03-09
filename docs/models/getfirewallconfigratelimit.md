@@ -6,9 +6,9 @@
 import { GetFirewallConfigRateLimit } from "@vercel/sdk/models/getfirewallconfigop.js";
 
 let value: GetFirewallConfigRateLimit = {
-  algo: "token_bucket",
-  window: 618.44,
-  limit: 4496.94,
+  algo: "fixed_window",
+  window: 2439.41,
+  limit: 7221.51,
   keys: [
     "<value>",
   ],

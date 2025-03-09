@@ -9,8 +9,8 @@ let value: UpdateProjectLastAliasRequest = {
   fromDeploymentId: "<id>",
   toDeploymentId: "<id>",
   jobStatus: "failed",
-  requestedAt: 1797.95,
-  type: "promote",
+  requestedAt: 5910.65,
+  type: "rollback",
 };
 ```
 
