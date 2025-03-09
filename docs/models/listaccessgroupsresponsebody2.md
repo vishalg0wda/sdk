@@ -16,10 +16,17 @@ let value: ListAccessGroupsResponseBody2 = {
       accessGroupId: "ag_123a6c5209bc3778245d011443644c8d27dc2c50",
       membersCount: 5,
       projectsCount: 2,
+      teamRoles: [
+        "DEVELOPER",
+        "BILLING",
+      ],
+      teamPermissions: [
+        "CreateProject",
+      ],
     },
   ],
   pagination: {
-    count: 6176.36,
+    count: 4561.5,
     next: "<value>",
   },
 };

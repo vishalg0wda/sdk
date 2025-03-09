@@ -20,6 +20,9 @@ let value: CreateProjectEnvRequest = {
       ],
       gitBranch: "feature-1",
       comment: "database connection string for production",
+      customEnvironmentIds: [
+        "env_1234567890",
+      ],
     },
   ],
 };

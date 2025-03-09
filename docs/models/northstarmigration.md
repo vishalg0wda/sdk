@@ -7,12 +7,12 @@ import { NorthstarMigration } from "@vercel/sdk/models/authuser.js";
 
 let value: NorthstarMigration = {
   teamId: "<id>",
-  projects: 1726.96,
-  stores: 4815.53,
-  integrationConfigurations: 1096.83,
-  integrationClients: 3216.97,
-  startTime: 4265.94,
-  endTime: 245.48,
+  projects: 7188.79,
+  stores: 8256.81,
+  integrationConfigurations: 7468.34,
+  integrationClients: 5123.49,
+  startTime: 4580.21,
+  endTime: 5494.19,
 };
 ```
 

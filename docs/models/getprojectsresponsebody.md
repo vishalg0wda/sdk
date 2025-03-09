@@ -12,9 +12,9 @@ let value: GetProjectsResponseBody = {
     {
       accountId: "<id>",
       crons: {
-        enabledAt: 6964.83,
-        disabledAt: 8136.79,
-        updatedAt: 5098.07,
+        enabledAt: 6232.95,
+        disabledAt: 8869.61,
+        updatedAt: 6188.26,
         deploymentId: "<id>",
         definitions: [
           {
@@ -29,44 +29,54 @@ let value: GetProjectsResponseBody = {
       latestDeployments: [
         {
           id: "<id>",
-          createdAt: 3339.65,
+          createdAt: 1334.61,
           createdIn: "<value>",
           creator: {
-            email: "Avis_Leannon9@hotmail.com",
+            email: "Savanah92@hotmail.com",
             uid: "<id>",
-            username: "Halle13",
+            username: "Vivianne38",
           },
           deploymentHostname: "<value>",
           name: "<value>",
-          plan: "hobby",
+          plan: "pro",
           previewCommentsEnabled: false,
           private: false,
-          readyState: "QUEUED",
+          readyState: "BUILDING",
           type: "LAMBDAS",
-          url: "https://nautical-traditionalism.net",
+          url: "https://juvenile-thigh.com",
           userId: "<id>",
         },
       ],
       name: "<value>",
-      nodeVersion: "8.10.x",
+      nodeVersion: "12.x",
+      resourceConfig: {
+        functionDefaultRegions: [
+          "<value>",
+        ],
+      },
+      defaultResourceConfig: {
+        functionDefaultRegions: [
+          "<value>",
+        ],
+      },
       targets: {
         "key": {
           id: "<id>",
-          createdAt: 9197.83,
+          createdAt: 4402.64,
           createdIn: "<value>",
           creator: {
-            email: "Chandler16@gmail.com",
+            email: "Maurine6@gmail.com",
             uid: "<id>",
-            username: "Isabelle_Cronin44",
+            username: "Nadia30",
           },
           deploymentHostname: "<value>",
           name: "<value>",
-          plan: "hobby",
+          plan: "enterprise",
           previewCommentsEnabled: false,
           private: false,
-          readyState: "ERROR",
+          readyState: "INITIALIZING",
           type: "LAMBDAS",
-          url: "https://bare-bar.org/",
+          url: "https://wordy-completion.biz/",
           userId: "<id>",
         },
       },

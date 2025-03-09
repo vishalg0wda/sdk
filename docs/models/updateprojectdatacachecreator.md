@@ -6,9 +6,9 @@
 import { UpdateProjectDataCacheCreator } from "@vercel/sdk/models/updateprojectdatacacheop.js";
 
 let value: UpdateProjectDataCacheCreator = {
-  email: "Creola.Balistreri@gmail.com",
+  email: "Joshua.Durgan@gmail.com",
   uid: "<id>",
-  username: "Jamaal_McGlynn",
+  username: "Drew.Stracke51",
 };
 ```
 

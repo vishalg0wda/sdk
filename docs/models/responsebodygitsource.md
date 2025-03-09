@@ -27,7 +27,7 @@ const value: models.GetDeploymentGitSource2 = {
 ```typescript
 const value: models.GetDeploymentGitSource3 = {
   type: "gitlab",
-  projectId: "<id>",
+  projectId: 9838.54,
 };
 ```
 
@@ -57,7 +57,7 @@ const value: models.GetDeploymentGitSource6 = {
   type: "custom",
   ref: "<value>",
   sha: "<value>",
-  gitUrl: "https://carefree-grouper.biz",
+  gitUrl: "https://illiterate-dividend.org",
 };
 ```
 
@@ -68,7 +68,7 @@ const value: models.GetDeploymentGitSource7 = {
   type: "github",
   ref: "<value>",
   sha: "<value>",
-  repoId: 5063.43,
+  repoId: 1355.48,
 };
 ```
 
@@ -79,7 +79,7 @@ const value: models.GetDeploymentGitSource8 = {
   type: "gitlab",
   ref: "<value>",
   sha: "<value>",
-  projectId: 3498.98,
+  projectId: 7202.66,
 };
 ```
 

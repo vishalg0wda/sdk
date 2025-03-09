@@ -15,7 +15,7 @@ const value: models.CancelDeploymentRoutes1 = {
 
 ```typescript
 const value: models.CancelDeploymentRoutes2 = {
-  handle: "resource",
+  handle: "error",
 };
 ```
 
@@ -25,7 +25,7 @@ const value: models.CancelDeploymentRoutes2 = {
 const value: models.CancelDeploymentRoutes3 = {
   src: "<value>",
   continue: false,
-  middleware: 2715.51,
+  middleware: 423.64,
 };
 ```
 

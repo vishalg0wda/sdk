@@ -6,7 +6,7 @@
 import { CreateCheckCLS } from "@vercel/sdk/models/createcheckop.js";
 
 let value: CreateCheckCLS = {
-  value: 7392.64,
+  value: 4686.51,
   source: "web-vitals",
 };
 ```

@@ -8,9 +8,9 @@ import { Anomalies } from "@vercel/sdk/models/getactiveattackstatusop.js";
 let value: Anomalies = {
   ownerId: "<id>",
   projectId: "<id>",
-  startTime: 6566.05,
-  endTime: 3738.4,
-  atMinute: 7850.67,
+  startTime: 7503.43,
+  endTime: 2878.34,
+  atMinute: 4949.72,
   affectedHostMap: {
     "key": {},
   },

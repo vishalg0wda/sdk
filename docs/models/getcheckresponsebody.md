@@ -8,12 +8,12 @@ import { GetCheckResponseBody } from "@vercel/sdk/models/getcheckop.js";
 let value: GetCheckResponseBody = {
   id: "<id>",
   name: "<value>",
-  status: "completed",
+  status: "registered",
   blocking: false,
   integrationId: "<id>",
   deploymentId: "<id>",
-  createdAt: 6994.79,
-  updatedAt: 2974.37,
+  createdAt: 9527.49,
+  updatedAt: 4471.25,
 };
 ```
 

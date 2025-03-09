@@ -8,8 +8,8 @@
 ```typescript
 const value: models.RateLimit1 = {
   algo: "token_bucket",
-  window: 5846.63,
-  limit: 3035.49,
+  window: 724.73,
+  limit: 54.94,
   keys: [
     "<value>",
   ],

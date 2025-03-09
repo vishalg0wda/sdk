@@ -8,30 +8,29 @@ import { SubmitBillingDataRequest } from "@vercel/sdk/models/submitbillingdataop
 let value: SubmitBillingDataRequest = {
   integrationConfigurationId: "<id>",
   requestBody: {
-    timestamp: new Date("2024-10-30T05:11:34.005Z"),
-    eod: new Date("2023-08-22T02:23:53.093Z"),
+    timestamp: new Date("2024-01-19T19:42:43.719Z"),
+    eod: new Date("2023-10-21T17:10:27.496Z"),
     period: {
-      start: new Date("2024-06-06T08:51:38.406Z"),
-      end: new Date("2023-05-03T19:56:19.516Z"),
+      start: new Date("2023-03-09T19:55:57.710Z"),
+      end: new Date("2025-06-19T03:34:00.039Z"),
     },
     billing: [
       {
         billingPlanId: "<id>",
         name: "<value>",
-        price: "285.44",
-        quantity: 1812.67,
+        price: "571.99",
+        quantity: 1454.5,
         units: "<value>",
         total: "<value>",
       },
     ],
     usage: [
       {
-        resourceId: "<id>",
         name: "<value>",
-        type: "interval",
+        type: "rate",
         units: "<value>",
-        dayValue: 6155.97,
-        periodValue: 9465.58,
+        dayValue: 8051.28,
+        periodValue: 7692.47,
       },
     ],
   },

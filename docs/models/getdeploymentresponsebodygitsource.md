@@ -8,7 +8,7 @@
 ```typescript
 const value: models.GetDeploymentGitSourceDeployments1 = {
   type: "github",
-  repoId: "<id>",
+  repoId: 2445.69,
 };
 ```
 
@@ -57,7 +57,7 @@ const value: models.GetDeploymentGitSourceDeployments6 = {
   type: "custom",
   ref: "<value>",
   sha: "<value>",
-  gitUrl: "https://noteworthy-pigsty.biz/",
+  gitUrl: "https://doting-mentor.biz",
 };
 ```
 
@@ -68,7 +68,7 @@ const value: models.GetDeploymentGitSourceDeployments7 = {
   type: "github",
   ref: "<value>",
   sha: "<value>",
-  repoId: 194.62,
+  repoId: 1047.36,
 };
 ```
 
@@ -79,7 +79,7 @@ const value: models.GetDeploymentGitSourceDeployments8 = {
   type: "gitlab",
   ref: "<value>",
   sha: "<value>",
-  projectId: 3992.22,
+  projectId: 1165.58,
 };
 ```
 
