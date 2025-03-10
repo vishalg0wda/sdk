@@ -5,17 +5,17 @@ Scanner Detection - Detect and prevent reconnaissance activities from network sc
 ## Example Usage
 
 ```typescript
-import { Sd } from "@vercel/sdk/models/putfirewallconfigop.js";
+import { Sd } from "@vercel/sdk/models/getfirewallconfigop.js";
 
 let value: Sd = {
   active: false,
-  action: "log",
+  action: "deny",
 };
 ```
 
 ## Fields
 
-| Field                                                                  | Type                                                                   | Required                                                               | Description                                                            |
-| ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| `active`                                                               | *boolean*                                                              | :heavy_check_mark:                                                     | N/A                                                                    |
-| `action`                                                               | [models.PutFirewallConfigAction](../models/putfirewallconfigaction.md) | :heavy_check_mark:                                                     | N/A                                                                    |
+| Field                                                                                                                                                                        | Type                                                                                                                                                                         | Required                                                                                                                                                                     | Description                                                                                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `active`                                                                                                                                                                     | *boolean*                                                                                                                                                                    | :heavy_check_mark:                                                                                                                                                           | N/A                                                                                                                                                                          |
+| `action`                                                                                                                                                                     | [models.GetFirewallConfigSecurityResponse200ApplicationJSONResponseBodyCrsSdAction](../models/getfirewallconfigsecurityresponse200applicationjsonresponsebodycrssdaction.md) | :heavy_check_mark:                                                                                                                                                           | N/A                                                                                                                                                                          |

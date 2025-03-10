@@ -12,8 +12,8 @@ const value: models.Billing1[] = [
   {
     billingPlanId: "<id>",
     name: "<value>",
-    price: "784.27",
-    quantity: 8748.43,
+    price: "476.69",
+    quantity: 6050.43,
     units: "<value>",
     total: "<value>",
   },
@@ -28,8 +28,8 @@ const value: models.Billing2 = {
     {
       billingPlanId: "<id>",
       name: "<value>",
-      price: "556.19",
-      quantity: 3136.95,
+      price: "303.69",
+      quantity: 1594.69,
       units: "<value>",
       total: "<value>",
     },

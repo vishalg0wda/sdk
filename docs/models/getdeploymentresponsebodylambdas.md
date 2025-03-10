@@ -10,7 +10,7 @@ import { GetDeploymentResponseBodyLambdas } from "@vercel/sdk/models/getdeployme
 let value: GetDeploymentResponseBodyLambdas = {
   output: [
     {
-      path: "/usr/X11R6",
+      path: "/usr/local/src",
       functionName: "<value>",
     },
   ],

@@ -7,9 +7,9 @@ import { Srv } from "@vercel/sdk/models/updaterecordop.js";
 
 let value: Srv = {
   target: "example2.com.",
-  weight: 713718,
-  port: 59992,
-  priority: 146583,
+  weight: 307874,
+  port: 61959,
+  priority: 294181,
 };
 ```
 

@@ -25,7 +25,7 @@ const value: models.UpdateFirewallConfigRequestBody2 = {
         conditions: [
           {
             type: "geo_country",
-            op: "gt",
+            op: "lte",
           },
         ],
       },
@@ -48,8 +48,8 @@ const value: models.UpdateFirewallConfigRequestBody3 = {
       {
         conditions: [
           {
-            type: "query",
-            op: "sub",
+            type: "geo_country_region",
+            op: "suf",
           },
         ],
       },
@@ -74,7 +74,7 @@ const value: models.UpdateFirewallConfigRequestBody4 = {
 const value: models.UpdateFirewallConfigRequestBody5 = {
   action: "rules.priority",
   id: "<id>",
-  value: 8513.24,
+  value: 780.74,
 };
 ```
 
@@ -83,7 +83,7 @@ const value: models.UpdateFirewallConfigRequestBody5 = {
 ```typescript
 const value: models.RequestBody6 = {
   action: "crs.update",
-  id: "lfi",
+  id: "rfi",
   value: {
     active: false,
     action: "log",
@@ -105,9 +105,9 @@ const value: models.RequestBody7 = {
 const value: models.RequestBody8 = {
   action: "ip.insert",
   value: {
-    hostname: "pricey-valuable.biz",
-    ip: "79.66.193.187",
-    action: "log",
+    hostname: "distinct-stall.net",
+    ip: "135.138.182.132",
+    action: "deny",
   },
 };
 ```
@@ -119,8 +119,8 @@ const value: models.RequestBody9 = {
   action: "ip.update",
   id: "<id>",
   value: {
-    hostname: "edible-straw.org",
-    ip: "eb66:64dc:a8e4:c14d:ecdf:aac2:fb3f:7ddb",
+    hostname: "sore-halt.org",
+    ip: "67.85.146.229",
     action: "deny",
   },
 };
@@ -140,9 +140,22 @@ const value: models.RequestBody10 = {
 ```typescript
 const value: models.Eleven = {
   action: "managedRules.update",
-  id: "owasp",
+  id: "<id>",
   value: {
     active: false,
+  },
+};
+```
+
+### `models.Twelve`
+
+```typescript
+const value: models.Twelve = {
+  id: "<id>",
+  value: {
+    "key": {
+      active: false,
+    },
   },
 };
 ```

@@ -6,7 +6,7 @@
 import { GetCheckCLS } from "@vercel/sdk/models/getcheckop.js";
 
 let value: GetCheckCLS = {
-  value: 2487.53,
+  value: 2700.08,
   source: "web-vitals",
 };
 ```

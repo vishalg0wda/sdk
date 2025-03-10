@@ -1,4 +1,4 @@
-speakeasyVersion: 1.469.11
+speakeasyVersion: 1.513.4
 sources:
     vercel-OAS:
         sourceNamespace: vercel-oas
@@ -14,8 +14,6 @@ targets:
         sourceNamespace: vercel-oas
         sourceRevisionDigest: sha256:9041630c14e6e22057f3a9cdeb455b2e58e22091f06dc6258d2772eb74acd62f
         sourceBlobDigest: sha256:80c721b73c0634c08b22bbad4c0d891c33b5a291100f09c6e7d818bf5096dd27
-        codeSamplesNamespace: vercel-oas-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:b79eaff38d6a7af6ad069efe7b53943f11e6a6c5092b61d8bf066a05fcd213b6
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest

@@ -6,30 +6,31 @@
 import { SubmitBillingDataRequestBody } from "@vercel/sdk/models/submitbillingdataop.js";
 
 let value: SubmitBillingDataRequestBody = {
-  timestamp: new Date("2023-12-12T17:59:43.779Z"),
-  eod: new Date("2024-10-19T03:23:15.846Z"),
+  timestamp: new Date("2023-02-12T23:23:38.484Z"),
+  eod: new Date("2023-01-28T15:41:52.745Z"),
   period: {
-    start: new Date("2024-04-16T11:28:38.206Z"),
-    end: new Date("2025-09-23T08:46:33.172Z"),
+    start: new Date("2023-10-25T14:51:31.782Z"),
+    end: new Date("2024-05-21T04:35:34.593Z"),
   },
-  billing: [
-    {
-      billingPlanId: "<id>",
-      name: "<value>",
-      price: "698.09",
-      quantity: 2019.66,
-      units: "<value>",
-      total: "<value>",
-    },
-  ],
+  billing: {
+    items: [
+      {
+        billingPlanId: "<id>",
+        name: "<value>",
+        price: "475.49",
+        quantity: 1806.6,
+        units: "<value>",
+        total: "<value>",
+      },
+    ],
+  },
   usage: [
     {
-      resourceId: "<id>",
       name: "<value>",
-      type: "rate",
+      type: "interval",
       units: "<value>",
-      dayValue: 7791.54,
-      periodValue: 4905.49,
+      dayValue: 5774.96,
+      periodValue: 8527.37,
     },
   ],
 };
@@ -37,10 +38,10 @@ let value: SubmitBillingDataRequestBody = {
 
 ## Fields
 
-| Field                                                                                         | Type                                                                                          | Required                                                                                      | Description                                                                                   |
-| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `timestamp`                                                                                   | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_check_mark:                                                                            | N/A                                                                                           |
-| `eod`                                                                                         | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_check_mark:                                                                            | N/A                                                                                           |
-| `period`                                                                                      | [models.Period](../models/period.md)                                                          | :heavy_check_mark:                                                                            | Period for the billing cycle.                                                                 |
-| `billing`                                                                                     | *models.SubmitBillingDataBilling*                                                             | :heavy_check_mark:                                                                            | Billing data (interim invoicing data).                                                        |
-| `usage`                                                                                       | [models.Usage](../models/usage.md)[]                                                          | :heavy_check_mark:                                                                            | N/A                                                                                           |
+| Field                                                                                                                                                                                                                                                                                                                      | Type                                                                                                                                                                                                                                                                                                                       | Required                                                                                                                                                                                                                                                                                                                   | Description                                                                                                                                                                                                                                                                                                                |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `timestamp`                                                                                                                                                                                                                                                                                                                | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)                                                                                                                                                                                                                              | :heavy_check_mark:                                                                                                                                                                                                                                                                                                         | Server time of your integration, used to determine the most recent data for race conditions & updates. Only the latest usage data for a given day, week, and month will be kept.                                                                                                                                           |
+| `eod`                                                                                                                                                                                                                                                                                                                      | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)                                                                                                                                                                                                                              | :heavy_check_mark:                                                                                                                                                                                                                                                                                                         | End of Day, the UTC datetime for when the end of the billing/usage day is in UTC time. This tells us which day the usage data is for, and also allows for your \"end of day\" to be different from UTC 00:00:00. eod must be within the period dates, and cannot be older than 24h earlier from our server's current time. |
+| `period`                                                                                                                                                                                                                                                                                                                   | [models.Period](../models/period.md)                                                                                                                                                                                                                                                                                       | :heavy_check_mark:                                                                                                                                                                                                                                                                                                         | Period for the billing cycle. The period end date cannot be older than 24 hours earlier than our current server's time.                                                                                                                                                                                                    |
+| `billing`                                                                                                                                                                                                                                                                                                                  | *models.SubmitBillingDataBilling*                                                                                                                                                                                                                                                                                          | :heavy_check_mark:                                                                                                                                                                                                                                                                                                         | Billing data (interim invoicing data).                                                                                                                                                                                                                                                                                     |
+| `usage`                                                                                                                                                                                                                                                                                                                    | [models.Usage](../models/usage.md)[]                                                                                                                                                                                                                                                                                       | :heavy_check_mark:                                                                                                                                                                                                                                                                                                         | N/A                                                                                                                                                                                                                                                                                                                        |

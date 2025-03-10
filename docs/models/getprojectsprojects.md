@@ -8,9 +8,9 @@ import { GetProjectsProjects } from "@vercel/sdk/models/getprojectsop.js";
 let value: GetProjectsProjects = {
   accountId: "<id>",
   crons: {
-    enabledAt: 5249.7,
-    disabledAt: 7505.95,
-    updatedAt: 3335.07,
+    enabledAt: 6223.85,
+    disabledAt: 7105.29,
+    updatedAt: 2049.23,
     deploymentId: "<id>",
     definitions: [
       {
@@ -25,44 +25,54 @@ let value: GetProjectsProjects = {
   latestDeployments: [
     {
       id: "<id>",
-      createdAt: 9241.59,
+      createdAt: 3416.98,
       createdIn: "<value>",
       creator: {
-        email: "Amanda34@hotmail.com",
+        email: "Shane.Grady71@hotmail.com",
         uid: "<id>",
-        username: "Marilyne34",
+        username: "Gage.Walker40",
       },
       deploymentHostname: "<value>",
       name: "<value>",
-      plan: "hobby",
+      plan: "enterprise",
       previewCommentsEnabled: false,
       private: false,
       readyState: "QUEUED",
       type: "LAMBDAS",
-      url: "https://amused-programme.com/",
+      url: "https://dull-captain.name/",
       userId: "<id>",
     },
   ],
   name: "<value>",
-  nodeVersion: "18.x",
+  nodeVersion: "12.x",
+  resourceConfig: {
+    functionDefaultRegions: [
+      "<value>",
+    ],
+  },
+  defaultResourceConfig: {
+    functionDefaultRegions: [
+      "<value>",
+    ],
+  },
   targets: {
     "key": {
       id: "<id>",
-      createdAt: 5305.37,
+      createdAt: 6719.57,
       createdIn: "<value>",
       creator: {
-        email: "Asia.Bailey62@hotmail.com",
+        email: "Abdul_Miller96@hotmail.com",
         uid: "<id>",
-        username: "Cornelius67",
+        username: "Maurine.Langosh79",
       },
       deploymentHostname: "<value>",
       name: "<value>",
-      plan: "pro",
+      plan: "enterprise",
       previewCommentsEnabled: false,
       private: false,
       readyState: "QUEUED",
       type: "LAMBDAS",
-      url: "https://oval-vestment.com",
+      url: "https://broken-deduction.info",
       userId: "<id>",
     },
   },
@@ -100,7 +110,7 @@ let value: GetProjectsProjects = {
 | `ipBuckets`                                                                                    | [models.GetProjectsIpBuckets](../models/getprojectsipbuckets.md)[]                             | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `latestDeployments`                                                                            | [models.GetProjectsLatestDeployments](../models/getprojectslatestdeployments.md)[]             | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `link`                                                                                         | *models.GetProjectsLink*                                                                       | :heavy_minus_sign:                                                                             | N/A                                                                                            |
-| `microfrontends`                                                                               | [models.GetProjectsMicrofrontends](../models/getprojectsmicrofrontends.md)                     | :heavy_minus_sign:                                                                             | N/A                                                                                            |
+| `microfrontends`                                                                               | *models.GetProjectsMicrofrontends*                                                             | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `name`                                                                                         | *string*                                                                                       | :heavy_check_mark:                                                                             | N/A                                                                                            |
 | `nodeVersion`                                                                                  | [models.GetProjectsNodeVersion](../models/getprojectsnodeversion.md)                           | :heavy_check_mark:                                                                             | N/A                                                                                            |
 | `optionsAllowlist`                                                                             | [models.GetProjectsOptionsAllowlist](../models/getprojectsoptionsallowlist.md)                 | :heavy_minus_sign:                                                                             | N/A                                                                                            |
@@ -109,7 +119,9 @@ let value: GetProjectsProjects = {
 | `passwordProtection`                                                                           | [models.GetProjectsPasswordProtection](../models/getprojectspasswordprotection.md)             | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `productionDeploymentsFastLane`                                                                | *boolean*                                                                                      | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `publicSource`                                                                                 | *boolean*                                                                                      | :heavy_minus_sign:                                                                             | N/A                                                                                            |
-| `resourceConfig`                                                                               | [models.GetProjectsResourceConfig](../models/getprojectsresourceconfig.md)                     | :heavy_minus_sign:                                                                             | N/A                                                                                            |
+| `resourceConfig`                                                                               | [models.GetProjectsResourceConfig](../models/getprojectsresourceconfig.md)                     | :heavy_check_mark:                                                                             | N/A                                                                                            |
+| `rollingRelease`                                                                               | [models.GetProjectsRollingRelease](../models/getprojectsrollingrelease.md)                     | :heavy_minus_sign:                                                                             | N/A                                                                                            |
+| `defaultResourceConfig`                                                                        | [models.GetProjectsDefaultResourceConfig](../models/getprojectsdefaultresourceconfig.md)       | :heavy_check_mark:                                                                             | N/A                                                                                            |
 | `rootDirectory`                                                                                | *string*                                                                                       | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `serverlessFunctionRegion`                                                                     | *string*                                                                                       | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `serverlessFunctionZeroConfigFailover`                                                         | *boolean*                                                                                      | :heavy_minus_sign:                                                                             | N/A                                                                                            |
@@ -131,11 +143,11 @@ let value: GetProjectsProjects = {
 | `permissions`                                                                                  | [models.GetProjectsPermissions](../models/getprojectspermissions.md)                           | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `lastRollbackTarget`                                                                           | [models.GetProjectsLastRollbackTarget](../models/getprojectslastrollbacktarget.md)             | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `lastAliasRequest`                                                                             | [models.GetProjectsLastAliasRequest](../models/getprojectslastaliasrequest.md)                 | :heavy_minus_sign:                                                                             | N/A                                                                                            |
-| `hasFloatingAliases`                                                                           | *boolean*                                                                                      | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `protectionBypass`                                                                             | Record<string, [models.GetProjectsProtectionBypass](../models/getprojectsprotectionbypass.md)> | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `hasActiveBranches`                                                                            | *boolean*                                                                                      | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `trustedIps`                                                                                   | *models.GetProjectsTrustedIps*                                                                 | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `gitComments`                                                                                  | [models.GetProjectsGitComments](../models/getprojectsgitcomments.md)                           | :heavy_minus_sign:                                                                             | N/A                                                                                            |
+| `gitProviderOptions`                                                                           | [models.GetProjectsGitProviderOptions](../models/getprojectsgitprovideroptions.md)             | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `paused`                                                                                       | *boolean*                                                                                      | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `concurrencyBucketName`                                                                        | *string*                                                                                       | :heavy_minus_sign:                                                                             | N/A                                                                                            |
 | `webAnalytics`                                                                                 | [models.GetProjectsWebAnalytics](../models/getprojectswebanalytics.md)                         | :heavy_minus_sign:                                                                             | N/A                                                                                            |
