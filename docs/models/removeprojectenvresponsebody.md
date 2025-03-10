@@ -10,7 +10,7 @@ The environment variable was successfully removed
 ```typescript
 const value: models.RemoveProjectEnvResponseBody1[] = [
   {
-    type: "system",
+    type: "sensitive",
     key: "<key>",
     value: "<value>",
   },
@@ -21,7 +21,7 @@ const value: models.RemoveProjectEnvResponseBody1[] = [
 
 ```typescript
 const value: models.RemoveProjectEnvResponseBody2 = {
-  type: "plain",
+  type: "system",
   key: "<key>",
   value: "<value>",
 };

@@ -16,8 +16,8 @@ let value: GetInvoiceResponseBody = {
     {
       billingPlanId: "<id>",
       name: "<value>",
-      price: "862.85",
-      quantity: 8167.26,
+      price: "497.79",
+      quantity: 8048.23,
       units: "<value>",
       total: "<value>",
     },

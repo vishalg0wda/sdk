@@ -10,9 +10,9 @@ import { CreateProjectResponseBody } from "@vercel/sdk/models/createprojectop.js
 let value: CreateProjectResponseBody = {
   accountId: "<id>",
   crons: {
-    enabledAt: 8806.79,
-    disabledAt: 9450.27,
-    updatedAt: 9918.91,
+    enabledAt: 1024.13,
+    disabledAt: 1563.83,
+    updatedAt: 3041.98,
     deploymentId: "<id>",
     definitions: [
       {
@@ -27,35 +27,12 @@ let value: CreateProjectResponseBody = {
   latestDeployments: [
     {
       id: "<id>",
-      createdAt: 3767.41,
+      createdAt: 753.59,
       createdIn: "<value>",
       creator: {
-        email: "Paxton16@hotmail.com",
+        email: "Berenice11@yahoo.com",
         uid: "<id>",
-        username: "Eldred_Kunde84",
-      },
-      deploymentHostname: "<value>",
-      name: "<value>",
-      plan: "enterprise",
-      previewCommentsEnabled: false,
-      private: false,
-      readyState: "CANCELED",
-      type: "LAMBDAS",
-      url: "https://carefree-cleaner.biz",
-      userId: "<id>",
-    },
-  ],
-  name: "<value>",
-  nodeVersion: "22.x",
-  targets: {
-    "key": {
-      id: "<id>",
-      createdAt: 4246.63,
-      createdIn: "<value>",
-      creator: {
-        email: "Keon97@gmail.com",
-        uid: "<id>",
-        username: "Giuseppe.Friesen",
+        username: "Torey.Flatley48",
       },
       deploymentHostname: "<value>",
       name: "<value>",
@@ -64,7 +41,40 @@ let value: CreateProjectResponseBody = {
       private: false,
       readyState: "INITIALIZING",
       type: "LAMBDAS",
-      url: "https://scared-valley.info",
+      url: "https://strong-produce.org/",
+      userId: "<id>",
+    },
+  ],
+  name: "<value>",
+  nodeVersion: "18.x",
+  resourceConfig: {
+    functionDefaultRegions: [
+      "<value>",
+    ],
+  },
+  defaultResourceConfig: {
+    functionDefaultRegions: [
+      "<value>",
+    ],
+  },
+  targets: {
+    "key": {
+      id: "<id>",
+      createdAt: 8975.43,
+      createdIn: "<value>",
+      creator: {
+        email: "Florence_Green11@hotmail.com",
+        uid: "<id>",
+        username: "Christa_Rodriguez48",
+      },
+      deploymentHostname: "<value>",
+      name: "<value>",
+      plan: "enterprise",
+      previewCommentsEnabled: false,
+      private: false,
+      readyState: "BUILDING",
+      type: "LAMBDAS",
+      url: "https://violent-cutover.org/",
       userId: "<id>",
     },
   },
@@ -102,7 +112,7 @@ let value: CreateProjectResponseBody = {
 | `ipBuckets`                                                                                        | [models.CreateProjectIpBuckets](../models/createprojectipbuckets.md)[]                             | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `latestDeployments`                                                                                | [models.CreateProjectLatestDeployments](../models/createprojectlatestdeployments.md)[]             | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `link`                                                                                             | *models.CreateProjectLink*                                                                         | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
-| `microfrontends`                                                                                   | [models.CreateProjectMicrofrontends](../models/createprojectmicrofrontends.md)                     | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
+| `microfrontends`                                                                                   | *models.CreateProjectMicrofrontends*                                                               | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `name`                                                                                             | *string*                                                                                           | :heavy_check_mark:                                                                                 | N/A                                                                                                |
 | `nodeVersion`                                                                                      | [models.CreateProjectNodeVersion](../models/createprojectnodeversion.md)                           | :heavy_check_mark:                                                                                 | N/A                                                                                                |
 | `optionsAllowlist`                                                                                 | [models.CreateProjectOptionsAllowlist](../models/createprojectoptionsallowlist.md)                 | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
@@ -111,7 +121,9 @@ let value: CreateProjectResponseBody = {
 | `passwordProtection`                                                                               | [models.CreateProjectPasswordProtection](../models/createprojectpasswordprotection.md)             | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `productionDeploymentsFastLane`                                                                    | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `publicSource`                                                                                     | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
-| `resourceConfig`                                                                                   | [models.CreateProjectResourceConfig](../models/createprojectresourceconfig.md)                     | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
+| `resourceConfig`                                                                                   | [models.CreateProjectResourceConfig](../models/createprojectresourceconfig.md)                     | :heavy_check_mark:                                                                                 | N/A                                                                                                |
+| `rollingRelease`                                                                                   | [models.CreateProjectRollingRelease](../models/createprojectrollingrelease.md)                     | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
+| `defaultResourceConfig`                                                                            | [models.CreateProjectDefaultResourceConfig](../models/createprojectdefaultresourceconfig.md)       | :heavy_check_mark:                                                                                 | N/A                                                                                                |
 | `rootDirectory`                                                                                    | *string*                                                                                           | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `serverlessFunctionRegion`                                                                         | *string*                                                                                           | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `serverlessFunctionZeroConfigFailover`                                                             | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
@@ -133,11 +145,11 @@ let value: CreateProjectResponseBody = {
 | `permissions`                                                                                      | [models.CreateProjectPermissions](../models/createprojectpermissions.md)                           | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `lastRollbackTarget`                                                                               | [models.CreateProjectLastRollbackTarget](../models/createprojectlastrollbacktarget.md)             | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `lastAliasRequest`                                                                                 | [models.CreateProjectLastAliasRequest](../models/createprojectlastaliasrequest.md)                 | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
-| `hasFloatingAliases`                                                                               | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `protectionBypass`                                                                                 | Record<string, [models.CreateProjectProtectionBypass](../models/createprojectprotectionbypass.md)> | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `hasActiveBranches`                                                                                | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `trustedIps`                                                                                       | *models.CreateProjectTrustedIps*                                                                   | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `gitComments`                                                                                      | [models.CreateProjectGitComments](../models/createprojectgitcomments.md)                           | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
+| `gitProviderOptions`                                                                               | [models.CreateProjectGitProviderOptions](../models/createprojectgitprovideroptions.md)             | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `paused`                                                                                           | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `concurrencyBucketName`                                                                            | *string*                                                                                           | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `webAnalytics`                                                                                     | [models.CreateProjectWebAnalytics](../models/createprojectwebanalytics.md)                         | :heavy_minus_sign:                                                                                 | N/A                                                                                                |

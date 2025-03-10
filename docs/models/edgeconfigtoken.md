@@ -12,7 +12,7 @@ let value: EdgeConfigToken = {
   label: "<value>",
   id: "<id>",
   edgeConfigId: "<id>",
-  createdAt: 1853.13,
+  createdAt: 5592.48,
 };
 ```
 

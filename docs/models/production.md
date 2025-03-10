@@ -7,7 +7,7 @@ Filters only production domains when set to `true`.
 ```typescript
 import { Production } from "@vercel/sdk/models/getprojectdomainsop.js";
 
-let value: Production = "false";
+let value: Production = "true";
 ```
 
 ## Values

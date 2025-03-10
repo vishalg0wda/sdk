@@ -9,7 +9,15 @@ import { GetAuthUserResponseBody } from "@vercel/sdk/models/getauthuserop.js";
 
 let value: GetAuthUserResponseBody = {
   user: {
-    limited: false,
+    createdAt: 1630748523395,
+    softBlock: {
+      blockedAt: 1048.34,
+      reason: "SUBSCRIPTION_CANCELED",
+    },
+    billing: {},
+    resourceConfig: {},
+    stagingPrefix: "<value>",
+    hasTrialAvailable: false,
     id: "AEIIDYVk59zbFF2Sxfyxxmua",
     email: "me@example.com",
     name: "John Doe",

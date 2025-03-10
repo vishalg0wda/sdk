@@ -14,25 +14,25 @@ const value: models.SearchRepoResponseBody1 = {};
 ```typescript
 const value: models.SearchRepoResponseBody2 = {
   gitAccount: {
-    provider: "bitbucket",
-    namespaceId: 7399.46,
+    provider: "gitlab",
+    namespaceId: 6844.99,
   },
   repos: [
     {
-      id: 4144.38,
+      id: "<id>",
       provider: "github-custom-host",
-      url: "https://dependable-descendant.biz/",
+      url: "https://overcooked-swine.org/",
       name: "<value>",
       slug: "<value>",
       namespace: "<value>",
       owner: {
-        id: 5358.83,
+        id: "<id>",
         name: "<value>",
       },
-      ownerType: "team",
+      ownerType: "user",
       private: false,
       defaultBranch: "<value>",
-      updatedAt: 8204.62,
+      updatedAt: 1122.24,
     },
   ],
 };

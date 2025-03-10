@@ -7,8 +7,8 @@ import { IssueCertResponseBody } from "@vercel/sdk/models/issuecertop.js";
 
 let value: IssueCertResponseBody = {
   id: "<id>",
-  createdAt: 5036.97,
-  expiresAt: 257.37,
+  createdAt: 9464.16,
+  expiresAt: 4682.21,
   autoRenew: false,
   cns: [
     "<value>",

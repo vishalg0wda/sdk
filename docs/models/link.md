@@ -12,7 +12,7 @@ const value: models.Link1 = {
       id: "<id>",
       name: "<value>",
       ref: "<value>",
-      url: "https://unlucky-word.biz",
+      url: "https://bitter-platter.info/",
     },
   ],
 };
@@ -27,7 +27,7 @@ const value: models.Link2 = {
       id: "<id>",
       name: "<value>",
       ref: "<value>",
-      url: "https://fatherly-agreement.net",
+      url: "https://unlucky-word.biz",
     },
   ],
 };
@@ -42,7 +42,7 @@ const value: models.Link3 = {
       id: "<id>",
       name: "<value>",
       ref: "<value>",
-      url: "https://ideal-mortise.net/",
+      url: "https://fatherly-agreement.net",
     },
   ],
 };

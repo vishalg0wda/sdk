@@ -10,9 +10,9 @@ let value: GetActiveAttackStatusResponseBody2 = {
     {
       ownerId: "<id>",
       projectId: "<id>",
-      startTime: 4153.95,
-      endTime: 5082.71,
-      atMinute: 7874.67,
+      startTime: 1862.11,
+      endTime: 1883.99,
+      atMinute: 4358.41,
       affectedHostMap: {
         "key": {},
       },

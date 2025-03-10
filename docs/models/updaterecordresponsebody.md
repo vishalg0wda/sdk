@@ -7,11 +7,11 @@ import { UpdateRecordResponseBody } from "@vercel/sdk/models/updaterecordop.js";
 
 let value: UpdateRecordResponseBody = {
   creator: "<value>",
-  domain: "inferior-godparent.info",
+  domain: "clean-daddy.net",
   id: "<id>",
   name: "<value>",
-  recordType: "HTTPS",
-  type: "record-sys",
+  recordType: "AAAA",
+  type: "record",
   value: "<value>",
 };
 ```
