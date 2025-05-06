@@ -38,27 +38,29 @@ export type GetBypassIpRequest = {
   slug?: string | undefined;
 };
 
-export const ResponseBodyAction = {
+export const GetBypassIpResponseBodyAction = {
   Block: "block",
   Bypass: "bypass",
 } as const;
-export type ResponseBodyAction = ClosedEnum<typeof ResponseBodyAction>;
+export type GetBypassIpResponseBodyAction = ClosedEnum<
+  typeof GetBypassIpResponseBodyAction
+>;
 
 export type GetBypassIpResponseBodyResult = {
-  ownerId: string;
-  id: string;
-  domain: string;
-  ip: string;
-  action?: ResponseBodyAction | undefined;
+  ownerId?: string | undefined;
+  id?: string | undefined;
+  domain?: string | undefined;
+  ip?: string | undefined;
+  action?: GetBypassIpResponseBodyAction | undefined;
   projectId?: string | undefined;
   isProjectRule?: boolean | undefined;
   note?: string | undefined;
-  createdAt: string;
+  createdAt?: string | undefined;
   actorId?: string | undefined;
-  updatedAt: string;
-  updatedAtHour: string;
+  updatedAt?: string | undefined;
+  updatedAtHour?: string | undefined;
   deletedAt?: string | undefined;
-  expiresAt?: number | undefined;
+  expiresAt?: number | null | undefined;
 };
 
 export type GetBypassIpResponseBodyPagination = {
@@ -71,13 +73,27 @@ export type GetBypassIpResponseBody2 = {
   pagination?: GetBypassIpResponseBodyPagination | undefined;
 };
 
+export const ResponseBodyAction = {
+  Block: "block",
+  Bypass: "bypass",
+} as const;
+export type ResponseBodyAction = ClosedEnum<typeof ResponseBodyAction>;
+
 export type ResponseBodyResult = {
-  ownerId: string;
-  id: string;
-  domain: string;
-  ip: string;
-  projectId: string;
-  isProjectRule: boolean;
+  ownerId?: string | undefined;
+  id?: string | undefined;
+  domain?: string | undefined;
+  ip?: string | undefined;
+  action?: ResponseBodyAction | undefined;
+  projectId?: string | undefined;
+  isProjectRule?: boolean | undefined;
+  note?: string | undefined;
+  createdAt?: string | undefined;
+  actorId?: string | undefined;
+  updatedAt?: string | undefined;
+  updatedAtHour?: string | undefined;
+  deletedAt?: string | undefined;
+  expiresAt?: number | null | undefined;
 };
 
 export type GetBypassIpResponseBody1 = {
@@ -165,24 +181,24 @@ export function getBypassIpRequestFromJSON(
 }
 
 /** @internal */
-export const ResponseBodyAction$inboundSchema: z.ZodNativeEnum<
-  typeof ResponseBodyAction
-> = z.nativeEnum(ResponseBodyAction);
+export const GetBypassIpResponseBodyAction$inboundSchema: z.ZodNativeEnum<
+  typeof GetBypassIpResponseBodyAction
+> = z.nativeEnum(GetBypassIpResponseBodyAction);
 
 /** @internal */
-export const ResponseBodyAction$outboundSchema: z.ZodNativeEnum<
-  typeof ResponseBodyAction
-> = ResponseBodyAction$inboundSchema;
+export const GetBypassIpResponseBodyAction$outboundSchema: z.ZodNativeEnum<
+  typeof GetBypassIpResponseBodyAction
+> = GetBypassIpResponseBodyAction$inboundSchema;
 
 /**
  * @internal
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
-export namespace ResponseBodyAction$ {
-  /** @deprecated use `ResponseBodyAction$inboundSchema` instead. */
-  export const inboundSchema = ResponseBodyAction$inboundSchema;
-  /** @deprecated use `ResponseBodyAction$outboundSchema` instead. */
-  export const outboundSchema = ResponseBodyAction$outboundSchema;
+export namespace GetBypassIpResponseBodyAction$ {
+  /** @deprecated use `GetBypassIpResponseBodyAction$inboundSchema` instead. */
+  export const inboundSchema = GetBypassIpResponseBodyAction$inboundSchema;
+  /** @deprecated use `GetBypassIpResponseBodyAction$outboundSchema` instead. */
+  export const outboundSchema = GetBypassIpResponseBodyAction$outboundSchema;
 }
 
 /** @internal */
@@ -191,20 +207,20 @@ export const GetBypassIpResponseBodyResult$inboundSchema: z.ZodType<
   z.ZodTypeDef,
   unknown
 > = z.object({
-  OwnerId: z.string(),
-  Id: z.string(),
-  Domain: z.string(),
-  Ip: z.string(),
-  Action: ResponseBodyAction$inboundSchema.optional(),
+  OwnerId: z.string().optional(),
+  Id: z.string().optional(),
+  Domain: z.string().optional(),
+  Ip: z.string().optional(),
+  Action: GetBypassIpResponseBodyAction$inboundSchema.optional(),
   ProjectId: z.string().optional(),
   IsProjectRule: z.boolean().optional(),
   Note: z.string().optional(),
-  CreatedAt: z.string(),
+  CreatedAt: z.string().optional(),
   ActorId: z.string().optional(),
-  UpdatedAt: z.string(),
-  UpdatedAtHour: z.string(),
+  UpdatedAt: z.string().optional(),
+  UpdatedAtHour: z.string().optional(),
   DeletedAt: z.string().optional(),
-  ExpiresAt: z.number().optional(),
+  ExpiresAt: z.nullable(z.number()).optional(),
 }).transform((v) => {
   return remap$(v, {
     "OwnerId": "ownerId",
@@ -226,20 +242,20 @@ export const GetBypassIpResponseBodyResult$inboundSchema: z.ZodType<
 
 /** @internal */
 export type GetBypassIpResponseBodyResult$Outbound = {
-  OwnerId: string;
-  Id: string;
-  Domain: string;
-  Ip: string;
+  OwnerId?: string | undefined;
+  Id?: string | undefined;
+  Domain?: string | undefined;
+  Ip?: string | undefined;
   Action?: string | undefined;
   ProjectId?: string | undefined;
   IsProjectRule?: boolean | undefined;
   Note?: string | undefined;
-  CreatedAt: string;
+  CreatedAt?: string | undefined;
   ActorId?: string | undefined;
-  UpdatedAt: string;
-  UpdatedAtHour: string;
+  UpdatedAt?: string | undefined;
+  UpdatedAtHour?: string | undefined;
   DeletedAt?: string | undefined;
-  ExpiresAt?: number | undefined;
+  ExpiresAt?: number | null | undefined;
 };
 
 /** @internal */
@@ -248,20 +264,20 @@ export const GetBypassIpResponseBodyResult$outboundSchema: z.ZodType<
   z.ZodTypeDef,
   GetBypassIpResponseBodyResult
 > = z.object({
-  ownerId: z.string(),
-  id: z.string(),
-  domain: z.string(),
-  ip: z.string(),
-  action: ResponseBodyAction$outboundSchema.optional(),
+  ownerId: z.string().optional(),
+  id: z.string().optional(),
+  domain: z.string().optional(),
+  ip: z.string().optional(),
+  action: GetBypassIpResponseBodyAction$outboundSchema.optional(),
   projectId: z.string().optional(),
   isProjectRule: z.boolean().optional(),
   note: z.string().optional(),
-  createdAt: z.string(),
+  createdAt: z.string().optional(),
   actorId: z.string().optional(),
-  updatedAt: z.string(),
-  updatedAtHour: z.string(),
+  updatedAt: z.string().optional(),
+  updatedAtHour: z.string().optional(),
   deletedAt: z.string().optional(),
-  expiresAt: z.number().optional(),
+  expiresAt: z.nullable(z.number()).optional(),
 }).transform((v) => {
   return remap$(v, {
     ownerId: "OwnerId",
@@ -446,36 +462,81 @@ export function getBypassIpResponseBody2FromJSON(
 }
 
 /** @internal */
+export const ResponseBodyAction$inboundSchema: z.ZodNativeEnum<
+  typeof ResponseBodyAction
+> = z.nativeEnum(ResponseBodyAction);
+
+/** @internal */
+export const ResponseBodyAction$outboundSchema: z.ZodNativeEnum<
+  typeof ResponseBodyAction
+> = ResponseBodyAction$inboundSchema;
+
+/**
+ * @internal
+ * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
+ */
+export namespace ResponseBodyAction$ {
+  /** @deprecated use `ResponseBodyAction$inboundSchema` instead. */
+  export const inboundSchema = ResponseBodyAction$inboundSchema;
+  /** @deprecated use `ResponseBodyAction$outboundSchema` instead. */
+  export const outboundSchema = ResponseBodyAction$outboundSchema;
+}
+
+/** @internal */
 export const ResponseBodyResult$inboundSchema: z.ZodType<
   ResponseBodyResult,
   z.ZodTypeDef,
   unknown
 > = z.object({
-  OwnerId: z.string(),
-  Id: z.string(),
-  Domain: z.string(),
-  Ip: z.string(),
-  ProjectId: z.string(),
-  IsProjectRule: z.boolean(),
+  OwnerId: z.string().optional(),
+  Id: z.string().optional(),
+  Domain: z.string().optional(),
+  Ip: z.string().optional(),
+  Action: ResponseBodyAction$inboundSchema.optional(),
+  ProjectId: z.string().optional(),
+  IsProjectRule: z.boolean().optional(),
+  Note: z.string().optional(),
+  CreatedAt: z.string().optional(),
+  ActorId: z.string().optional(),
+  UpdatedAt: z.string().optional(),
+  UpdatedAtHour: z.string().optional(),
+  DeletedAt: z.string().optional(),
+  ExpiresAt: z.nullable(z.number()).optional(),
 }).transform((v) => {
   return remap$(v, {
     "OwnerId": "ownerId",
     "Id": "id",
     "Domain": "domain",
     "Ip": "ip",
+    "Action": "action",
     "ProjectId": "projectId",
     "IsProjectRule": "isProjectRule",
+    "Note": "note",
+    "CreatedAt": "createdAt",
+    "ActorId": "actorId",
+    "UpdatedAt": "updatedAt",
+    "UpdatedAtHour": "updatedAtHour",
+    "DeletedAt": "deletedAt",
+    "ExpiresAt": "expiresAt",
   });
 });
 
 /** @internal */
 export type ResponseBodyResult$Outbound = {
-  OwnerId: string;
-  Id: string;
-  Domain: string;
-  Ip: string;
-  ProjectId: string;
-  IsProjectRule: boolean;
+  OwnerId?: string | undefined;
+  Id?: string | undefined;
+  Domain?: string | undefined;
+  Ip?: string | undefined;
+  Action?: string | undefined;
+  ProjectId?: string | undefined;
+  IsProjectRule?: boolean | undefined;
+  Note?: string | undefined;
+  CreatedAt?: string | undefined;
+  ActorId?: string | undefined;
+  UpdatedAt?: string | undefined;
+  UpdatedAtHour?: string | undefined;
+  DeletedAt?: string | undefined;
+  ExpiresAt?: number | null | undefined;
 };
 
 /** @internal */
@@ -484,20 +545,36 @@ export const ResponseBodyResult$outboundSchema: z.ZodType<
   z.ZodTypeDef,
   ResponseBodyResult
 > = z.object({
-  ownerId: z.string(),
-  id: z.string(),
-  domain: z.string(),
-  ip: z.string(),
-  projectId: z.string(),
-  isProjectRule: z.boolean(),
+  ownerId: z.string().optional(),
+  id: z.string().optional(),
+  domain: z.string().optional(),
+  ip: z.string().optional(),
+  action: ResponseBodyAction$outboundSchema.optional(),
+  projectId: z.string().optional(),
+  isProjectRule: z.boolean().optional(),
+  note: z.string().optional(),
+  createdAt: z.string().optional(),
+  actorId: z.string().optional(),
+  updatedAt: z.string().optional(),
+  updatedAtHour: z.string().optional(),
+  deletedAt: z.string().optional(),
+  expiresAt: z.nullable(z.number()).optional(),
 }).transform((v) => {
   return remap$(v, {
     ownerId: "OwnerId",
     id: "Id",
     domain: "Domain",
     ip: "Ip",
+    action: "Action",
     projectId: "ProjectId",
     isProjectRule: "IsProjectRule",
+    note: "Note",
+    createdAt: "CreatedAt",
+    actorId: "ActorId",
+    updatedAt: "UpdatedAt",
+    updatedAtHour: "UpdatedAtHour",
+    deletedAt: "DeletedAt",
+    expiresAt: "ExpiresAt",
   });
 });
 

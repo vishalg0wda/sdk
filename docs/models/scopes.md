@@ -8,8 +8,8 @@
 ```typescript
 const value: models.Scopes1 = {
   type: "user",
-  origin: "invite",
-  createdAt: 4090.21,
+  origin: "saml",
+  createdAt: 176.21,
 };
 ```
 
@@ -19,8 +19,8 @@ const value: models.Scopes1 = {
 const value: models.Scopes2 = {
   type: "team",
   teamId: "<id>",
-  origin: "bitbucket",
-  createdAt: 9895.26,
+  origin: "passkey",
+  createdAt: 3684.64,
 };
 ```
 

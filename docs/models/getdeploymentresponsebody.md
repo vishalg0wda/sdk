@@ -18,41 +18,39 @@ const value: models.GetDeploymentResponseBody1 = {
   env: [
     "<value>",
   ],
-  inspectorUrl: "https://well-off-waterspout.org",
+  inspectorUrl: "https://minty-department.info",
   isInConcurrentBuildsQueue: false,
   isInSystemBuildsQueue: false,
   projectSettings: {},
   aliasAssigned: false,
-  bootedAt: 3590.97,
-  buildingAt: 8877.01,
+  bootedAt: 8640.34,
+  buildingAt: 6840.75,
   buildSkipped: false,
   creator: {
     uid: "<id>",
   },
   public: false,
-  status: "INITIALIZING",
+  status: "BUILDING",
   id: "<id>",
-  type: "LAMBDAS",
-  createdAt: 4299.97,
   name: "<value>",
-  readyState: "QUEUED",
+  type: "LAMBDAS",
+  createdAt: 249.45,
+  readyState: "BUILDING",
   meta: {
     "key": "<value>",
   },
   regions: [
     "<value>",
   ],
-  url: "https://meager-scholarship.net",
-  version: 7935.68,
+  url: "https://unique-birdcage.name",
+  version: 5166.73,
   projectId: "<id>",
   plan: "pro",
   createdIn: "<value>",
   ownerId: "<id>",
   routes: [
     {
-      src: "<value>",
-      continue: false,
-      middleware: 5488.46,
+      handle: "error",
     },
   ],
 };
@@ -63,27 +61,27 @@ const value: models.GetDeploymentResponseBody1 = {
 ```typescript
 const value: models.GetDeploymentResponseBody2 = {
   aliasAssigned: false,
-  bootedAt: 4733.26,
-  buildingAt: 6751.26,
+  bootedAt: 9734.5,
+  buildingAt: 6774.57,
   buildSkipped: false,
   creator: {
     uid: "<id>",
   },
   public: false,
-  status: "QUEUED",
+  status: "CANCELED",
   id: "<id>",
-  type: "LAMBDAS",
-  createdAt: 1023.16,
   name: "<value>",
-  readyState: "BUILDING",
+  type: "LAMBDAS",
+  createdAt: 4900.07,
+  readyState: "INITIALIZING",
   meta: {
     "key": "<value>",
   },
   regions: [
     "<value>",
   ],
-  url: "https://cool-final.com",
-  version: 3312.69,
+  url: "https://calculating-sock.org",
+  version: 7243.82,
 };
 ```
 

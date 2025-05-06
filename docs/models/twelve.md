@@ -1,19 +1,23 @@
 # Twelve
 
+The payload of the event, if requested.
+
 ## Example Usage
 
 ```typescript
-import { Twelve } from "@vercel/sdk/models/updateprojectdatacacheop.js";
+import { Twelve } from "@vercel/sdk/models/userevent.js";
 
 let value: Twelve = {
-  type: "postgres-database",
-  storeId: "<id>",
+  projectName: "<value>",
+  alias: "<value>",
+  action: "created",
 };
 ```
 
 ## Fields
 
-| Field                                                                                                                                                                                                    | Type                                                                                                                                                                                                     | Required                                                                                                                                                                                                 | Description                                                                                                                                                                                              |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`                                                                                                                                                                                                   | [models.UpdateProjectDataCacheContentHintProjectsResponse200ApplicationJSONResponseBodyEnv12Type](../models/updateprojectdatacachecontenthintprojectsresponse200applicationjsonresponsebodyenv12type.md) | :heavy_check_mark:                                                                                                                                                                                       | N/A                                                                                                                                                                                                      |
-| `storeId`                                                                                                                                                                                                | *string*                                                                                                                                                                                                 | :heavy_check_mark:                                                                                                                                                                                       | N/A                                                                                                                                                                                                      |
+| Field                                              | Type                                               | Required                                           | Description                                        |
+| -------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
+| `projectName`                                      | *string*                                           | :heavy_check_mark:                                 | N/A                                                |
+| `alias`                                            | *string*                                           | :heavy_check_mark:                                 | N/A                                                |
+| `action`                                           | [models.PayloadAction](../models/payloadaction.md) | :heavy_check_mark:                                 | N/A                                                |

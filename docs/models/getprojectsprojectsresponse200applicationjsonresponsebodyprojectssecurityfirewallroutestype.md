@@ -9,7 +9,7 @@ import {
 
 let value:
   GetProjectsProjectsResponse200ApplicationJSONResponseBodyProjectsSecurityFirewallRoutesType =
-    "protocol";
+    "initial_request_path";
 ```
 
 ## Values

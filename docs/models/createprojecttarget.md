@@ -8,14 +8,14 @@ Deployment Target or Targets in which the ENV variable will be used
 ### `models.Target1`
 
 ```typescript
-const value: models.Target1 = "development";
+const value: models.Target1 = "preview";
 ```
 
 ### `models.Target2[]`
 
 ```typescript
 const value: models.Target2[] = [
-  "preview",
+  "development",
 ];
 ```
 

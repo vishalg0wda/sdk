@@ -3,9 +3,9 @@
 ## Example Usage
 
 ```typescript
-import { ProtectionBypassAccess } from "@vercel/sdk/models/listaliasesop.js";
+import { ProtectionBypassAccess } from "@vercel/sdk/models/getaliasop.js";
 
-let value: ProtectionBypassAccess = "granted";
+let value: ProtectionBypassAccess = "requested";
 ```
 
 ## Values

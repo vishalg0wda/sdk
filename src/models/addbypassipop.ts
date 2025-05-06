@@ -11,17 +11,31 @@ import { SDKValidationError } from "./sdkvalidationerror.js";
 
 export type AddBypassIpRequestBody2 = {
   domain?: string | undefined;
+  /**
+   * If the specified bypass will apply to all domains for a project.
+   */
   projectScope: boolean;
   sourceIp?: string | undefined;
   allSources?: boolean | undefined;
+  /**
+   * Time to live in milliseconds
+   */
+  ttl?: number | undefined;
   note?: string | undefined;
 };
 
 export type AddBypassIpRequestBody1 = {
   domain: string;
+  /**
+   * If the specified bypass will apply to all domains for a project.
+   */
   projectScope?: boolean | undefined;
   sourceIp?: string | undefined;
   allSources?: boolean | undefined;
+  /**
+   * Time to live in milliseconds
+   */
+  ttl?: number | undefined;
   note?: string | undefined;
 };
 
@@ -64,7 +78,7 @@ export type AddBypassIpResponseBodySecurityResult = {
   updatedAt: string;
   updatedAtHour: string;
   deletedAt?: string | undefined;
-  expiresAt?: number | undefined;
+  expiresAt?: number | null | undefined;
 };
 
 export type AddBypassIpResponseBody2 = {
@@ -78,6 +92,7 @@ export type AddBypassIpResponseBodyResult = {
   domain: string;
   ip?: string | undefined;
   projectId: string;
+  note: string;
   isProjectRule: boolean;
 };
 
@@ -101,6 +116,7 @@ export const AddBypassIpRequestBody2$inboundSchema: z.ZodType<
   projectScope: z.boolean(),
   sourceIp: z.string().optional(),
   allSources: z.boolean().optional(),
+  ttl: z.number().optional(),
   note: z.string().optional(),
 });
 
@@ -110,6 +126,7 @@ export type AddBypassIpRequestBody2$Outbound = {
   projectScope: boolean;
   sourceIp?: string | undefined;
   allSources?: boolean | undefined;
+  ttl?: number | undefined;
   note?: string | undefined;
 };
 
@@ -123,6 +140,7 @@ export const AddBypassIpRequestBody2$outboundSchema: z.ZodType<
   projectScope: z.boolean(),
   sourceIp: z.string().optional(),
   allSources: z.boolean().optional(),
+  ttl: z.number().optional(),
   note: z.string().optional(),
 });
 
@@ -167,6 +185,7 @@ export const AddBypassIpRequestBody1$inboundSchema: z.ZodType<
   projectScope: z.boolean().optional(),
   sourceIp: z.string().optional(),
   allSources: z.boolean().optional(),
+  ttl: z.number().optional(),
   note: z.string().optional(),
 });
 
@@ -176,6 +195,7 @@ export type AddBypassIpRequestBody1$Outbound = {
   projectScope?: boolean | undefined;
   sourceIp?: string | undefined;
   allSources?: boolean | undefined;
+  ttl?: number | undefined;
   note?: string | undefined;
 };
 
@@ -189,6 +209,7 @@ export const AddBypassIpRequestBody1$outboundSchema: z.ZodType<
   projectScope: z.boolean().optional(),
   sourceIp: z.string().optional(),
   allSources: z.boolean().optional(),
+  ttl: z.number().optional(),
   note: z.string().optional(),
 });
 
@@ -399,7 +420,7 @@ export const AddBypassIpResponseBodySecurityResult$inboundSchema: z.ZodType<
   UpdatedAt: z.string(),
   UpdatedAtHour: z.string(),
   DeletedAt: z.string().optional(),
-  ExpiresAt: z.number().optional(),
+  ExpiresAt: z.nullable(z.number()).optional(),
 }).transform((v) => {
   return remap$(v, {
     "OwnerId": "ownerId",
@@ -434,7 +455,7 @@ export type AddBypassIpResponseBodySecurityResult$Outbound = {
   UpdatedAt: string;
   UpdatedAtHour: string;
   DeletedAt?: string | undefined;
-  ExpiresAt?: number | undefined;
+  ExpiresAt?: number | null | undefined;
 };
 
 /** @internal */
@@ -456,7 +477,7 @@ export const AddBypassIpResponseBodySecurityResult$outboundSchema: z.ZodType<
   updatedAt: z.string(),
   updatedAtHour: z.string(),
   deletedAt: z.string().optional(),
-  expiresAt: z.number().optional(),
+  expiresAt: z.nullable(z.number()).optional(),
 }).transform((v) => {
   return remap$(v, {
     ownerId: "OwnerId",
@@ -584,6 +605,7 @@ export const AddBypassIpResponseBodyResult$inboundSchema: z.ZodType<
   Domain: z.string(),
   Ip: z.string().optional(),
   ProjectId: z.string(),
+  Note: z.string(),
   IsProjectRule: z.boolean(),
 }).transform((v) => {
   return remap$(v, {
@@ -592,6 +614,7 @@ export const AddBypassIpResponseBodyResult$inboundSchema: z.ZodType<
     "Domain": "domain",
     "Ip": "ip",
     "ProjectId": "projectId",
+    "Note": "note",
     "IsProjectRule": "isProjectRule",
   });
 });
@@ -603,6 +626,7 @@ export type AddBypassIpResponseBodyResult$Outbound = {
   Domain: string;
   Ip?: string | undefined;
   ProjectId: string;
+  Note: string;
   IsProjectRule: boolean;
 };
 
@@ -617,6 +641,7 @@ export const AddBypassIpResponseBodyResult$outboundSchema: z.ZodType<
   domain: z.string(),
   ip: z.string().optional(),
   projectId: z.string(),
+  note: z.string(),
   isProjectRule: z.boolean(),
 }).transform((v) => {
   return remap$(v, {
@@ -625,6 +650,7 @@ export const AddBypassIpResponseBodyResult$outboundSchema: z.ZodType<
     domain: "Domain",
     ip: "Ip",
     projectId: "ProjectId",
+    note: "Note",
     isProjectRule: "IsProjectRule",
   });
 });

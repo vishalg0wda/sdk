@@ -7,7 +7,7 @@ import { CreateProjectProjectsResponse200ApplicationJSONResponseBodySecurityType
 
 let value:
   CreateProjectProjectsResponse200ApplicationJSONResponseBodySecurityType =
-    "ip_address";
+    "initial_request_path";
 ```
 
 ## Values

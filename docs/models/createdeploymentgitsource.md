@@ -22,31 +22,33 @@ const value: models.CreateDeploymentGitSource2 = {
 };
 ```
 
-### `models.GitSource3`
+### `models.CreateDeploymentGitSource3`
 
 ```typescript
-const value: models.GitSource3 = {
+const value: models.CreateDeploymentGitSource3 = {
+  type: "github-custom-host",
+  host: "straight-translation.biz",
+  repoId: 6995.39,
+};
+```
+
+### `models.CreateDeploymentGitSource4`
+
+```typescript
+const value: models.CreateDeploymentGitSource4 = {
+  type: "github-custom-host",
+  host: "bad-bran.org",
+  org: "<value>",
+  repo: "<value>",
+};
+```
+
+### `models.CreateDeploymentGitSource5`
+
+```typescript
+const value: models.CreateDeploymentGitSource5 = {
   type: "gitlab",
-  projectId: "<id>",
-};
-```
-
-### `models.GitSource4`
-
-```typescript
-const value: models.GitSource4 = {
-  type: "bitbucket",
-  repoUuid: "<id>",
-};
-```
-
-### `models.GitSource5`
-
-```typescript
-const value: models.GitSource5 = {
-  type: "bitbucket",
-  owner: "<value>",
-  slug: "<value>",
+  projectId: 6813.69,
 };
 ```
 
@@ -54,10 +56,8 @@ const value: models.GitSource5 = {
 
 ```typescript
 const value: models.CreateDeploymentGitSource6 = {
-  type: "custom",
-  ref: "<value>",
-  sha: "<value>",
-  gitUrl: "https://fruitful-masterpiece.org",
+  type: "bitbucket",
+  repoUuid: "<id>",
 };
 ```
 
@@ -65,10 +65,9 @@ const value: models.CreateDeploymentGitSource6 = {
 
 ```typescript
 const value: models.CreateDeploymentGitSource7 = {
-  type: "github",
-  ref: "<value>",
-  sha: "<value>",
-  repoId: 4004.48,
+  type: "bitbucket",
+  owner: "<value>",
+  slug: "<value>",
 };
 ```
 
@@ -76,10 +75,10 @@ const value: models.CreateDeploymentGitSource7 = {
 
 ```typescript
 const value: models.CreateDeploymentGitSource8 = {
-  type: "gitlab",
+  type: "custom",
   ref: "<value>",
   sha: "<value>",
-  projectId: 6658.72,
+  gitUrl: "https://jumbo-transparency.com",
 };
 ```
 
@@ -87,6 +86,40 @@ const value: models.CreateDeploymentGitSource8 = {
 
 ```typescript
 const value: models.CreateDeploymentGitSource9 = {
+  type: "github",
+  ref: "<value>",
+  sha: "<value>",
+  repoId: 4239.27,
+};
+```
+
+### `models.CreateDeploymentGitSource10`
+
+```typescript
+const value: models.CreateDeploymentGitSource10 = {
+  type: "github-custom-host",
+  host: "phony-soliloquy.info",
+  ref: "<value>",
+  sha: "<value>",
+  repoId: 5177.94,
+};
+```
+
+### `models.CreateDeploymentGitSource11`
+
+```typescript
+const value: models.CreateDeploymentGitSource11 = {
+  type: "gitlab",
+  ref: "<value>",
+  sha: "<value>",
+  projectId: 2202.73,
+};
+```
+
+### `models.CreateDeploymentGitSource12`
+
+```typescript
+const value: models.CreateDeploymentGitSource12 = {
   type: "bitbucket",
   ref: "<value>",
   sha: "<value>",

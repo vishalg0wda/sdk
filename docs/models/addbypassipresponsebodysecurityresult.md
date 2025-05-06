@@ -8,10 +8,10 @@ import { AddBypassIpResponseBodySecurityResult } from "@vercel/sdk/models/addbyp
 let value: AddBypassIpResponseBodySecurityResult = {
   ownerId: "<id>",
   id: "<id>",
-  domain: "flickering-accompanist.biz",
-  ip: "d5f8:63df:7f72:8c2c:a5db:7f9f:a70e:42ef",
-  createdAt: "1714377314552",
-  updatedAt: "1737341773479",
+  domain: "selfish-version.name",
+  ip: "fffe:1d58:eebc:b907:af95:7ab0:bf83:a5a3",
+  createdAt: "1721924398285",
+  updatedAt: "1746428028864",
   updatedAtHour: "<value>",
 };
 ```

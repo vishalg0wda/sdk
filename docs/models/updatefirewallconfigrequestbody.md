@@ -24,8 +24,8 @@ const value: models.UpdateFirewallConfigRequestBody2 = {
       {
         conditions: [
           {
-            type: "geo_country",
-            op: "gt",
+            type: "cookie",
+            op: "lte",
           },
         ],
       },
@@ -48,8 +48,8 @@ const value: models.UpdateFirewallConfigRequestBody3 = {
       {
         conditions: [
           {
-            type: "query",
-            op: "sub",
+            type: "scheme",
+            op: "inc",
           },
         ],
       },
@@ -74,75 +74,88 @@ const value: models.UpdateFirewallConfigRequestBody4 = {
 const value: models.UpdateFirewallConfigRequestBody5 = {
   action: "rules.priority",
   id: "<id>",
-  value: 8513.24,
+  value: 9901.25,
 };
 ```
 
-### `models.RequestBody6`
+### `models.UpdateFirewallConfigRequestBody6`
 
 ```typescript
-const value: models.RequestBody6 = {
+const value: models.UpdateFirewallConfigRequestBody6 = {
   action: "crs.update",
-  id: "lfi",
+  id: "sf",
   value: {
     active: false,
-    action: "log",
-  },
-};
-```
-
-### `models.RequestBody7`
-
-```typescript
-const value: models.RequestBody7 = {
-  action: "crs.disable",
-};
-```
-
-### `models.RequestBody8`
-
-```typescript
-const value: models.RequestBody8 = {
-  action: "ip.insert",
-  value: {
-    hostname: "pricey-valuable.biz",
-    ip: "79.66.193.187",
-    action: "log",
-  },
-};
-```
-
-### `models.RequestBody9`
-
-```typescript
-const value: models.RequestBody9 = {
-  action: "ip.update",
-  id: "<id>",
-  value: {
-    hostname: "edible-straw.org",
-    ip: "eb66:64dc:a8e4:c14d:ecdf:aac2:fb3f:7ddb",
     action: "deny",
   },
 };
 ```
 
-### `models.RequestBody10`
+### `models.UpdateFirewallConfigRequestBody7`
 
 ```typescript
-const value: models.RequestBody10 = {
+const value: models.UpdateFirewallConfigRequestBody7 = {
+  action: "crs.disable",
+};
+```
+
+### `models.UpdateFirewallConfigRequestBody8`
+
+```typescript
+const value: models.UpdateFirewallConfigRequestBody8 = {
+  action: "ip.insert",
+  value: {
+    hostname: "questionable-marimba.info",
+    ip: "1d0e:0eee:d411:839c:0fff:4cf6:dcb3:fa5a",
+    action: "deny",
+  },
+};
+```
+
+### `models.UpdateFirewallConfigRequestBody9`
+
+```typescript
+const value: models.UpdateFirewallConfigRequestBody9 = {
+  action: "ip.update",
+  id: "<id>",
+  value: {
+    hostname: "idolized-tuxedo.name",
+    ip: "6c8e:bfeb:b75e:a5e0:5596:e99e:fee8:b71f",
+    action: "challenge",
+  },
+};
+```
+
+### `models.UpdateFirewallConfigRequestBody10`
+
+```typescript
+const value: models.UpdateFirewallConfigRequestBody10 = {
   action: "ip.remove",
   id: "<id>",
 };
 ```
 
-### `models.Eleven`
+### `models.RequestBody11`
 
 ```typescript
-const value: models.Eleven = {
+const value: models.RequestBody11 = {
   action: "managedRules.update",
-  id: "owasp",
+  id: "<id>",
   value: {
     active: false,
+  },
+};
+```
+
+### `models.RequestBody12`
+
+```typescript
+const value: models.RequestBody12 = {
+  id: "<id>",
+  value: {
+    "key": {
+      active: false,
+    },
   },
 };
 ```

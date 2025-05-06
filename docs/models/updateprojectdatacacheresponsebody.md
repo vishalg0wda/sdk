@@ -8,9 +8,9 @@ import { UpdateProjectDataCacheResponseBody } from "@vercel/sdk/models/updatepro
 let value: UpdateProjectDataCacheResponseBody = {
   accountId: "<id>",
   crons: {
-    enabledAt: 5113.19,
-    disabledAt: 2243.17,
-    updatedAt: 978.44,
+    enabledAt: 9704.69,
+    disabledAt: 4463.87,
+    updatedAt: 385.52,
     deploymentId: "<id>",
     definitions: [
       {
@@ -25,44 +25,54 @@ let value: UpdateProjectDataCacheResponseBody = {
   latestDeployments: [
     {
       id: "<id>",
-      createdAt: 8621.92,
+      createdAt: 5961.83,
       createdIn: "<value>",
       creator: {
-        email: "Victor.Ryan@hotmail.com",
+        email: "Isai52@gmail.com",
         uid: "<id>",
-        username: "Darion1",
+        username: "Camron_Bednar",
       },
       deploymentHostname: "<value>",
       name: "<value>",
-      plan: "pro",
+      plan: "hobby",
       previewCommentsEnabled: false,
       private: false,
-      readyState: "BUILDING",
+      readyState: "CANCELED",
       type: "LAMBDAS",
-      url: "https://rectangular-developmental.info/",
+      url: "https://mean-analogy.name/",
       userId: "<id>",
     },
   ],
   name: "<value>",
-  nodeVersion: "14.x",
+  nodeVersion: "8.10.x",
+  resourceConfig: {
+    functionDefaultRegions: [
+      "<value>",
+    ],
+  },
+  defaultResourceConfig: {
+    functionDefaultRegions: [
+      "<value>",
+    ],
+  },
   targets: {
     "key": {
       id: "<id>",
-      createdAt: 8605.52,
+      createdAt: 1957.16,
       createdIn: "<value>",
       creator: {
-        email: "Don.Bednar@hotmail.com",
+        email: "Kailee.Emard@hotmail.com",
         uid: "<id>",
-        username: "Marjory18",
+        username: "Aaliyah_Cummerata96",
       },
       deploymentHostname: "<value>",
       name: "<value>",
-      plan: "pro",
+      plan: "enterprise",
       previewCommentsEnabled: false,
       private: false,
       readyState: "READY",
       type: "LAMBDAS",
-      url: "https://sour-disposer.info",
+      url: "https://parallel-baritone.name",
       userId: "<id>",
     },
   },
@@ -100,7 +110,7 @@ let value: UpdateProjectDataCacheResponseBody = {
 | `ipBuckets`                                                                                              | [models.IpBuckets](../models/ipbuckets.md)[]                                                             | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `latestDeployments`                                                                                      | [models.LatestDeployments](../models/latestdeployments.md)[]                                             | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `link`                                                                                                   | *models.Link*                                                                                            | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
-| `microfrontends`                                                                                         | [models.Microfrontends](../models/microfrontends.md)                                                     | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
+| `microfrontends`                                                                                         | *models.UpdateProjectDataCacheMicrofrontends*                                                            | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `name`                                                                                                   | *string*                                                                                                 | :heavy_check_mark:                                                                                       | N/A                                                                                                      |
 | `nodeVersion`                                                                                            | [models.UpdateProjectDataCacheNodeVersion](../models/updateprojectdatacachenodeversion.md)               | :heavy_check_mark:                                                                                       | N/A                                                                                                      |
 | `optionsAllowlist`                                                                                       | [models.UpdateProjectDataCacheOptionsAllowlist](../models/updateprojectdatacacheoptionsallowlist.md)     | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
@@ -109,7 +119,9 @@ let value: UpdateProjectDataCacheResponseBody = {
 | `passwordProtection`                                                                                     | [models.UpdateProjectDataCachePasswordProtection](../models/updateprojectdatacachepasswordprotection.md) | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `productionDeploymentsFastLane`                                                                          | *boolean*                                                                                                | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `publicSource`                                                                                           | *boolean*                                                                                                | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
-| `resourceConfig`                                                                                         | [models.UpdateProjectDataCacheResourceConfig](../models/updateprojectdatacacheresourceconfig.md)         | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
+| `resourceConfig`                                                                                         | [models.UpdateProjectDataCacheResourceConfig](../models/updateprojectdatacacheresourceconfig.md)         | :heavy_check_mark:                                                                                       | N/A                                                                                                      |
+| `rollingRelease`                                                                                         | [models.RollingRelease](../models/rollingrelease.md)                                                     | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
+| `defaultResourceConfig`                                                                                  | [models.DefaultResourceConfig](../models/defaultresourceconfig.md)                                       | :heavy_check_mark:                                                                                       | N/A                                                                                                      |
 | `rootDirectory`                                                                                          | *string*                                                                                                 | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `serverlessFunctionRegion`                                                                               | *string*                                                                                                 | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `serverlessFunctionZeroConfigFailover`                                                                   | *boolean*                                                                                                | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
@@ -131,14 +143,14 @@ let value: UpdateProjectDataCacheResponseBody = {
 | `permissions`                                                                                            | [models.Permissions](../models/permissions.md)                                                           | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `lastRollbackTarget`                                                                                     | [models.LastRollbackTarget](../models/lastrollbacktarget.md)                                             | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `lastAliasRequest`                                                                                       | [models.LastAliasRequest](../models/lastaliasrequest.md)                                                 | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
-| `hasFloatingAliases`                                                                                     | *boolean*                                                                                                | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `protectionBypass`                                                                                       | Record<string, [models.ProtectionBypass](../models/protectionbypass.md)>                                 | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `hasActiveBranches`                                                                                      | *boolean*                                                                                                | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `trustedIps`                                                                                             | *models.UpdateProjectDataCacheTrustedIps*                                                                | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `gitComments`                                                                                            | [models.GitComments](../models/gitcomments.md)                                                           | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
+| `gitProviderOptions`                                                                                     | [models.GitProviderOptions](../models/gitprovideroptions.md)                                             | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `paused`                                                                                                 | *boolean*                                                                                                | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `concurrencyBucketName`                                                                                  | *string*                                                                                                 | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `webAnalytics`                                                                                           | [models.UpdateProjectDataCacheWebAnalytics](../models/updateprojectdatacachewebanalytics.md)             | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `security`                                                                                               | [models.UpdateProjectDataCacheSecurity](../models/updateprojectdatacachesecurity.md)                     | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
 | `oidcTokenConfig`                                                                                        | [models.UpdateProjectDataCacheOidcTokenConfig](../models/updateprojectdatacacheoidctokenconfig.md)       | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
-| `tier`                                                                                                   | [models.Tier](../models/tier.md)                                                                         | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |
+| `tier`                                                                                                   | [models.UpdateProjectDataCacheTier](../models/updateprojectdatacachetier.md)                             | :heavy_minus_sign:                                                                                       | N/A                                                                                                      |

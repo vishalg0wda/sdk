@@ -12,6 +12,12 @@ let value: InviteUserToTeamResponseBody1 = {
   username: "john-doe",
   email: "john@user.co",
   role: "MEMBER",
+  teamRoles: [
+    "MEMBER",
+  ],
+  teamPermissions: [
+    "CreateProject",
+  ],
 };
 ```
 
@@ -23,3 +29,5 @@ let value: InviteUserToTeamResponseBody1 = {
 | `username`                                                                         | *string*                                                                           | :heavy_check_mark:                                                                 | The username of the invited user                                                   | john-doe                                                                           |
 | `email`                                                                            | *string*                                                                           | :heavy_minus_sign:                                                                 | The email of the invited user. Not included if the user was invited via their UID. | john@user.co                                                                       |
 | `role`                                                                             | [models.ResponseBodyRole](../models/responsebodyrole.md)                           | :heavy_check_mark:                                                                 | The role used for the invitation                                                   | MEMBER                                                                             |
+| `teamRoles`                                                                        | [models.ResponseBodyTeamRoles](../models/responsebodyteamroles.md)[]               | :heavy_minus_sign:                                                                 | The team roles of the user                                                         | [<br/>"MEMBER"<br/>]                                                               |
+| `teamPermissions`                                                                  | [models.ResponseBodyTeamPermissions](../models/responsebodyteampermissions.md)[]   | :heavy_minus_sign:                                                                 | The team permissions of the user                                                   | [<br/>"CreateProject"<br/>]                                                        |

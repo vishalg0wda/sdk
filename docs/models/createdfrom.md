@@ -13,5 +13,5 @@ let value: CreatedFrom = "integration";
 ## Values
 
 ```typescript
-"self-served" | "integration"
+"integration" | "self-served"
 ```

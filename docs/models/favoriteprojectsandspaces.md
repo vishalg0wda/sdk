@@ -1,25 +1,21 @@
 # FavoriteProjectsAndSpaces
 
+A list of projects and spaces across teams that a user has marked as a favorite.
 
-## Supported Types
-
-### `models.One`
+## Example Usage
 
 ```typescript
-const value: models.One = {
+import { FavoriteProjectsAndSpaces } from "@vercel/sdk/models/authuser.js";
+
+let value: FavoriteProjectsAndSpaces = {
+  teamId: "<id>",
   projectId: "<id>",
-  scopeSlug: "<value>",
-  scopeId: "<id>",
 };
 ```
 
-### `models.Two`
+## Fields
 
-```typescript
-const value: models.Two = {
-  spaceId: "<id>",
-  scopeSlug: "<value>",
-  scopeId: "<id>",
-};
-```
-
+| Field              | Type               | Required           | Description        |
+| ------------------ | ------------------ | ------------------ | ------------------ |
+| `teamId`           | *string*           | :heavy_check_mark: | N/A                |
+| `projectId`        | *string*           | :heavy_check_mark: | N/A                |

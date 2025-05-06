@@ -74,17 +74,17 @@ export type FilterProjectEnvsTargetProjectsResponse2 = ClosedEnum<
   typeof FilterProjectEnvsTargetProjectsResponse2
 >;
 
-export const FilterProjectEnvsTargetProjects1 = {
+export const FilterProjectEnvsTargetProjectsResponse1 = {
   Production: "production",
   Preview: "preview",
   Development: "development",
 } as const;
-export type FilterProjectEnvsTargetProjects1 = ClosedEnum<
-  typeof FilterProjectEnvsTargetProjects1
+export type FilterProjectEnvsTargetProjectsResponse1 = ClosedEnum<
+  typeof FilterProjectEnvsTargetProjectsResponse1
 >;
 
 export type FilterProjectEnvsResponseBodyProjectsResponseTarget =
-  | Array<FilterProjectEnvsTargetProjects1>
+  | Array<FilterProjectEnvsTargetProjectsResponse1>
   | FilterProjectEnvsTargetProjectsResponse2;
 
 export const FilterProjectEnvsResponseBodyProjectsResponse200Type = {
@@ -365,7 +365,7 @@ export type FilterProjectEnvsResponseBodyProjectsInternalContentHint = {
 
 export type ResponseBodyEnvs = {
   target?:
-    | Array<FilterProjectEnvsTargetProjects1>
+    | Array<FilterProjectEnvsTargetProjectsResponse1>
     | FilterProjectEnvsTargetProjectsResponse2
     | undefined;
   type?: FilterProjectEnvsResponseBodyProjectsResponse200Type | undefined;
@@ -373,9 +373,11 @@ export type ResponseBodyEnvs = {
    * This is used to identiy variables that have been migrated from type secret to sensitive.
    */
   sunsetSecretId?: string | undefined;
+  decrypted?: boolean | undefined;
+  value?: string | undefined;
+  vsmValue?: string | undefined;
   id?: string | undefined;
   key?: string | undefined;
-  value?: string | undefined;
   configurationId?: string | null | undefined;
   createdAt?: number | undefined;
   updatedAt?: number | undefined;
@@ -409,13 +411,8 @@ export type ResponseBodyEnvs = {
     | FilterProjectEnvsResponseBodyProjectsInternalContentHint
     | null
     | undefined;
-  /**
-   * Whether `value` and `vsmValue` are decrypted.
-   */
-  decrypted?: boolean | undefined;
   comment?: string | undefined;
   customEnvironmentIds?: Array<string> | undefined;
-  vsmValue?: string | undefined;
   system?: boolean | undefined;
 };
 
@@ -435,17 +432,17 @@ export type FilterProjectEnvsTargetProjects2 = ClosedEnum<
   typeof FilterProjectEnvsTargetProjects2
 >;
 
-export const FilterProjectEnvsTarget1 = {
+export const FilterProjectEnvsTargetProjects1 = {
   Production: "production",
   Preview: "preview",
   Development: "development",
 } as const;
-export type FilterProjectEnvsTarget1 = ClosedEnum<
-  typeof FilterProjectEnvsTarget1
+export type FilterProjectEnvsTargetProjects1 = ClosedEnum<
+  typeof FilterProjectEnvsTargetProjects1
 >;
 
 export type FilterProjectEnvsResponseBodyProjectsTarget =
-  | Array<FilterProjectEnvsTarget1>
+  | Array<FilterProjectEnvsTargetProjects1>
   | FilterProjectEnvsTargetProjects2;
 
 export const FilterProjectEnvsResponseBodyProjectsResponseType = {
@@ -726,7 +723,7 @@ export type FilterProjectEnvsResponseBodyInternalContentHint = {
 
 export type Envs = {
   target?:
-    | Array<FilterProjectEnvsTarget1>
+    | Array<FilterProjectEnvsTargetProjects1>
     | FilterProjectEnvsTargetProjects2
     | undefined;
   type?: FilterProjectEnvsResponseBodyProjectsResponseType | undefined;
@@ -734,9 +731,11 @@ export type Envs = {
    * This is used to identiy variables that have been migrated from type secret to sensitive.
    */
   sunsetSecretId?: string | undefined;
+  decrypted?: boolean | undefined;
+  value?: string | undefined;
+  vsmValue?: string | undefined;
   id?: string | undefined;
   key?: string | undefined;
-  value?: string | undefined;
   configurationId?: string | null | undefined;
   createdAt?: number | undefined;
   updatedAt?: number | undefined;
@@ -770,13 +769,8 @@ export type Envs = {
     | FilterProjectEnvsResponseBodyInternalContentHint
     | null
     | undefined;
-  /**
-   * Whether `value` and `vsmValue` are decrypted.
-   */
-  decrypted?: boolean | undefined;
   comment?: string | undefined;
   customEnvironmentIds?: Array<string> | undefined;
-  vsmValue?: string | undefined;
   system?: boolean | undefined;
 };
 
@@ -797,8 +791,17 @@ export type FilterProjectEnvsTarget2 = ClosedEnum<
   typeof FilterProjectEnvsTarget2
 >;
 
+export const FilterProjectEnvsTarget1 = {
+  Production: "production",
+  Preview: "preview",
+  Development: "development",
+} as const;
+export type FilterProjectEnvsTarget1 = ClosedEnum<
+  typeof FilterProjectEnvsTarget1
+>;
+
 export type FilterProjectEnvsResponseBodyTarget =
-  | Array<string>
+  | Array<FilterProjectEnvsTarget1>
   | FilterProjectEnvsTarget2;
 
 export const FilterProjectEnvsResponseBodyType = {
@@ -1063,15 +1066,20 @@ export type ResponseBodyInternalContentHint = {
 };
 
 export type FilterProjectEnvsResponseBody1 = {
-  target?: Array<string> | FilterProjectEnvsTarget2 | undefined;
+  target?:
+    | Array<FilterProjectEnvsTarget1>
+    | FilterProjectEnvsTarget2
+    | undefined;
   type?: FilterProjectEnvsResponseBodyType | undefined;
   /**
    * This is used to identiy variables that have been migrated from type secret to sensitive.
    */
   sunsetSecretId?: string | undefined;
+  decrypted?: boolean | undefined;
+  value?: string | undefined;
+  vsmValue?: string | undefined;
   id?: string | undefined;
   key?: string | undefined;
-  value?: string | undefined;
   configurationId?: string | null | undefined;
   createdAt?: number | undefined;
   updatedAt?: number | undefined;
@@ -1102,13 +1110,8 @@ export type FilterProjectEnvsResponseBody1 = {
    * Similar to `contentHints`, but should not be exposed to the user.
    */
   internalContentHint?: ResponseBodyInternalContentHint | null | undefined;
-  /**
-   * Whether `value` and `vsmValue` are decrypted.
-   */
-  decrypted?: boolean | undefined;
   comment?: string | undefined;
   customEnvironmentIds?: Array<string> | undefined;
-  vsmValue?: string | undefined;
   system?: boolean | undefined;
 };
 
@@ -1238,24 +1241,26 @@ export namespace FilterProjectEnvsTargetProjectsResponse2$ {
 }
 
 /** @internal */
-export const FilterProjectEnvsTargetProjects1$inboundSchema: z.ZodNativeEnum<
-  typeof FilterProjectEnvsTargetProjects1
-> = z.nativeEnum(FilterProjectEnvsTargetProjects1);
+export const FilterProjectEnvsTargetProjectsResponse1$inboundSchema:
+  z.ZodNativeEnum<typeof FilterProjectEnvsTargetProjectsResponse1> = z
+    .nativeEnum(FilterProjectEnvsTargetProjectsResponse1);
 
 /** @internal */
-export const FilterProjectEnvsTargetProjects1$outboundSchema: z.ZodNativeEnum<
-  typeof FilterProjectEnvsTargetProjects1
-> = FilterProjectEnvsTargetProjects1$inboundSchema;
+export const FilterProjectEnvsTargetProjectsResponse1$outboundSchema:
+  z.ZodNativeEnum<typeof FilterProjectEnvsTargetProjectsResponse1> =
+    FilterProjectEnvsTargetProjectsResponse1$inboundSchema;
 
 /**
  * @internal
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
-export namespace FilterProjectEnvsTargetProjects1$ {
-  /** @deprecated use `FilterProjectEnvsTargetProjects1$inboundSchema` instead. */
-  export const inboundSchema = FilterProjectEnvsTargetProjects1$inboundSchema;
-  /** @deprecated use `FilterProjectEnvsTargetProjects1$outboundSchema` instead. */
-  export const outboundSchema = FilterProjectEnvsTargetProjects1$outboundSchema;
+export namespace FilterProjectEnvsTargetProjectsResponse1$ {
+  /** @deprecated use `FilterProjectEnvsTargetProjectsResponse1$inboundSchema` instead. */
+  export const inboundSchema =
+    FilterProjectEnvsTargetProjectsResponse1$inboundSchema;
+  /** @deprecated use `FilterProjectEnvsTargetProjectsResponse1$outboundSchema` instead. */
+  export const outboundSchema =
+    FilterProjectEnvsTargetProjectsResponse1$outboundSchema;
 }
 
 /** @internal */
@@ -1265,7 +1270,7 @@ export const FilterProjectEnvsResponseBodyProjectsResponseTarget$inboundSchema:
     z.ZodTypeDef,
     unknown
   > = z.union([
-    z.array(FilterProjectEnvsTargetProjects1$inboundSchema),
+    z.array(FilterProjectEnvsTargetProjectsResponse1$inboundSchema),
     FilterProjectEnvsTargetProjectsResponse2$inboundSchema,
   ]);
 
@@ -1281,7 +1286,7 @@ export const FilterProjectEnvsResponseBodyProjectsResponseTarget$outboundSchema:
     z.ZodTypeDef,
     FilterProjectEnvsResponseBodyProjectsResponseTarget
   > = z.union([
-    z.array(FilterProjectEnvsTargetProjects1$outboundSchema),
+    z.array(FilterProjectEnvsTargetProjectsResponse1$outboundSchema),
     FilterProjectEnvsTargetProjectsResponse2$outboundSchema,
   ]);
 
@@ -3082,15 +3087,17 @@ export const ResponseBodyEnvs$inboundSchema: z.ZodType<
   unknown
 > = z.object({
   target: z.union([
-    z.array(FilterProjectEnvsTargetProjects1$inboundSchema),
+    z.array(FilterProjectEnvsTargetProjectsResponse1$inboundSchema),
     FilterProjectEnvsTargetProjectsResponse2$inboundSchema,
   ]).optional(),
   type: FilterProjectEnvsResponseBodyProjectsResponse200Type$inboundSchema
     .optional(),
   sunsetSecretId: z.string().optional(),
+  decrypted: z.boolean().optional(),
+  value: z.string().optional(),
+  vsmValue: z.string().optional(),
   id: z.string().optional(),
   key: z.string().optional(),
-  value: z.string().optional(),
   configurationId: z.nullable(z.string()).optional(),
   createdAt: z.number().optional(),
   updatedAt: z.number().optional(),
@@ -3137,10 +3144,8 @@ export const ResponseBodyEnvs$inboundSchema: z.ZodType<
       FilterProjectEnvsResponseBodyProjectsInternalContentHint$inboundSchema
     ),
   ).optional(),
-  decrypted: z.boolean().optional(),
   comment: z.string().optional(),
   customEnvironmentIds: z.array(z.string()).optional(),
-  vsmValue: z.string().optional(),
   system: z.boolean().optional(),
 });
 
@@ -3149,9 +3154,11 @@ export type ResponseBodyEnvs$Outbound = {
   target?: Array<string> | string | undefined;
   type?: string | undefined;
   sunsetSecretId?: string | undefined;
+  decrypted?: boolean | undefined;
+  value?: string | undefined;
+  vsmValue?: string | undefined;
   id?: string | undefined;
   key?: string | undefined;
-  value?: string | undefined;
   configurationId?: string | null | undefined;
   createdAt?: number | undefined;
   updatedAt?: number | undefined;
@@ -3182,10 +3189,8 @@ export type ResponseBodyEnvs$Outbound = {
     | FilterProjectEnvsResponseBodyProjectsInternalContentHint$Outbound
     | null
     | undefined;
-  decrypted?: boolean | undefined;
   comment?: string | undefined;
   customEnvironmentIds?: Array<string> | undefined;
-  vsmValue?: string | undefined;
   system?: boolean | undefined;
 };
 
@@ -3196,15 +3201,17 @@ export const ResponseBodyEnvs$outboundSchema: z.ZodType<
   ResponseBodyEnvs
 > = z.object({
   target: z.union([
-    z.array(FilterProjectEnvsTargetProjects1$outboundSchema),
+    z.array(FilterProjectEnvsTargetProjectsResponse1$outboundSchema),
     FilterProjectEnvsTargetProjectsResponse2$outboundSchema,
   ]).optional(),
   type: FilterProjectEnvsResponseBodyProjectsResponse200Type$outboundSchema
     .optional(),
   sunsetSecretId: z.string().optional(),
+  decrypted: z.boolean().optional(),
+  value: z.string().optional(),
+  vsmValue: z.string().optional(),
   id: z.string().optional(),
   key: z.string().optional(),
-  value: z.string().optional(),
   configurationId: z.nullable(z.string()).optional(),
   createdAt: z.number().optional(),
   updatedAt: z.number().optional(),
@@ -3267,10 +3274,8 @@ export const ResponseBodyEnvs$outboundSchema: z.ZodType<
       FilterProjectEnvsResponseBodyProjectsInternalContentHint$outboundSchema
     ),
   ).optional(),
-  decrypted: z.boolean().optional(),
   comment: z.string().optional(),
   customEnvironmentIds: z.array(z.string()).optional(),
-  vsmValue: z.string().optional(),
   system: z.boolean().optional(),
 });
 
@@ -3383,24 +3388,24 @@ export namespace FilterProjectEnvsTargetProjects2$ {
 }
 
 /** @internal */
-export const FilterProjectEnvsTarget1$inboundSchema: z.ZodNativeEnum<
-  typeof FilterProjectEnvsTarget1
-> = z.nativeEnum(FilterProjectEnvsTarget1);
+export const FilterProjectEnvsTargetProjects1$inboundSchema: z.ZodNativeEnum<
+  typeof FilterProjectEnvsTargetProjects1
+> = z.nativeEnum(FilterProjectEnvsTargetProjects1);
 
 /** @internal */
-export const FilterProjectEnvsTarget1$outboundSchema: z.ZodNativeEnum<
-  typeof FilterProjectEnvsTarget1
-> = FilterProjectEnvsTarget1$inboundSchema;
+export const FilterProjectEnvsTargetProjects1$outboundSchema: z.ZodNativeEnum<
+  typeof FilterProjectEnvsTargetProjects1
+> = FilterProjectEnvsTargetProjects1$inboundSchema;
 
 /**
  * @internal
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
-export namespace FilterProjectEnvsTarget1$ {
-  /** @deprecated use `FilterProjectEnvsTarget1$inboundSchema` instead. */
-  export const inboundSchema = FilterProjectEnvsTarget1$inboundSchema;
-  /** @deprecated use `FilterProjectEnvsTarget1$outboundSchema` instead. */
-  export const outboundSchema = FilterProjectEnvsTarget1$outboundSchema;
+export namespace FilterProjectEnvsTargetProjects1$ {
+  /** @deprecated use `FilterProjectEnvsTargetProjects1$inboundSchema` instead. */
+  export const inboundSchema = FilterProjectEnvsTargetProjects1$inboundSchema;
+  /** @deprecated use `FilterProjectEnvsTargetProjects1$outboundSchema` instead. */
+  export const outboundSchema = FilterProjectEnvsTargetProjects1$outboundSchema;
 }
 
 /** @internal */
@@ -3410,7 +3415,7 @@ export const FilterProjectEnvsResponseBodyProjectsTarget$inboundSchema:
     z.ZodTypeDef,
     unknown
   > = z.union([
-    z.array(FilterProjectEnvsTarget1$inboundSchema),
+    z.array(FilterProjectEnvsTargetProjects1$inboundSchema),
     FilterProjectEnvsTargetProjects2$inboundSchema,
   ]);
 
@@ -3426,7 +3431,7 @@ export const FilterProjectEnvsResponseBodyProjectsTarget$outboundSchema:
     z.ZodTypeDef,
     FilterProjectEnvsResponseBodyProjectsTarget
   > = z.union([
-    z.array(FilterProjectEnvsTarget1$outboundSchema),
+    z.array(FilterProjectEnvsTargetProjects1$outboundSchema),
     FilterProjectEnvsTargetProjects2$outboundSchema,
   ]);
 
@@ -5101,15 +5106,17 @@ export function filterProjectEnvsResponseBodyInternalContentHintFromJSON(
 export const Envs$inboundSchema: z.ZodType<Envs, z.ZodTypeDef, unknown> = z
   .object({
     target: z.union([
-      z.array(FilterProjectEnvsTarget1$inboundSchema),
+      z.array(FilterProjectEnvsTargetProjects1$inboundSchema),
       FilterProjectEnvsTargetProjects2$inboundSchema,
     ]).optional(),
     type: FilterProjectEnvsResponseBodyProjectsResponseType$inboundSchema
       .optional(),
     sunsetSecretId: z.string().optional(),
+    decrypted: z.boolean().optional(),
+    value: z.string().optional(),
+    vsmValue: z.string().optional(),
     id: z.string().optional(),
     key: z.string().optional(),
-    value: z.string().optional(),
     configurationId: z.nullable(z.string()).optional(),
     createdAt: z.number().optional(),
     updatedAt: z.number().optional(),
@@ -5142,10 +5149,8 @@ export const Envs$inboundSchema: z.ZodType<Envs, z.ZodTypeDef, unknown> = z
         FilterProjectEnvsResponseBodyInternalContentHint$inboundSchema
       ),
     ).optional(),
-    decrypted: z.boolean().optional(),
     comment: z.string().optional(),
     customEnvironmentIds: z.array(z.string()).optional(),
-    vsmValue: z.string().optional(),
     system: z.boolean().optional(),
   });
 
@@ -5154,9 +5159,11 @@ export type Envs$Outbound = {
   target?: Array<string> | string | undefined;
   type?: string | undefined;
   sunsetSecretId?: string | undefined;
+  decrypted?: boolean | undefined;
+  value?: string | undefined;
+  vsmValue?: string | undefined;
   id?: string | undefined;
   key?: string | undefined;
-  value?: string | undefined;
   configurationId?: string | null | undefined;
   createdAt?: number | undefined;
   updatedAt?: number | undefined;
@@ -5187,10 +5194,8 @@ export type Envs$Outbound = {
     | FilterProjectEnvsResponseBodyInternalContentHint$Outbound
     | null
     | undefined;
-  decrypted?: boolean | undefined;
   comment?: string | undefined;
   customEnvironmentIds?: Array<string> | undefined;
-  vsmValue?: string | undefined;
   system?: boolean | undefined;
 };
 
@@ -5198,15 +5203,17 @@ export type Envs$Outbound = {
 export const Envs$outboundSchema: z.ZodType<Envs$Outbound, z.ZodTypeDef, Envs> =
   z.object({
     target: z.union([
-      z.array(FilterProjectEnvsTarget1$outboundSchema),
+      z.array(FilterProjectEnvsTargetProjects1$outboundSchema),
       FilterProjectEnvsTargetProjects2$outboundSchema,
     ]).optional(),
     type: FilterProjectEnvsResponseBodyProjectsResponseType$outboundSchema
       .optional(),
     sunsetSecretId: z.string().optional(),
+    decrypted: z.boolean().optional(),
+    value: z.string().optional(),
+    vsmValue: z.string().optional(),
     id: z.string().optional(),
     key: z.string().optional(),
-    value: z.string().optional(),
     configurationId: z.nullable(z.string()).optional(),
     createdAt: z.number().optional(),
     updatedAt: z.number().optional(),
@@ -5239,10 +5246,8 @@ export const Envs$outboundSchema: z.ZodType<Envs$Outbound, z.ZodTypeDef, Envs> =
         FilterProjectEnvsResponseBodyInternalContentHint$outboundSchema
       ),
     ).optional(),
-    decrypted: z.boolean().optional(),
     comment: z.string().optional(),
     customEnvironmentIds: z.array(z.string()).optional(),
-    vsmValue: z.string().optional(),
     system: z.boolean().optional(),
   });
 
@@ -5354,11 +5359,35 @@ export namespace FilterProjectEnvsTarget2$ {
 }
 
 /** @internal */
+export const FilterProjectEnvsTarget1$inboundSchema: z.ZodNativeEnum<
+  typeof FilterProjectEnvsTarget1
+> = z.nativeEnum(FilterProjectEnvsTarget1);
+
+/** @internal */
+export const FilterProjectEnvsTarget1$outboundSchema: z.ZodNativeEnum<
+  typeof FilterProjectEnvsTarget1
+> = FilterProjectEnvsTarget1$inboundSchema;
+
+/**
+ * @internal
+ * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
+ */
+export namespace FilterProjectEnvsTarget1$ {
+  /** @deprecated use `FilterProjectEnvsTarget1$inboundSchema` instead. */
+  export const inboundSchema = FilterProjectEnvsTarget1$inboundSchema;
+  /** @deprecated use `FilterProjectEnvsTarget1$outboundSchema` instead. */
+  export const outboundSchema = FilterProjectEnvsTarget1$outboundSchema;
+}
+
+/** @internal */
 export const FilterProjectEnvsResponseBodyTarget$inboundSchema: z.ZodType<
   FilterProjectEnvsResponseBodyTarget,
   z.ZodTypeDef,
   unknown
-> = z.union([z.array(z.string()), FilterProjectEnvsTarget2$inboundSchema]);
+> = z.union([
+  z.array(FilterProjectEnvsTarget1$inboundSchema),
+  FilterProjectEnvsTarget2$inboundSchema,
+]);
 
 /** @internal */
 export type FilterProjectEnvsResponseBodyTarget$Outbound =
@@ -5370,7 +5399,10 @@ export const FilterProjectEnvsResponseBodyTarget$outboundSchema: z.ZodType<
   FilterProjectEnvsResponseBodyTarget$Outbound,
   z.ZodTypeDef,
   FilterProjectEnvsResponseBodyTarget
-> = z.union([z.array(z.string()), FilterProjectEnvsTarget2$outboundSchema]);
+> = z.union([
+  z.array(FilterProjectEnvsTarget1$outboundSchema),
+  FilterProjectEnvsTarget2$outboundSchema,
+]);
 
 /**
  * @internal
@@ -6927,13 +6959,17 @@ export const FilterProjectEnvsResponseBody1$inboundSchema: z.ZodType<
   z.ZodTypeDef,
   unknown
 > = z.object({
-  target: z.union([z.array(z.string()), FilterProjectEnvsTarget2$inboundSchema])
-    .optional(),
+  target: z.union([
+    z.array(FilterProjectEnvsTarget1$inboundSchema),
+    FilterProjectEnvsTarget2$inboundSchema,
+  ]).optional(),
   type: FilterProjectEnvsResponseBodyType$inboundSchema.optional(),
   sunsetSecretId: z.string().optional(),
+  decrypted: z.boolean().optional(),
+  value: z.string().optional(),
+  vsmValue: z.string().optional(),
   id: z.string().optional(),
   key: z.string().optional(),
-  value: z.string().optional(),
   configurationId: z.nullable(z.string()).optional(),
   createdAt: z.number().optional(),
   updatedAt: z.number().optional(),
@@ -6964,10 +7000,8 @@ export const FilterProjectEnvsResponseBody1$inboundSchema: z.ZodType<
   internalContentHint: z.nullable(
     z.lazy(() => ResponseBodyInternalContentHint$inboundSchema),
   ).optional(),
-  decrypted: z.boolean().optional(),
   comment: z.string().optional(),
   customEnvironmentIds: z.array(z.string()).optional(),
-  vsmValue: z.string().optional(),
   system: z.boolean().optional(),
 });
 
@@ -6976,9 +7010,11 @@ export type FilterProjectEnvsResponseBody1$Outbound = {
   target?: Array<string> | string | undefined;
   type?: string | undefined;
   sunsetSecretId?: string | undefined;
+  decrypted?: boolean | undefined;
+  value?: string | undefined;
+  vsmValue?: string | undefined;
   id?: string | undefined;
   key?: string | undefined;
-  value?: string | undefined;
   configurationId?: string | null | undefined;
   createdAt?: number | undefined;
   updatedAt?: number | undefined;
@@ -7009,10 +7045,8 @@ export type FilterProjectEnvsResponseBody1$Outbound = {
     | ResponseBodyInternalContentHint$Outbound
     | null
     | undefined;
-  decrypted?: boolean | undefined;
   comment?: string | undefined;
   customEnvironmentIds?: Array<string> | undefined;
-  vsmValue?: string | undefined;
   system?: boolean | undefined;
 };
 
@@ -7023,14 +7057,16 @@ export const FilterProjectEnvsResponseBody1$outboundSchema: z.ZodType<
   FilterProjectEnvsResponseBody1
 > = z.object({
   target: z.union([
-    z.array(z.string()),
+    z.array(FilterProjectEnvsTarget1$outboundSchema),
     FilterProjectEnvsTarget2$outboundSchema,
   ]).optional(),
   type: FilterProjectEnvsResponseBodyType$outboundSchema.optional(),
   sunsetSecretId: z.string().optional(),
+  decrypted: z.boolean().optional(),
+  value: z.string().optional(),
+  vsmValue: z.string().optional(),
   id: z.string().optional(),
   key: z.string().optional(),
-  value: z.string().optional(),
   configurationId: z.nullable(z.string()).optional(),
   createdAt: z.number().optional(),
   updatedAt: z.number().optional(),
@@ -7061,10 +7097,8 @@ export const FilterProjectEnvsResponseBody1$outboundSchema: z.ZodType<
   internalContentHint: z.nullable(
     z.lazy(() => ResponseBodyInternalContentHint$outboundSchema),
   ).optional(),
-  decrypted: z.boolean().optional(),
   comment: z.string().optional(),
   customEnvironmentIds: z.array(z.string()).optional(),
-  vsmValue: z.string().optional(),
   system: z.boolean().optional(),
 });
 

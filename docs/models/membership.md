@@ -9,10 +9,10 @@ import { Membership } from "@vercel/sdk/models/teamlimited.js";
 
 let value: Membership = {
   confirmed: false,
-  confirmedAt: 3727.37,
-  role: "CONTRIBUTOR",
-  createdAt: 3319.27,
-  created: 414.36,
+  confirmedAt: 5378.67,
+  role: "OWNER",
+  createdAt: 2058.4,
+  created: 8507.09,
 };
 ```
 
@@ -26,7 +26,8 @@ let value: Membership = {
 | `confirmedAt`                                            | *number*                                                 | :heavy_check_mark:                                       | N/A                                                      |
 | `accessRequestedAt`                                      | *number*                                                 | :heavy_minus_sign:                                       | N/A                                                      |
 | `role`                                                   | [models.Role](../models/role.md)                         | :heavy_check_mark:                                       | N/A                                                      |
-| `additionalRoles`                                        | [models.AdditionalRoles](../models/additionalroles.md)[] | :heavy_minus_sign:                                       | N/A                                                      |
+| `teamRoles`                                              | [models.TeamRoles](../models/teamroles.md)[]             | :heavy_minus_sign:                                       | N/A                                                      |
+| `teamPermissions`                                        | [models.TeamPermissions](../models/teampermissions.md)[] | :heavy_minus_sign:                                       | N/A                                                      |
 | `teamId`                                                 | *string*                                                 | :heavy_minus_sign:                                       | N/A                                                      |
 | `createdAt`                                              | *number*                                                 | :heavy_check_mark:                                       | N/A                                                      |
 | `created`                                                | *number*                                                 | :heavy_check_mark:                                       | N/A                                                      |

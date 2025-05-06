@@ -15,6 +15,7 @@ import { projectsGetProjectDomains } from "../funcs/projectsGetProjectDomains.js
 import { projectsGetProjectEnv } from "../funcs/projectsGetProjectEnv.js";
 import { projectsGetProjects } from "../funcs/projectsGetProjects.js";
 import { projectsListPromoteAliases } from "../funcs/projectsListPromoteAliases.js";
+import { projectsMoveProjectDomain } from "../funcs/projectsMoveProjectDomain.js";
 import { projectsRemoveProjectDomain } from "../funcs/projectsRemoveProjectDomain.js";
 import { projectsRemoveProjectEnv } from "../funcs/projectsRemoveProjectEnv.js";
 import { projectsRequestPromote } from "../funcs/projectsRequestPromote.js";
@@ -73,6 +74,10 @@ import {
   ListPromoteAliasesRequest,
   ListPromoteAliasesResponseBody,
 } from "../models/listpromotealiasesop.js";
+import {
+  MoveProjectDomainRequest,
+  MoveProjectDomainResponseBody,
+} from "../models/moveprojectdomainop.js";
 import {
   RemoveProjectDomainRequest,
   RemoveProjectDomainResponseBody,
@@ -276,6 +281,23 @@ export class Projects extends ClientSDK {
   }
 
   /**
+   * Move a project domain
+   *
+   * @remarks
+   * Move one project's domain to another project. Also allows the move of all redirects pointed to that domain in the same project.
+   */
+  async moveProjectDomain(
+    request: MoveProjectDomainRequest,
+    options?: RequestOptions,
+  ): Promise<MoveProjectDomainResponseBody> {
+    return unwrapAsync(projectsMoveProjectDomain(
+      this,
+      request,
+      options,
+    ));
+  }
+
+  /**
    * Verify project domain
    *
    * @remarks
@@ -310,23 +332,6 @@ export class Projects extends ClientSDK {
   }
 
   /**
-   * Retrieve the decrypted value of an environment variable of a project by id
-   *
-   * @remarks
-   * Retrieve the environment variable for a given project.
-   */
-  async getProjectEnv(
-    request: GetProjectEnvRequest,
-    options?: RequestOptions,
-  ): Promise<GetProjectEnvResponseBody> {
-    return unwrapAsync(projectsGetProjectEnv(
-      this,
-      request,
-      options,
-    ));
-  }
-
-  /**
    * Create one or more environment variables
    *
    * @remarks
@@ -337,6 +342,23 @@ export class Projects extends ClientSDK {
     options?: RequestOptions,
   ): Promise<CreateProjectEnvResponseBody> {
     return unwrapAsync(projectsCreateProjectEnv(
+      this,
+      request,
+      options,
+    ));
+  }
+
+  /**
+   * Retrieve the decrypted value of an environment variable of a project by id
+   *
+   * @remarks
+   * Retrieve the environment variable for a given project.
+   */
+  async getProjectEnv(
+    request: GetProjectEnvRequest,
+    options?: RequestOptions,
+  ): Promise<GetProjectEnvResponseBody> {
+    return unwrapAsync(projectsGetProjectEnv(
       this,
       request,
       options,

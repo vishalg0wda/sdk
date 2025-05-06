@@ -9,7 +9,26 @@ import { ListUserEventsResponseBody } from "@vercel/sdk/models/listusereventsop.
 
 let value: ListUserEventsResponseBody = {
   events: [
-    {},
+    {
+      id: "uev_bfmMjiMnXfnPbT97dGdpJbCN",
+      text: "You logged in via GitHub",
+      entities: [
+        {
+          type: "author",
+          start: 0,
+          end: 3,
+        },
+      ],
+      createdAt: 1632859321020,
+      userId: "zTuNVUXEAvvnNN3IaqinkyMw",
+      payload: {
+        projectName: "<value>",
+        passwordProtection: "all",
+        oldPasswordProtection: {
+          deploymentType: "all",
+        },
+      },
+    },
   ],
 };
 ```

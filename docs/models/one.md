@@ -1,23 +1,16 @@
 # One
 
-A list of projects and spaces across teams that a user has marked as a favorite.
+The payload of the event, if requested.
 
 ## Example Usage
 
 ```typescript
-import { One } from "@vercel/sdk/models/authuser.js";
+import { One } from "@vercel/sdk/models/userevent.js";
 
-let value: One = {
-  projectId: "<id>",
-  scopeSlug: "<value>",
-  scopeId: "<id>",
-};
+let value: One = {};
 ```
 
 ## Fields
 
-| Field              | Type               | Required           | Description        |
-| ------------------ | ------------------ | ------------------ | ------------------ |
-| `projectId`        | *string*           | :heavy_check_mark: | N/A                |
-| `scopeSlug`        | *string*           | :heavy_check_mark: | N/A                |
-| `scopeId`          | *string*           | :heavy_check_mark: | N/A                |
+| Field       | Type        | Required    | Description |
+| ----------- | ----------- | ----------- | ----------- |

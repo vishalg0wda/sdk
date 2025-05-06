@@ -58,6 +58,10 @@ export type Two2 = {
    * A comment to add context on what this environment variable is for
    */
   comment?: string | undefined;
+  /**
+   * The custom environment IDs associated with the environment variable
+   */
+  customEnvironmentIds: Array<string>;
 };
 
 /**
@@ -107,6 +111,10 @@ export type Two1 = {
    * A comment to add context on what this environment variable is for
    */
   comment?: string | undefined;
+  /**
+   * The custom environment IDs associated with the environment variable
+   */
+  customEnvironmentIds?: Array<string> | undefined;
 };
 
 export type CreateProjectEnvRequestBody2 = Two1 | Two2;
@@ -160,6 +168,10 @@ export type CreateProjectEnv12 = {
    * A comment to add context on what this environment variable is for
    */
   comment?: string | undefined;
+  /**
+   * The custom environment IDs associated with the environment variable
+   */
+  customEnvironmentIds: Array<string>;
 };
 
 /**
@@ -209,6 +221,10 @@ export type CreateProjectEnv11 = {
    * A comment to add context on what this environment variable is for
    */
   comment?: string | undefined;
+  /**
+   * The custom environment IDs associated with the environment variable
+   */
+  customEnvironmentIds?: Array<string> | undefined;
 };
 
 export type CreateProjectEnvRequestBody1 =
@@ -534,9 +550,11 @@ export type Created2 = {
    * This is used to identiy variables that have been migrated from type secret to sensitive.
    */
   sunsetSecretId?: string | undefined;
+  decrypted?: boolean | undefined;
+  value?: string | undefined;
+  vsmValue?: string | undefined;
   id?: string | undefined;
   key?: string | undefined;
-  value?: string | undefined;
   configurationId?: string | null | undefined;
   createdAt?: number | undefined;
   updatedAt?: number | undefined;
@@ -570,13 +588,8 @@ export type Created2 = {
     | CreateProjectEnvCreatedInternalContentHint
     | null
     | undefined;
-  /**
-   * Whether `value` and `vsmValue` are decrypted.
-   */
-  decrypted?: boolean | undefined;
   comment?: string | undefined;
   customEnvironmentIds?: Array<string> | undefined;
-  vsmValue?: string | undefined;
   system?: boolean | undefined;
 };
 
@@ -868,9 +881,11 @@ export type Created1 = {
    * This is used to identiy variables that have been migrated from type secret to sensitive.
    */
   sunsetSecretId?: string | undefined;
+  decrypted?: boolean | undefined;
+  value?: string | undefined;
+  vsmValue?: string | undefined;
   id?: string | undefined;
   key?: string | undefined;
-  value?: string | undefined;
   configurationId?: string | null | undefined;
   createdAt?: number | undefined;
   updatedAt?: number | undefined;
@@ -901,26 +916,21 @@ export type Created1 = {
    * Similar to `contentHints`, but should not be exposed to the user.
    */
   internalContentHint?: CreatedInternalContentHint | null | undefined;
-  /**
-   * Whether `value` and `vsmValue` are decrypted.
-   */
-  decrypted?: boolean | undefined;
   comment?: string | undefined;
   customEnvironmentIds?: Array<string> | undefined;
-  vsmValue?: string | undefined;
   system?: boolean | undefined;
 };
 
 export type Created = Created1 | Array<Created2>;
 
-export const CreateProjectEnvValue2 = {
+export const Value2 = {
   Production: "production",
   Preview: "preview",
   Development: "development",
 } as const;
-export type CreateProjectEnvValue2 = ClosedEnum<typeof CreateProjectEnvValue2>;
+export type Value2 = ClosedEnum<typeof Value2>;
 
-export type CreateProjectEnvValue = string | Array<CreateProjectEnvValue2>;
+export type CreateProjectEnvValue = string | Array<Value2>;
 
 export const CreateProjectEnvTargetProjectsResponse2 = {
   Production: "production",
@@ -952,7 +962,7 @@ export type CreateProjectEnvError = {
   envVarKey?: string | undefined;
   action?: string | undefined;
   link?: string | undefined;
-  value?: string | Array<CreateProjectEnvValue2> | undefined;
+  value?: string | Array<Value2> | undefined;
   gitBranch?: string | undefined;
   target?:
     | Array<CreateProjectEnvTargetProjects1>
@@ -1024,6 +1034,7 @@ export const Two2$inboundSchema: z.ZodType<Two2, z.ZodTypeDef, unknown> = z
     target: z.array(CreateProjectEnv2Target$inboundSchema).optional(),
     gitBranch: z.nullable(z.string()).optional(),
     comment: z.string().optional(),
+    customEnvironmentIds: z.array(z.string()),
   });
 
 /** @internal */
@@ -1034,6 +1045,7 @@ export type Two2$Outbound = {
   target?: Array<string> | undefined;
   gitBranch?: string | null | undefined;
   comment?: string | undefined;
+  customEnvironmentIds: Array<string>;
 };
 
 /** @internal */
@@ -1045,6 +1057,7 @@ export const Two2$outboundSchema: z.ZodType<Two2$Outbound, z.ZodTypeDef, Two2> =
     target: z.array(CreateProjectEnv2Target$outboundSchema).optional(),
     gitBranch: z.nullable(z.string()).optional(),
     comment: z.string().optional(),
+    customEnvironmentIds: z.array(z.string()),
   });
 
 /**
@@ -1121,6 +1134,7 @@ export const Two1$inboundSchema: z.ZodType<Two1, z.ZodTypeDef, unknown> = z
     target: z.array(TwoTarget$inboundSchema),
     gitBranch: z.nullable(z.string()).optional(),
     comment: z.string().optional(),
+    customEnvironmentIds: z.array(z.string()).optional(),
   });
 
 /** @internal */
@@ -1131,6 +1145,7 @@ export type Two1$Outbound = {
   target: Array<string>;
   gitBranch?: string | null | undefined;
   comment?: string | undefined;
+  customEnvironmentIds?: Array<string> | undefined;
 };
 
 /** @internal */
@@ -1142,6 +1157,7 @@ export const Two1$outboundSchema: z.ZodType<Two1$Outbound, z.ZodTypeDef, Two1> =
     target: z.array(TwoTarget$outboundSchema),
     gitBranch: z.nullable(z.string()).optional(),
     comment: z.string().optional(),
+    customEnvironmentIds: z.array(z.string()).optional(),
   });
 
 /**
@@ -1283,6 +1299,7 @@ export const CreateProjectEnv12$inboundSchema: z.ZodType<
   target: z.array(CreateProjectEnv1Target$inboundSchema).optional(),
   gitBranch: z.nullable(z.string()).optional(),
   comment: z.string().optional(),
+  customEnvironmentIds: z.array(z.string()),
 });
 
 /** @internal */
@@ -1293,6 +1310,7 @@ export type CreateProjectEnv12$Outbound = {
   target?: Array<string> | undefined;
   gitBranch?: string | null | undefined;
   comment?: string | undefined;
+  customEnvironmentIds: Array<string>;
 };
 
 /** @internal */
@@ -1307,6 +1325,7 @@ export const CreateProjectEnv12$outboundSchema: z.ZodType<
   target: z.array(CreateProjectEnv1Target$outboundSchema).optional(),
   gitBranch: z.nullable(z.string()).optional(),
   comment: z.string().optional(),
+  customEnvironmentIds: z.array(z.string()),
 });
 
 /**
@@ -1390,6 +1409,7 @@ export const CreateProjectEnv11$inboundSchema: z.ZodType<
   target: z.array(OneTarget$inboundSchema),
   gitBranch: z.nullable(z.string()).optional(),
   comment: z.string().optional(),
+  customEnvironmentIds: z.array(z.string()).optional(),
 });
 
 /** @internal */
@@ -1400,6 +1420,7 @@ export type CreateProjectEnv11$Outbound = {
   target: Array<string>;
   gitBranch?: string | null | undefined;
   comment?: string | undefined;
+  customEnvironmentIds?: Array<string> | undefined;
 };
 
 /** @internal */
@@ -1414,6 +1435,7 @@ export const CreateProjectEnv11$outboundSchema: z.ZodType<
   target: z.array(OneTarget$outboundSchema),
   gitBranch: z.nullable(z.string()).optional(),
   comment: z.string().optional(),
+  customEnvironmentIds: z.array(z.string()).optional(),
 });
 
 /**
@@ -3367,9 +3389,11 @@ export const Created2$inboundSchema: z.ZodType<
   ]).optional(),
   type: CreateProjectEnvCreatedType$inboundSchema.optional(),
   sunsetSecretId: z.string().optional(),
+  decrypted: z.boolean().optional(),
+  value: z.string().optional(),
+  vsmValue: z.string().optional(),
   id: z.string().optional(),
   key: z.string().optional(),
-  value: z.string().optional(),
   configurationId: z.nullable(z.string()).optional(),
   createdAt: z.number().optional(),
   updatedAt: z.number().optional(),
@@ -3400,10 +3424,8 @@ export const Created2$inboundSchema: z.ZodType<
   internalContentHint: z.nullable(
     z.lazy(() => CreateProjectEnvCreatedInternalContentHint$inboundSchema),
   ).optional(),
-  decrypted: z.boolean().optional(),
   comment: z.string().optional(),
   customEnvironmentIds: z.array(z.string()).optional(),
-  vsmValue: z.string().optional(),
   system: z.boolean().optional(),
 });
 
@@ -3412,9 +3434,11 @@ export type Created2$Outbound = {
   target?: Array<string> | string | undefined;
   type?: string | undefined;
   sunsetSecretId?: string | undefined;
+  decrypted?: boolean | undefined;
+  value?: string | undefined;
+  vsmValue?: string | undefined;
   id?: string | undefined;
   key?: string | undefined;
-  value?: string | undefined;
   configurationId?: string | null | undefined;
   createdAt?: number | undefined;
   updatedAt?: number | undefined;
@@ -3445,10 +3469,8 @@ export type Created2$Outbound = {
     | CreateProjectEnvCreatedInternalContentHint$Outbound
     | null
     | undefined;
-  decrypted?: boolean | undefined;
   comment?: string | undefined;
   customEnvironmentIds?: Array<string> | undefined;
-  vsmValue?: string | undefined;
   system?: boolean | undefined;
 };
 
@@ -3464,9 +3486,11 @@ export const Created2$outboundSchema: z.ZodType<
   ]).optional(),
   type: CreateProjectEnvCreatedType$outboundSchema.optional(),
   sunsetSecretId: z.string().optional(),
+  decrypted: z.boolean().optional(),
+  value: z.string().optional(),
+  vsmValue: z.string().optional(),
   id: z.string().optional(),
   key: z.string().optional(),
-  value: z.string().optional(),
   configurationId: z.nullable(z.string()).optional(),
   createdAt: z.number().optional(),
   updatedAt: z.number().optional(),
@@ -3497,10 +3521,8 @@ export const Created2$outboundSchema: z.ZodType<
   internalContentHint: z.nullable(
     z.lazy(() => CreateProjectEnvCreatedInternalContentHint$outboundSchema),
   ).optional(),
-  decrypted: z.boolean().optional(),
   comment: z.string().optional(),
   customEnvironmentIds: z.array(z.string()).optional(),
-  vsmValue: z.string().optional(),
   system: z.boolean().optional(),
 });
 
@@ -5143,9 +5165,11 @@ export const Created1$inboundSchema: z.ZodType<
   ]).optional(),
   type: CreatedType$inboundSchema.optional(),
   sunsetSecretId: z.string().optional(),
+  decrypted: z.boolean().optional(),
+  value: z.string().optional(),
+  vsmValue: z.string().optional(),
   id: z.string().optional(),
   key: z.string().optional(),
-  value: z.string().optional(),
   configurationId: z.nullable(z.string()).optional(),
   createdAt: z.number().optional(),
   updatedAt: z.number().optional(),
@@ -5176,10 +5200,8 @@ export const Created1$inboundSchema: z.ZodType<
   internalContentHint: z.nullable(
     z.lazy(() => CreatedInternalContentHint$inboundSchema),
   ).optional(),
-  decrypted: z.boolean().optional(),
   comment: z.string().optional(),
   customEnvironmentIds: z.array(z.string()).optional(),
-  vsmValue: z.string().optional(),
   system: z.boolean().optional(),
 });
 
@@ -5188,9 +5210,11 @@ export type Created1$Outbound = {
   target?: Array<string> | string | undefined;
   type?: string | undefined;
   sunsetSecretId?: string | undefined;
+  decrypted?: boolean | undefined;
+  value?: string | undefined;
+  vsmValue?: string | undefined;
   id?: string | undefined;
   key?: string | undefined;
-  value?: string | undefined;
   configurationId?: string | null | undefined;
   createdAt?: number | undefined;
   updatedAt?: number | undefined;
@@ -5218,10 +5242,8 @@ export type Created1$Outbound = {
     | null
     | undefined;
   internalContentHint?: CreatedInternalContentHint$Outbound | null | undefined;
-  decrypted?: boolean | undefined;
   comment?: string | undefined;
   customEnvironmentIds?: Array<string> | undefined;
-  vsmValue?: string | undefined;
   system?: boolean | undefined;
 };
 
@@ -5237,9 +5259,11 @@ export const Created1$outboundSchema: z.ZodType<
   ]).optional(),
   type: CreatedType$outboundSchema.optional(),
   sunsetSecretId: z.string().optional(),
+  decrypted: z.boolean().optional(),
+  value: z.string().optional(),
+  vsmValue: z.string().optional(),
   id: z.string().optional(),
   key: z.string().optional(),
-  value: z.string().optional(),
   configurationId: z.nullable(z.string()).optional(),
   createdAt: z.number().optional(),
   updatedAt: z.number().optional(),
@@ -5270,10 +5294,8 @@ export const Created1$outboundSchema: z.ZodType<
   internalContentHint: z.nullable(
     z.lazy(() => CreatedInternalContentHint$outboundSchema),
   ).optional(),
-  decrypted: z.boolean().optional(),
   comment: z.string().optional(),
   customEnvironmentIds: z.array(z.string()).optional(),
-  vsmValue: z.string().optional(),
   system: z.boolean().optional(),
 });
 
@@ -5352,24 +5374,22 @@ export function createdFromJSON(
 }
 
 /** @internal */
-export const CreateProjectEnvValue2$inboundSchema: z.ZodNativeEnum<
-  typeof CreateProjectEnvValue2
-> = z.nativeEnum(CreateProjectEnvValue2);
+export const Value2$inboundSchema: z.ZodNativeEnum<typeof Value2> = z
+  .nativeEnum(Value2);
 
 /** @internal */
-export const CreateProjectEnvValue2$outboundSchema: z.ZodNativeEnum<
-  typeof CreateProjectEnvValue2
-> = CreateProjectEnvValue2$inboundSchema;
+export const Value2$outboundSchema: z.ZodNativeEnum<typeof Value2> =
+  Value2$inboundSchema;
 
 /**
  * @internal
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
-export namespace CreateProjectEnvValue2$ {
-  /** @deprecated use `CreateProjectEnvValue2$inboundSchema` instead. */
-  export const inboundSchema = CreateProjectEnvValue2$inboundSchema;
-  /** @deprecated use `CreateProjectEnvValue2$outboundSchema` instead. */
-  export const outboundSchema = CreateProjectEnvValue2$outboundSchema;
+export namespace Value2$ {
+  /** @deprecated use `Value2$inboundSchema` instead. */
+  export const inboundSchema = Value2$inboundSchema;
+  /** @deprecated use `Value2$outboundSchema` instead. */
+  export const outboundSchema = Value2$outboundSchema;
 }
 
 /** @internal */
@@ -5377,7 +5397,7 @@ export const CreateProjectEnvValue$inboundSchema: z.ZodType<
   CreateProjectEnvValue,
   z.ZodTypeDef,
   unknown
-> = z.union([z.string(), z.array(CreateProjectEnvValue2$inboundSchema)]);
+> = z.union([z.string(), z.array(Value2$inboundSchema)]);
 
 /** @internal */
 export type CreateProjectEnvValue$Outbound = string | Array<string>;
@@ -5387,7 +5407,7 @@ export const CreateProjectEnvValue$outboundSchema: z.ZodType<
   CreateProjectEnvValue$Outbound,
   z.ZodTypeDef,
   CreateProjectEnvValue
-> = z.union([z.string(), z.array(CreateProjectEnvValue2$outboundSchema)]);
+> = z.union([z.string(), z.array(Value2$outboundSchema)]);
 
 /**
  * @internal
@@ -5531,8 +5551,7 @@ export const CreateProjectEnvError$inboundSchema: z.ZodType<
   envVarKey: z.string().optional(),
   action: z.string().optional(),
   link: z.string().optional(),
-  value: z.union([z.string(), z.array(CreateProjectEnvValue2$inboundSchema)])
-    .optional(),
+  value: z.union([z.string(), z.array(Value2$inboundSchema)]).optional(),
   gitBranch: z.string().optional(),
   target: z.union([
     z.array(CreateProjectEnvTargetProjects1$inboundSchema),
@@ -5569,8 +5588,7 @@ export const CreateProjectEnvError$outboundSchema: z.ZodType<
   envVarKey: z.string().optional(),
   action: z.string().optional(),
   link: z.string().optional(),
-  value: z.union([z.string(), z.array(CreateProjectEnvValue2$outboundSchema)])
-    .optional(),
+  value: z.union([z.string(), z.array(Value2$outboundSchema)]).optional(),
   gitBranch: z.string().optional(),
   target: z.union([
     z.array(CreateProjectEnvTargetProjects1$outboundSchema),

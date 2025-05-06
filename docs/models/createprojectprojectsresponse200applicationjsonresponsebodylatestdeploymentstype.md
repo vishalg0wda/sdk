@@ -1,5 +1,7 @@
 # CreateProjectProjectsResponse200ApplicationJSONResponseBodyLatestDeploymentsType
 
+The type of matching to perform
+
 ## Example Usage
 
 ```typescript
@@ -7,7 +9,7 @@ import { CreateProjectProjectsResponse200ApplicationJSONResponseBodyLatestDeploy
 
 let value:
   CreateProjectProjectsResponse200ApplicationJSONResponseBodyLatestDeploymentsType =
-    "equals";
+    "endsWith";
 ```
 
 ## Values

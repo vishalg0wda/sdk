@@ -3,9 +3,21 @@
  */
 
 import * as z from "zod";
+import { remap as remap$ } from "../lib/primitives.js";
 import { safeParse } from "../lib/schemas.js";
 import { Result as SafeParseResult } from "../types/fp.js";
 import { SDKValidationError } from "./sdkvalidationerror.js";
+
+export type CreateProjectTransferRequestRequestBody = {
+  /**
+   * The URL to send a webhook to when the transfer is accepted.
+   */
+  callbackUrl?: string | undefined;
+  /**
+   * The secret to use to sign the webhook payload with HMAC-SHA256.
+   */
+  callbackSecret?: string | undefined;
+};
 
 export type CreateProjectTransferRequestRequest = {
   /**
@@ -20,12 +32,86 @@ export type CreateProjectTransferRequestRequest = {
    * The Team slug to perform the request on behalf of.
    */
   slug?: string | undefined;
+  requestBody?: CreateProjectTransferRequestRequestBody | undefined;
 };
 
 /**
  * The project transfer request has been initiated successfully.
  */
-export type CreateProjectTransferRequestResponseBody = {};
+export type CreateProjectTransferRequestResponseBody = {
+  /**
+   * Code that can be used to accept the project transfer request.
+   */
+  code: string;
+};
+
+/** @internal */
+export const CreateProjectTransferRequestRequestBody$inboundSchema: z.ZodType<
+  CreateProjectTransferRequestRequestBody,
+  z.ZodTypeDef,
+  unknown
+> = z.object({
+  callbackUrl: z.string().optional(),
+  callbackSecret: z.string().optional(),
+});
+
+/** @internal */
+export type CreateProjectTransferRequestRequestBody$Outbound = {
+  callbackUrl?: string | undefined;
+  callbackSecret?: string | undefined;
+};
+
+/** @internal */
+export const CreateProjectTransferRequestRequestBody$outboundSchema: z.ZodType<
+  CreateProjectTransferRequestRequestBody$Outbound,
+  z.ZodTypeDef,
+  CreateProjectTransferRequestRequestBody
+> = z.object({
+  callbackUrl: z.string().optional(),
+  callbackSecret: z.string().optional(),
+});
+
+/**
+ * @internal
+ * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
+ */
+export namespace CreateProjectTransferRequestRequestBody$ {
+  /** @deprecated use `CreateProjectTransferRequestRequestBody$inboundSchema` instead. */
+  export const inboundSchema =
+    CreateProjectTransferRequestRequestBody$inboundSchema;
+  /** @deprecated use `CreateProjectTransferRequestRequestBody$outboundSchema` instead. */
+  export const outboundSchema =
+    CreateProjectTransferRequestRequestBody$outboundSchema;
+  /** @deprecated use `CreateProjectTransferRequestRequestBody$Outbound` instead. */
+  export type Outbound = CreateProjectTransferRequestRequestBody$Outbound;
+}
+
+export function createProjectTransferRequestRequestBodyToJSON(
+  createProjectTransferRequestRequestBody:
+    CreateProjectTransferRequestRequestBody,
+): string {
+  return JSON.stringify(
+    CreateProjectTransferRequestRequestBody$outboundSchema.parse(
+      createProjectTransferRequestRequestBody,
+    ),
+  );
+}
+
+export function createProjectTransferRequestRequestBodyFromJSON(
+  jsonString: string,
+): SafeParseResult<
+  CreateProjectTransferRequestRequestBody,
+  SDKValidationError
+> {
+  return safeParse(
+    jsonString,
+    (x) =>
+      CreateProjectTransferRequestRequestBody$inboundSchema.parse(
+        JSON.parse(x),
+      ),
+    `Failed to parse 'CreateProjectTransferRequestRequestBody' from JSON`,
+  );
+}
 
 /** @internal */
 export const CreateProjectTransferRequestRequest$inboundSchema: z.ZodType<
@@ -36,6 +122,13 @@ export const CreateProjectTransferRequestRequest$inboundSchema: z.ZodType<
   idOrName: z.string(),
   teamId: z.string().optional(),
   slug: z.string().optional(),
+  RequestBody: z.lazy(() =>
+    CreateProjectTransferRequestRequestBody$inboundSchema
+  ).optional(),
+}).transform((v) => {
+  return remap$(v, {
+    "RequestBody": "requestBody",
+  });
 });
 
 /** @internal */
@@ -43,6 +136,7 @@ export type CreateProjectTransferRequestRequest$Outbound = {
   idOrName: string;
   teamId?: string | undefined;
   slug?: string | undefined;
+  RequestBody?: CreateProjectTransferRequestRequestBody$Outbound | undefined;
 };
 
 /** @internal */
@@ -54,6 +148,13 @@ export const CreateProjectTransferRequestRequest$outboundSchema: z.ZodType<
   idOrName: z.string(),
   teamId: z.string().optional(),
   slug: z.string().optional(),
+  requestBody: z.lazy(() =>
+    CreateProjectTransferRequestRequestBody$outboundSchema
+  ).optional(),
+}).transform((v) => {
+  return remap$(v, {
+    requestBody: "RequestBody",
+  });
 });
 
 /**
@@ -97,17 +198,23 @@ export const CreateProjectTransferRequestResponseBody$inboundSchema: z.ZodType<
   CreateProjectTransferRequestResponseBody,
   z.ZodTypeDef,
   unknown
-> = z.object({});
+> = z.object({
+  code: z.string(),
+});
 
 /** @internal */
-export type CreateProjectTransferRequestResponseBody$Outbound = {};
+export type CreateProjectTransferRequestResponseBody$Outbound = {
+  code: string;
+};
 
 /** @internal */
 export const CreateProjectTransferRequestResponseBody$outboundSchema: z.ZodType<
   CreateProjectTransferRequestResponseBody$Outbound,
   z.ZodTypeDef,
   CreateProjectTransferRequestResponseBody
-> = z.object({});
+> = z.object({
+  code: z.string(),
+});
 
 /**
  * @internal

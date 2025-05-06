@@ -8,12 +8,18 @@
 ```typescript
 const value: models.GetEdgeConfigBackupResponseBody1 = {
   id: "<id>",
-  lastModified: 8996.52,
+  lastModified: 4249.81,
   backup: {
     digest: "<value>",
-    items: {},
+    items: {
+      "key": {
+        updatedAt: 3692.05,
+        value: "<value>",
+        createdAt: 2028.84,
+      },
+    },
     slug: "<value>",
-    updatedAt: 1164.63,
+    updatedAt: 7674.05,
   },
   metadata: {},
 };
@@ -25,16 +31,22 @@ const value: models.GetEdgeConfigBackupResponseBody1 = {
 const value: models.GetEdgeConfigBackupResponseBody2 = {
   user: {
     id: "<id>",
-    username: "Carter42",
-    email: "Okey.Bartoletti@hotmail.com",
+    username: "Cheyanne.Hegmann",
+    email: "Heber_VonRueden@yahoo.com",
   },
   id: "<id>",
-  lastModified: 2312.55,
+  lastModified: 4430.93,
   backup: {
     digest: "<value>",
-    items: {},
+    items: {
+      "key": {
+        updatedAt: 5365.21,
+        value: "<value>",
+        createdAt: 794.08,
+      },
+    },
     slug: "<value>",
-    updatedAt: 3078.74,
+    updatedAt: 1890.92,
   },
   metadata: {},
 };

@@ -53,10 +53,6 @@ export type GetTeamMembersRequest = {
    * Include team members who are eligible to be members of the specified project.
    */
   eligibleMembersForProjectId?: string | undefined;
-  /**
-   * The Team identifier to perform the request on behalf of.
-   */
-  teamId: string;
 };
 
 /**
@@ -90,6 +86,7 @@ export const GetTeamMembersRole = {
   Viewer: "VIEWER",
   Billing: "BILLING",
   Contributor: "CONTRIBUTOR",
+  Security: "SECURITY",
 } as const;
 /**
  * Role of this user in the team.
@@ -99,12 +96,12 @@ export type GetTeamMembersRole = ClosedEnum<typeof GetTeamMembersRole>;
 export const GetTeamMembersOrigin = {
   Teams: "teams",
   Link: "link",
-  Mail: "mail",
-  Import: "import",
+  Saml: "saml",
   Github: "github",
   Gitlab: "gitlab",
   Bitbucket: "bitbucket",
-  Saml: "saml",
+  Mail: "mail",
+  Import: "import",
   Dsync: "dsync",
   Feedback: "feedback",
   OrganizationTeams: "organization-teams",
@@ -178,10 +175,6 @@ export type GetTeamMembersMembers = {
    */
   role: GetTeamMembersRole;
   /**
-   * Permissions that this user has in addition to their role.
-   */
-  additionalRoles?: Array<string> | undefined;
-  /**
    * The ID of this user.
    */
   uid: string;
@@ -218,6 +211,7 @@ export const GetTeamMembersTeamsRole = {
   Viewer: "VIEWER",
   Billing: "BILLING",
   Contributor: "CONTRIBUTOR",
+  Security: "SECURITY",
 } as const;
 export type GetTeamMembersTeamsRole = ClosedEnum<
   typeof GetTeamMembersTeamsRole
@@ -300,7 +294,6 @@ export const GetTeamMembersRequest$inboundSchema: z.ZodType<
   role: QueryParamRole$inboundSchema.optional(),
   excludeProject: z.string().optional(),
   eligibleMembersForProjectId: z.string().optional(),
-  teamId: z.string(),
 });
 
 /** @internal */
@@ -312,7 +305,6 @@ export type GetTeamMembersRequest$Outbound = {
   role?: string | undefined;
   excludeProject?: string | undefined;
   eligibleMembersForProjectId?: string | undefined;
-  teamId: string;
 };
 
 /** @internal */
@@ -328,7 +320,6 @@ export const GetTeamMembersRequest$outboundSchema: z.ZodType<
   role: QueryParamRole$outboundSchema.optional(),
   excludeProject: z.string().optional(),
   eligibleMembersForProjectId: z.string().optional(),
-  teamId: z.string(),
 });
 
 /**
@@ -792,7 +783,6 @@ export const GetTeamMembersMembers$inboundSchema: z.ZodType<
   gitlab: z.lazy(() => GetTeamMembersGitlab$inboundSchema).optional(),
   bitbucket: z.lazy(() => GetTeamMembersBitbucket$inboundSchema).optional(),
   role: GetTeamMembersRole$inboundSchema,
-  additionalRoles: z.array(z.string()).optional(),
   uid: z.string(),
   username: z.string(),
   name: z.string().optional(),
@@ -812,7 +802,6 @@ export type GetTeamMembersMembers$Outbound = {
   gitlab?: GetTeamMembersGitlab$Outbound | undefined;
   bitbucket?: GetTeamMembersBitbucket$Outbound | undefined;
   role: string;
-  additionalRoles?: Array<string> | undefined;
   uid: string;
   username: string;
   name?: string | undefined;
@@ -835,7 +824,6 @@ export const GetTeamMembersMembers$outboundSchema: z.ZodType<
   gitlab: z.lazy(() => GetTeamMembersGitlab$outboundSchema).optional(),
   bitbucket: z.lazy(() => GetTeamMembersBitbucket$outboundSchema).optional(),
   role: GetTeamMembersRole$outboundSchema,
-  additionalRoles: z.array(z.string()).optional(),
   uid: z.string(),
   username: z.string(),
   name: z.string().optional(),

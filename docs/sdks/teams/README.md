@@ -38,7 +38,6 @@ async function run() {
     since: 1540095775951,
     until: 1540095775951,
     role: "OWNER",
-    teamId: "team_1a2b3c4d5e6f7g8h9i0j1k2l",
   });
 
   // Handle the result
@@ -68,7 +67,6 @@ async function run() {
     since: 1540095775951,
     until: 1540095775951,
     role: "OWNER",
-    teamId: "team_1a2b3c4d5e6f7g8h9i0j1k2l",
   });
 
   if (!res.ok) {
@@ -125,7 +123,6 @@ async function run() {
     requestBody: {
       uid: "kr1PsOIzqEL5Xg6M4VZcZosf",
       email: "john@example.com",
-      role: "VIEWER",
       projects: [
         {
           projectId: "prj_ndlgr43fadlPyCtREAqxxdyFK",
@@ -166,7 +163,6 @@ async function run() {
     requestBody: {
       uid: "kr1PsOIzqEL5Xg6M4VZcZosf",
       email: "john@example.com",
-      role: "VIEWER",
       projects: [
         {
           projectId: "prj_ndlgr43fadlPyCtREAqxxdyFK",
@@ -499,7 +495,6 @@ async function run() {
     teamId: "team_1a2b3c4d5e6f7g8h9i0j1k2l",
     requestBody: {
       confirmed: true,
-      role: "[\"MEMBER\",\"VIEWER\"]",
       projects: [
         {
           projectId: "prj_ndlgr43fadlPyCtREAqxxdyFK",
@@ -540,7 +535,6 @@ async function run() {
     teamId: "team_1a2b3c4d5e6f7g8h9i0j1k2l",
     requestBody: {
       confirmed: true,
-      role: "[\"MEMBER\",\"VIEWER\"]",
       projects: [
         {
           projectId: "prj_ndlgr43fadlPyCtREAqxxdyFK",

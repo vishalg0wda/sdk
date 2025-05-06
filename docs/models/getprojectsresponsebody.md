@@ -12,9 +12,9 @@ let value: GetProjectsResponseBody = {
     {
       accountId: "<id>",
       crons: {
-        enabledAt: 6964.83,
-        disabledAt: 8136.79,
-        updatedAt: 5098.07,
+        enabledAt: 8591.13,
+        disabledAt: 6356.32,
+        updatedAt: 1609.95,
         deploymentId: "<id>",
         definitions: [
           {
@@ -29,44 +29,54 @@ let value: GetProjectsResponseBody = {
       latestDeployments: [
         {
           id: "<id>",
-          createdAt: 3339.65,
+          createdAt: 2186.2,
           createdIn: "<value>",
           creator: {
-            email: "Avis_Leannon9@hotmail.com",
+            email: "Luciano.Lueilwitz68@yahoo.com",
             uid: "<id>",
-            username: "Halle13",
+            username: "Kattie79",
           },
           deploymentHostname: "<value>",
           name: "<value>",
-          plan: "hobby",
+          plan: "pro",
           previewCommentsEnabled: false,
           private: false,
-          readyState: "QUEUED",
+          readyState: "READY",
           type: "LAMBDAS",
-          url: "https://nautical-traditionalism.net",
+          url: "https://alive-moment.name/",
           userId: "<id>",
         },
       ],
       name: "<value>",
-      nodeVersion: "8.10.x",
+      nodeVersion: "20.x",
+      resourceConfig: {
+        functionDefaultRegions: [
+          "<value>",
+        ],
+      },
+      defaultResourceConfig: {
+        functionDefaultRegions: [
+          "<value>",
+        ],
+      },
       targets: {
         "key": {
           id: "<id>",
-          createdAt: 9197.83,
+          createdAt: 1603.18,
           createdIn: "<value>",
           creator: {
-            email: "Chandler16@gmail.com",
+            email: "Bridie18@gmail.com",
             uid: "<id>",
-            username: "Isabelle_Cronin44",
+            username: "Izaiah_Hayes93",
           },
           deploymentHostname: "<value>",
           name: "<value>",
           plan: "hobby",
           previewCommentsEnabled: false,
           private: false,
-          readyState: "ERROR",
+          readyState: "BUILDING",
           type: "LAMBDAS",
-          url: "https://bare-bar.org/",
+          url: "https://suburban-calculus.name",
           userId: "<id>",
         },
       },

@@ -5,7 +5,7 @@
 ```typescript
 import { TrustedIpsDeploymentType } from "@vercel/sdk/models/updateprojectdatacacheop.js";
 
-let value: TrustedIpsDeploymentType = "production";
+let value: TrustedIpsDeploymentType = "all";
 ```
 
 ## Values

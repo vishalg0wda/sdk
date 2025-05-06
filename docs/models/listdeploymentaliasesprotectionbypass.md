@@ -7,7 +7,7 @@
 
 ```typescript
 const value: models.ListDeploymentAliasesProtectionBypass1 = {
-  createdAt: 8175.09,
+  createdAt: 6024.09,
   createdBy: "<value>",
   scope: "shareable-link",
 };
@@ -17,8 +17,8 @@ const value: models.ListDeploymentAliasesProtectionBypass1 = {
 
 ```typescript
 const value: models.ListDeploymentAliasesProtectionBypass2 = {
-  createdAt: 4525.15,
-  lastUpdatedAt: 9714.36,
+  createdAt: 4557.27,
+  lastUpdatedAt: 4308.56,
   lastUpdatedBy: "<value>",
   access: "granted",
   scope: "user",
@@ -29,7 +29,7 @@ const value: models.ListDeploymentAliasesProtectionBypass2 = {
 
 ```typescript
 const value: models.ListDeploymentAliasesProtectionBypass3 = {
-  createdAt: 249.45,
+  createdAt: 6377.95,
   createdBy: "<value>",
   scope: "alias-protection-override",
 };
@@ -39,8 +39,8 @@ const value: models.ListDeploymentAliasesProtectionBypass3 = {
 
 ```typescript
 const value: models.ListDeploymentAliasesProtectionBypass4 = {
-  createdAt: 4153.67,
-  lastUpdatedAt: 6888.99,
+  createdAt: 9420.64,
+  lastUpdatedAt: 8539.04,
   lastUpdatedBy: "<value>",
   scope: "email_invite",
 };

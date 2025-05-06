@@ -1,5 +1,7 @@
 # State
 
+Invoice state.
+
 ## Example Usage
 
 ```typescript

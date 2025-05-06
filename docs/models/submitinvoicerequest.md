@@ -8,17 +8,17 @@ import { SubmitInvoiceRequest } from "@vercel/sdk/models/submitinvoiceop.js";
 let value: SubmitInvoiceRequest = {
   integrationConfigurationId: "<id>",
   requestBody: {
-    invoiceDate: new Date("2024-03-28T19:05:49.333Z"),
+    invoiceDate: new Date("2024-11-12T23:18:06.558Z"),
     period: {
-      start: new Date("2024-07-27T00:22:11.777Z"),
-      end: new Date("2023-02-18T17:02:19.985Z"),
+      start: new Date("2023-11-17T01:12:51.321Z"),
+      end: new Date("2025-11-16T06:04:23.394Z"),
     },
     items: [
       {
         billingPlanId: "<id>",
         name: "<value>",
-        price: "146.69",
-        quantity: 8373.27,
+        price: "18.39",
+        quantity: 7731.8,
         units: "<value>",
         total: "<value>",
       },

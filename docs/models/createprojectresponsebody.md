@@ -10,9 +10,9 @@ import { CreateProjectResponseBody } from "@vercel/sdk/models/createprojectop.js
 let value: CreateProjectResponseBody = {
   accountId: "<id>",
   crons: {
-    enabledAt: 8806.79,
-    disabledAt: 9450.27,
-    updatedAt: 9918.91,
+    enabledAt: 412.28,
+    disabledAt: 9363.32,
+    updatedAt: 3678.9,
     deploymentId: "<id>",
     definitions: [
       {
@@ -27,35 +27,45 @@ let value: CreateProjectResponseBody = {
   latestDeployments: [
     {
       id: "<id>",
-      createdAt: 3767.41,
+      createdAt: 5714.95,
       createdIn: "<value>",
       creator: {
-        email: "Paxton16@hotmail.com",
+        email: "Evans.Considine98@hotmail.com",
         uid: "<id>",
-        username: "Eldred_Kunde84",
+        username: "Jesus_Hirthe35",
       },
       deploymentHostname: "<value>",
       name: "<value>",
       plan: "enterprise",
       previewCommentsEnabled: false,
       private: false,
-      readyState: "CANCELED",
+      readyState: "QUEUED",
       type: "LAMBDAS",
-      url: "https://carefree-cleaner.biz",
+      url: "https://jam-packed-technologist.com",
       userId: "<id>",
     },
   ],
   name: "<value>",
-  nodeVersion: "22.x",
+  nodeVersion: "16.x",
+  resourceConfig: {
+    functionDefaultRegions: [
+      "<value>",
+    ],
+  },
+  defaultResourceConfig: {
+    functionDefaultRegions: [
+      "<value>",
+    ],
+  },
   targets: {
     "key": {
       id: "<id>",
-      createdAt: 4246.63,
+      createdAt: 2968.63,
       createdIn: "<value>",
       creator: {
-        email: "Keon97@gmail.com",
+        email: "Alfreda_Botsford@yahoo.com",
         uid: "<id>",
-        username: "Giuseppe.Friesen",
+        username: "Vern_Krajcik44",
       },
       deploymentHostname: "<value>",
       name: "<value>",
@@ -64,7 +74,7 @@ let value: CreateProjectResponseBody = {
       private: false,
       readyState: "INITIALIZING",
       type: "LAMBDAS",
-      url: "https://scared-valley.info",
+      url: "https://colossal-iridescence.biz/",
       userId: "<id>",
     },
   },
@@ -102,7 +112,7 @@ let value: CreateProjectResponseBody = {
 | `ipBuckets`                                                                                        | [models.CreateProjectIpBuckets](../models/createprojectipbuckets.md)[]                             | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `latestDeployments`                                                                                | [models.CreateProjectLatestDeployments](../models/createprojectlatestdeployments.md)[]             | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `link`                                                                                             | *models.CreateProjectLink*                                                                         | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
-| `microfrontends`                                                                                   | [models.CreateProjectMicrofrontends](../models/createprojectmicrofrontends.md)                     | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
+| `microfrontends`                                                                                   | *models.CreateProjectMicrofrontends*                                                               | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `name`                                                                                             | *string*                                                                                           | :heavy_check_mark:                                                                                 | N/A                                                                                                |
 | `nodeVersion`                                                                                      | [models.CreateProjectNodeVersion](../models/createprojectnodeversion.md)                           | :heavy_check_mark:                                                                                 | N/A                                                                                                |
 | `optionsAllowlist`                                                                                 | [models.CreateProjectOptionsAllowlist](../models/createprojectoptionsallowlist.md)                 | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
@@ -111,7 +121,9 @@ let value: CreateProjectResponseBody = {
 | `passwordProtection`                                                                               | [models.CreateProjectPasswordProtection](../models/createprojectpasswordprotection.md)             | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `productionDeploymentsFastLane`                                                                    | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `publicSource`                                                                                     | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
-| `resourceConfig`                                                                                   | [models.CreateProjectResourceConfig](../models/createprojectresourceconfig.md)                     | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
+| `resourceConfig`                                                                                   | [models.CreateProjectResourceConfig](../models/createprojectresourceconfig.md)                     | :heavy_check_mark:                                                                                 | N/A                                                                                                |
+| `rollingRelease`                                                                                   | [models.CreateProjectRollingRelease](../models/createprojectrollingrelease.md)                     | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
+| `defaultResourceConfig`                                                                            | [models.CreateProjectDefaultResourceConfig](../models/createprojectdefaultresourceconfig.md)       | :heavy_check_mark:                                                                                 | N/A                                                                                                |
 | `rootDirectory`                                                                                    | *string*                                                                                           | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `serverlessFunctionRegion`                                                                         | *string*                                                                                           | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `serverlessFunctionZeroConfigFailover`                                                             | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
@@ -133,11 +145,11 @@ let value: CreateProjectResponseBody = {
 | `permissions`                                                                                      | [models.CreateProjectPermissions](../models/createprojectpermissions.md)                           | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `lastRollbackTarget`                                                                               | [models.CreateProjectLastRollbackTarget](../models/createprojectlastrollbacktarget.md)             | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `lastAliasRequest`                                                                                 | [models.CreateProjectLastAliasRequest](../models/createprojectlastaliasrequest.md)                 | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
-| `hasFloatingAliases`                                                                               | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `protectionBypass`                                                                                 | Record<string, [models.CreateProjectProtectionBypass](../models/createprojectprotectionbypass.md)> | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `hasActiveBranches`                                                                                | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `trustedIps`                                                                                       | *models.CreateProjectTrustedIps*                                                                   | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `gitComments`                                                                                      | [models.CreateProjectGitComments](../models/createprojectgitcomments.md)                           | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
+| `gitProviderOptions`                                                                               | [models.CreateProjectGitProviderOptions](../models/createprojectgitprovideroptions.md)             | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `paused`                                                                                           | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `concurrencyBucketName`                                                                            | *string*                                                                                           | :heavy_minus_sign:                                                                                 | N/A                                                                                                |
 | `webAnalytics`                                                                                     | [models.CreateProjectWebAnalytics](../models/createprojectwebanalytics.md)                         | :heavy_minus_sign:                                                                                 | N/A                                                                                                |

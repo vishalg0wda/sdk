@@ -13,8 +13,8 @@ let value: GetFirewallConfigRules = {
     {
       conditions: [
         {
-          type: "header",
-          op: "lte",
+          type: "rate_limit_api_id",
+          op: "nex",
         },
       ],
     },

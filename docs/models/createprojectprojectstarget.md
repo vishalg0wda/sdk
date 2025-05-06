@@ -3,11 +3,11 @@
 
 ## Supported Types
 
-### `string[]`
+### `models.CreateProjectTarget1[]`
 
 ```typescript
-const value: string[] = [
-  "<value>",
+const value: models.CreateProjectTarget1[] = [
+  "preview",
 ];
 ```
 

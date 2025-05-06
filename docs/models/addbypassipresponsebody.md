@@ -12,8 +12,9 @@ const value: models.AddBypassIpResponseBody1 = {
     {
       ownerId: "<id>",
       id: "<id>",
-      domain: "shallow-tool.biz",
+      domain: "gummy-graffiti.info",
       projectId: "<id>",
+      note: "<value>",
       isProjectRule: false,
     },
   ],

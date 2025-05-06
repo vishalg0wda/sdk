@@ -26,6 +26,7 @@ export const GetIntegrationLogDrainsDeliveryFormat = {
   Json: "json",
   Ndjson: "ndjson",
   Syslog: "syslog",
+  Protobuf: "protobuf",
 } as const;
 /**
  * The delivery log format
@@ -56,8 +57,8 @@ export type GetIntegrationLogDrainsSources = ClosedEnum<
  * Whether the log drain was created by an integration or by a user
  */
 export const CreatedFrom = {
-  SelfServed: "self-served",
   Integration: "integration",
+  SelfServed: "self-served",
 } as const;
 /**
  * Whether the log drain was created by an integration or by a user

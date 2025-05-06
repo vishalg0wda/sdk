@@ -1,6 +1,6 @@
 # Period
 
-Period for the billing cycle.
+Period for the billing cycle. The period end date cannot be older than 24 hours earlier than our current server's time.
 
 ## Example Usage
 
@@ -8,8 +8,8 @@ Period for the billing cycle.
 import { Period } from "@vercel/sdk/models/submitbillingdataop.js";
 
 let value: Period = {
-  start: new Date("2024-09-04T22:28:02.223Z"),
-  end: new Date("2025-08-16T05:08:02.805Z"),
+  start: new Date("2024-04-17T01:12:19.083Z"),
+  end: new Date("2023-06-05T12:48:35.305Z"),
 };
 ```
 

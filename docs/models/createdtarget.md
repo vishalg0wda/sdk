@@ -7,7 +7,7 @@
 
 ```typescript
 const value: models.CreateProjectEnvTarget1[] = [
-  "preview",
+  "production",
 ];
 ```
 

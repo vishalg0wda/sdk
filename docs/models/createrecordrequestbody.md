@@ -3,36 +3,36 @@
 
 ## Supported Types
 
-### `models.RequestBody1`
+### `models.CreateRecordRequestBody1`
 
 ```typescript
-const value: models.RequestBody1 = {
+const value: models.CreateRecordRequestBody1 = {
   name: "subdomain",
-  type: "NS",
+  type: "HTTPS",
   ttl: 60,
   value: "192.0.2.42",
   comment: "used to verify ownership of domain",
 };
 ```
 
-### `models.RequestBody2`
+### `models.CreateRecordRequestBody2`
 
 ```typescript
-const value: models.RequestBody2 = {
+const value: models.CreateRecordRequestBody2 = {
   name: "subdomain",
-  type: "TXT",
+  type: "A",
   ttl: 60,
   value: "2001:DB8::42",
   comment: "used to verify ownership of domain",
 };
 ```
 
-### `models.RequestBody3`
+### `models.CreateRecordRequestBody3`
 
 ```typescript
-const value: models.RequestBody3 = {
+const value: models.CreateRecordRequestBody3 = {
   name: "subdomain",
-  type: "HTTPS",
+  type: "TXT",
   ttl: 60,
   value: "cname.vercel-dns.com",
   comment: "used to verify ownership of domain",
@@ -44,7 +44,7 @@ const value: models.RequestBody3 = {
 ```typescript
 const value: models.RequestBody4 = {
   name: "subdomain",
-  type: "HTTPS",
+  type: "CAA",
   ttl: 60,
   value: "0 issue \\"letsencrypt.org\\"",
   comment: "used to verify ownership of domain",
@@ -56,19 +56,19 @@ const value: models.RequestBody4 = {
 ```typescript
 const value: models.RequestBody5 = {
   name: "subdomain",
-  type: "A",
+  type: "AAAA",
   ttl: 60,
   value: "cname.vercel-dns.com",
   comment: "used to verify ownership of domain",
 };
 ```
 
-### `models.Six`
+### `models.RequestBody6`
 
 ```typescript
-const value: models.Six = {
+const value: models.RequestBody6 = {
   name: "subdomain",
-  type: "NS",
+  type: "CNAME",
   ttl: 60,
   value: "10 mail.example.com.",
   mxPriority: 10,
@@ -76,11 +76,11 @@ const value: models.Six = {
 };
 ```
 
-### `models.Seven`
+### `models.RequestBody7`
 
 ```typescript
-const value: models.Seven = {
-  type: "AAAA",
+const value: models.RequestBody7 = {
+  type: "CAA",
   ttl: 60,
   srv: {
     priority: 10,
@@ -92,34 +92,34 @@ const value: models.Seven = {
 };
 ```
 
-### `models.Eight`
+### `models.RequestBody8`
 
 ```typescript
-const value: models.Eight = {
-  type: "SRV",
+const value: models.RequestBody8 = {
+  type: "A",
   ttl: 60,
   value: "hello",
   comment: "used to verify ownership of domain",
 };
 ```
 
-### `models.Nine`
+### `models.RequestBody9`
 
 ```typescript
-const value: models.Nine = {
+const value: models.RequestBody9 = {
   name: "subdomain",
-  type: "TXT",
+  type: "ALIAS",
   ttl: 60,
   value: "ns1.example.com",
   comment: "used to verify ownership of domain",
 };
 ```
 
-### `models.Ten`
+### `models.RequestBody10`
 
 ```typescript
-const value: models.Ten = {
-  type: "CAA",
+const value: models.RequestBody10 = {
+  type: "AAAA",
   ttl: 60,
   https: {
     priority: 10,

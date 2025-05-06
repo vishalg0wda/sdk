@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { HeightlightedDetails } from "@vercel/sdk/models/getconfigurationsop.js";
+import { HeightlightedDetails } from "@vercel/sdk/models/importresourceop.js";
 
 let value: HeightlightedDetails = {
   label: "<value>",

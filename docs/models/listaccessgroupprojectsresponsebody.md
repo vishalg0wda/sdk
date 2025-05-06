@@ -9,14 +9,14 @@ let value: ListAccessGroupProjectsResponseBody = {
   projects: [
     {
       projectId: "<id>",
-      role: "PROJECT_VIEWER",
-      createdAt: "1727015326913",
-      updatedAt: "1737333868570",
+      role: "PROJECT_DEVELOPER",
+      createdAt: "1726062177116",
+      updatedAt: "1746454960202",
       project: {},
     },
   ],
   pagination: {
-    count: 1289.26,
+    count: 2185.28,
     next: "<value>",
   },
 };

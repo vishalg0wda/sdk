@@ -6,7 +6,7 @@
 import { GetAllChecksVirtualExperienceScore } from "@vercel/sdk/models/getallchecksop.js";
 
 let value: GetAllChecksVirtualExperienceScore = {
-  value: 5759.47,
+  value: 9002.03,
   source: "web-vitals",
 };
 ```

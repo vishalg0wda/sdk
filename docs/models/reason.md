@@ -5,7 +5,7 @@
 ```typescript
 import { Reason } from "@vercel/sdk/models/authuser.js";
 
-let value: Reason = "SUBSCRIPTION_CANCELED";
+let value: Reason = "BLOCKED_FOR_PLATFORM_ABUSE";
 ```
 
 ## Values

@@ -6,7 +6,7 @@
 import { ProtectionBypass } from "@vercel/sdk/models/updateprojectdatacacheop.js";
 
 let value: ProtectionBypass = {
-  createdAt: 8765.06,
+  createdAt: 4683.38,
   createdBy: "<value>",
   scope: "automation-bypass",
 };
@@ -14,8 +14,8 @@ let value: ProtectionBypass = {
 
 ## Fields
 
-| Field                              | Type                               | Required                           | Description                        |
-| ---------------------------------- | ---------------------------------- | ---------------------------------- | ---------------------------------- |
-| `createdAt`                        | *number*                           | :heavy_check_mark:                 | N/A                                |
-| `createdBy`                        | *string*                           | :heavy_check_mark:                 | N/A                                |
-| `scope`                            | [models.Scope](../models/scope.md) | :heavy_check_mark:                 | N/A                                |
+| Field                                                                          | Type                                                                           | Required                                                                       | Description                                                                    |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| `createdAt`                                                                    | *number*                                                                       | :heavy_check_mark:                                                             | N/A                                                                            |
+| `createdBy`                                                                    | *string*                                                                       | :heavy_check_mark:                                                             | N/A                                                                            |
+| `scope`                                                                        | [models.UpdateProjectDataCacheScope](../models/updateprojectdatacachescope.md) | :heavy_check_mark:                                                             | N/A                                                                            |

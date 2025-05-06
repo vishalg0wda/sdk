@@ -12,7 +12,7 @@ const value: models.UpdateProjectLink1 = {
       id: "<id>",
       name: "<value>",
       ref: "<value>",
-      url: "https://poor-kiss.org",
+      url: "https://smoggy-middle.net",
     },
   ],
 };
@@ -27,7 +27,7 @@ const value: models.UpdateProjectLink2 = {
       id: "<id>",
       name: "<value>",
       ref: "<value>",
-      url: "https://important-heartbeat.net",
+      url: "https://inexperienced-ethyl.name/",
     },
   ],
 };
@@ -42,7 +42,22 @@ const value: models.UpdateProjectLink3 = {
       id: "<id>",
       name: "<value>",
       ref: "<value>",
-      url: "https://each-bakeware.org/",
+      url: "https://terrible-rule.com/",
+    },
+  ],
+};
+```
+
+### `models.UpdateProjectLink4`
+
+```typescript
+const value: models.UpdateProjectLink4 = {
+  deployHooks: [
+    {
+      id: "<id>",
+      name: "<value>",
+      ref: "<value>",
+      url: "https://skeletal-allegation.net/",
     },
   ],
 };

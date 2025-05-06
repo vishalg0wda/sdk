@@ -10,8 +10,8 @@ import { Scopes2 } from "@vercel/sdk/models/authtoken.js";
 let value: Scopes2 = {
   type: "team",
   teamId: "<id>",
-  origin: "bitbucket",
-  createdAt: 7083.6,
+  origin: "sms",
+  createdAt: 7800.98,
 };
 ```
 
@@ -19,7 +19,7 @@ let value: Scopes2 = {
 
 | Field                                                              | Type                                                               | Required                                                           | Description                                                        |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
-| `type`                                                             | [models.ScopesType](../models/scopestype.md)                       | :heavy_check_mark:                                                 | N/A                                                                |
+| `type`                                                             | [models.AuthTokenScopesType](../models/authtokenscopestype.md)     | :heavy_check_mark:                                                 | N/A                                                                |
 | `teamId`                                                           | *string*                                                           | :heavy_check_mark:                                                 | N/A                                                                |
 | `origin`                                                           | [models.AuthTokenScopesOrigin](../models/authtokenscopesorigin.md) | :heavy_check_mark:                                                 | N/A                                                                |
 | `createdAt`                                                        | *number*                                                           | :heavy_check_mark:                                                 | N/A                                                                |

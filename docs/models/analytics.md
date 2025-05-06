@@ -7,8 +7,8 @@ import { Analytics } from "@vercel/sdk/models/updateprojectdatacacheop.js";
 
 let value: Analytics = {
   id: "<id>",
-  disabledAt: 6180.16,
-  enabledAt: 4287.69,
+  disabledAt: 7758.36,
+  enabledAt: 365.33,
 };
 ```
 

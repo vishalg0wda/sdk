@@ -7,9 +7,9 @@ import { CancelDeploymentGitRepo1 } from "@vercel/sdk/models/canceldeploymentop.
 
 let value: CancelDeploymentGitRepo1 = {
   namespace: "<value>",
-  projectId: 7690.47,
+  projectId: 7174.84,
   type: "gitlab",
-  url: "https://gleaming-costume.net",
+  url: "https://spanish-strategy.com",
   path: "/usr/ports",
   defaultBranch: "<value>",
   name: "<value>",

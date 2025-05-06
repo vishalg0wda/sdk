@@ -1,43 +1,26 @@
 # User
 
+Metadata for the User who generated the event.
 
-## Supported Types
-
-### `models.AuthUser`
+## Example Usage
 
 ```typescript
-const value: models.AuthUser = {
-  createdAt: 1630748523395,
-  softBlock: {
-    blockedAt: 3539.04,
-    reason: "SUBSCRIPTION_CANCELED",
-  },
-  billing: {},
-  resourceConfig: {},
-  stagingPrefix: "<value>",
-  hasTrialAvailable: false,
-  id: "AEIIDYVk59zbFF2Sxfyxxmua",
-  email: "me@example.com",
-  name: "John Doe",
-  username: "jdoe",
-  avatar: "22cb30c85ff45ac4c72de8981500006b28114aa1",
-  defaultTeamId: "<id>",
-  version: "northstar",
+import { User } from "@vercel/sdk/models/userevent.js";
+
+let value: User = {
+  avatar: "https://loremflickr.com/2014/619?lock=4777752609260298",
+  email: "Robyn.Stracke76@hotmail.com",
+  uid: "<id>",
+  username: "Hannah.Grant",
 };
 ```
 
-### `models.AuthUserLimited`
+## Fields
 
-```typescript
-const value: models.AuthUserLimited = {
-  limited: false,
-  id: "AEIIDYVk59zbFF2Sxfyxxmua",
-  email: "me@example.com",
-  name: "John Doe",
-  username: "jdoe",
-  avatar: "22cb30c85ff45ac4c72de8981500006b28114aa1",
-  defaultTeamId: "<id>",
-  version: "northstar",
-};
-```
-
+| Field              | Type               | Required           | Description        |
+| ------------------ | ------------------ | ------------------ | ------------------ |
+| `avatar`           | *string*           | :heavy_check_mark: | N/A                |
+| `email`            | *string*           | :heavy_check_mark: | N/A                |
+| `slug`             | *string*           | :heavy_minus_sign: | N/A                |
+| `uid`              | *string*           | :heavy_check_mark: | N/A                |
+| `username`         | *string*           | :heavy_check_mark: | N/A                |

@@ -3,11 +3,11 @@
 
 ## Supported Types
 
-### `models.FilterProjectEnvsTarget1[]`
+### `models.FilterProjectEnvsTargetProjects1[]`
 
 ```typescript
-const value: models.FilterProjectEnvsTarget1[] = [
-  "development",
+const value: models.FilterProjectEnvsTargetProjects1[] = [
+  "production",
 ];
 ```
 

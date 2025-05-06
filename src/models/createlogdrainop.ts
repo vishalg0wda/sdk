@@ -83,6 +83,7 @@ export const CreateLogDrainDeliveryFormat = {
   Json: "json",
   Ndjson: "ndjson",
   Syslog: "syslog",
+  Protobuf: "protobuf",
 } as const;
 /**
  * The delivery log format
@@ -111,8 +112,8 @@ export type CreateLogDrainSources = ClosedEnum<typeof CreateLogDrainSources>;
  * Whether the log drain was created by an integration or by a user
  */
 export const CreateLogDrainCreatedFrom = {
-  SelfServed: "self-served",
   Integration: "integration",
+  SelfServed: "self-served",
 } as const;
 /**
  * Whether the log drain was created by an integration or by a user
